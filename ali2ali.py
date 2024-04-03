@@ -18,7 +18,7 @@ class Ali2Ali(torch.nn.Module):
         #                                            "DownEncoderBlock2D"),
         #                          up_block_types=("UpDecoderBlock2D", "UpDecoderBlock2D", "UpDecoderBlock2D",
         #                                          "UpDecoderBlock2D"),
-        #                          block_out_channels=(128, 256, 512, 512),
+        #                          block_out_channels=(32, 32, 32, 32),
         #                          layers_per_block=2,
         #                         norm_num_groups=32,
         #                          act_fn="silu",
@@ -34,7 +34,7 @@ class Ali2Ali(torch.nn.Module):
         vae.decoder.ignore_skip = False
         unet = UNet2DConditionModel.from_pretrained("stabilityai/sd-turbo", subfolder="unet")
 
-        # self.unet = UNet2DConditionModel(sample_size=64,
+        # unet = UNet2DConditionModel(sample_size=64,
         #                                  in_channels=4,
         #                                  out_channels=4,
         #                                  center_input_sample=False,
@@ -44,15 +44,15 @@ class Ali2Ali(torch.nn.Module):
         #                                                    "CrossAttnDownBlock2D", "DownBlock2D"),
         #                                  up_block_types=("UpBlock2D", "CrossAttnUpBlock2D", "CrossAttnUpBlock2D",
         #                                                  "CrossAttnUpBlock2D"),
-        #                                  block_out_channels=(320, 640, 1280, 1280),
+        #                                  block_out_channels=(32, 32, 32, 32),
         #                                  layers_per_block=2,
         #                                  downsample_padding=1,
         #                                  mid_block_scale_factor=1,
         #                                  act_fn="silu",
         #                                  norm_num_groups=32,
         #                                  norm_eps=1e-5,
-        #                                  cross_attention_dim=768,
-        #                                  attention_head_dim=8)
+        #                                  cross_attention_dim=1024,
+        #                                  attention_head_dim=4)
 
         #skip connections
         print("Initializing model with random weights")

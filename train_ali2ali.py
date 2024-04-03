@@ -6,7 +6,7 @@ from cleanfid.features import build_feature_extractor
 from cleanfid.fid import get_folder_features
 from tqdm import tqdm
 import wandb
-wandb.login(key="7932525c36d2cd0d2995858bb0a4f432e982e0b8")
+wandb.login(key="7932525c36d2cd0d2995858bb0a4f432e982e0b8",relogin=True)
 from ali2ali import Ali2Ali
 from utils import parse_args_paired_training, PairedDataset
 import torch
@@ -84,18 +84,7 @@ def main(args):
         if "attn" in name:
             module.fused_attn = False
 
-    # # compute the reference stats for FID tracking
-    # if args.track_val_fid:
-    #     feat_model = build_feature_extractor("clean", "cuda", use_dataparallel=False)
-    #
-    #     def fn_transform(x):
-    #         x_pil = Image.fromarray(x)
-    #         out_pil = transforms.Resize(args.resolution, interpolation=transforms.InterpolationMode.LANCZOS)(x_pil)
-    #         return np.array(out_pil)
-    #
-    #     ref_stats = get_folder_features(os.path.join(args.dataset_folder, "test_B"), model=feat_model, num_workers=0, num=None,
-    #             shuffle=False, seed=0, batch_size=8, device=torch.device("cuda"),
-    #             mode="clean", custom_image_tranform=fn_transform, description="", verbose=True)
+
 
     global_step = 0
     for epoch in range(0,args.num_training_epochs):

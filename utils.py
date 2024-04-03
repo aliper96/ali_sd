@@ -12,7 +12,7 @@ import torchvision.transforms.functional as F
 
 def make_1step_sched():
     noise_scheduler_1step = DDPMScheduler.from_pretrained("stabilityai/sd-turbo", subfolder="scheduler")
-    noise_scheduler_1step.set_timesteps(1, device="cuda")
+    # noise_scheduler_1step.set_timesteps(1, device="cuda")
     noise_scheduler_1step.alphas_cumprod = noise_scheduler_1step.alphas_cumprod.cuda()
     return noise_scheduler_1step
 
@@ -102,7 +102,7 @@ def parse_args_paired_training(input_args=None):
     parser.add_argument("--num_samples_eval", type=int, default=100, help="Number of samples to use for all evaluation")
 
     parser.add_argument("--viz_freq", type=int, default=100, help="Frequency of visualizing the outputs.")
-    parser.add_argument("--tracker_project_name", type=str, default="train_pix2pix_turbo", help="The name of the wandb project to log to.")
+    parser.add_argument("--tracker_project_name", type=str, default="train_pix2pix_turbo_assembly", help="The name of the wandb project to log to.")
 
     # details about the model architecture
     parser.add_argument("--pretrained_model_name_or_path")
@@ -118,12 +118,12 @@ def parse_args_paired_training(input_args=None):
     parser.add_argument("--seed", type=int, default=None, help="A seed for reproducible training.")
     parser.add_argument("--resolution", type=int, default=512,)
     parser.add_argument("--train_batch_size", type=int, default=1, help="Batch size (per device) for the training dataloader.")
-    parser.add_argument("--num_training_epochs", type=int, default=10)
+    parser.add_argument("--num_training_epochs", type=int, default=1000)
     parser.add_argument("--max_train_steps", type=int, default=10_000,)
     parser.add_argument("--checkpointing_steps", type=int, default=500,)
     parser.add_argument("--gradient_accumulation_steps", type=int, default=1, help="Number of updates steps to accumulate before performing a backward/update pass.",)
     parser.add_argument("--gradient_checkpointing", action="store_true",)
-    parser.add_argument("--learning_rate", type=float, default=5e-6)
+    parser.add_argument("--learning_rate", type=float, default=5e-4)
     parser.add_argument("--lr_scheduler", type=str, default="constant",
         help=(
             'The scheduler type to use. Choose between ["linear", "cosine", "cosine_with_restarts", "polynomial",'
@@ -136,7 +136,7 @@ def parse_args_paired_training(input_args=None):
     )
     parser.add_argument("--lr_power", type=float, default=1.0, help="Power factor of the polynomial scheduler.")
 
-    parser.add_argument("--dataloader_num_workers", type=int, default=1,)
+    parser.add_argument("--dataloader_num_workers", type=int, default=4,)
     parser.add_argument("--adam_beta1", type=float, default=0.9, help="The beta1 parameter for the Adam optimizer.")
     parser.add_argument("--adam_beta2", type=float, default=0.999, help="The beta2 parameter for the Adam optimizer.")
     parser.add_argument("--adam_weight_decay", type=float, default=1e-2, help="Weight decay to use.")
@@ -200,6 +200,9 @@ class PairedDataset(torch.utils.data.Dataset):
         img_name = self.img_names[idx]
         input_img = Image.open(os.path.join(self.input_folder, img_name))
         output_img = Image.open(os.path.join(self.output_folder, img_name))
+        if output_img.mode != 'RGB':
+            output_img = output_img.convert('RGB')
+
         caption = self.captions[img_name]
 
         # input images scaled to 0,1
