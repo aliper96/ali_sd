@@ -90,12 +90,12 @@ def main(args):
     for epoch in range(0,args.num_training_epochs):
         for step, batch in enumerate(dl_train):
             l_acc = [net_pix2pix, net_disc]
-            x_src = batch["conditioning_pixel_values"].cuda()
+            x_src_condition = batch["conditioning_pixel_values"].cuda()
             x_tgt = batch["output_pixel_values"].cuda()
             input_ids = batch["input_ids"].cuda()
-            B,C,H,W = x_src.shape
+            B,C,H,W = x_src_condition.shape
             #forward pass
-            x_tgt_pred = net_pix2pix(x_src,prompt_tokens = input_ids ,deterministic = True)
+            x_tgt_pred = net_pix2pix(x_src_condition,x_tgt,prompt_tokens = input_ids ,deterministic = True)
             loss_l2 = F.mse_loss(x_tgt.float(), x_tgt_pred.float()).mean() * args.lambda_l2
             loss_lpips = F.mse_loss(x_tgt.float(), x_tgt_pred.float()).mean() * args.lambda_lpips
             loss = loss_l2 + loss_lpips
@@ -117,7 +117,7 @@ def main(args):
 
             # Generator loss: fool the discriminator
 
-            x_tgt_pred = net_pix2pix(x_src, prompt_tokens=input_ids, deterministic=True)
+            x_tgt_pred = net_pix2pix(x_src_condition,x_tgt, prompt_tokens=input_ids, deterministic=True)
             lossG = net_disc(x_tgt_pred, for_G=True).mean() * args.lambda_gan
             lossG.backward()
             torch.nn.utils.clip_grad_norm_(net_disc.parameters(), args.max_grad_norm)
@@ -158,7 +158,7 @@ def main(args):
             # viz some images
             if global_step % args.viz_freq == 1:
                 log_dict = {
-                    "train/source": [wandb.Image(x_src[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
+                    "train/source": [wandb.Image(x_src_condition[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
                     "train/target": [wandb.Image(x_tgt[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
                     "train/model_output": [wandb.Image(x_tgt_pred[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
                 }

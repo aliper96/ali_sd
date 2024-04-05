@@ -1,4 +1,4 @@
-from diffusers import AutoencoderKL,UNet2DConditionModel
+from diffusers import AutoencoderKL, UNet2DConditionModel, ControlNetModel
 from peft import LoraConfig
 from transformers import AutoTokenizer, CLIPTextModel
 import torch
@@ -33,6 +33,8 @@ class Ali2Ali(torch.nn.Module):
         vae.decoder.skip_conv_4 = torch.nn.Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False).cuda()
         vae.decoder.ignore_skip = False
         unet = UNet2DConditionModel.from_pretrained("stabilityai/sd-turbo", subfolder="unet")
+        self.controlnet = ControlNetModel.from_unet(unet, load_weights_from_unet=True)
+
 
         # unet = UNet2DConditionModel(sample_size=64,
         #                                  in_channels=4,
@@ -82,6 +84,7 @@ class Ali2Ali(torch.nn.Module):
 
         unet.to("cuda")
         vae.to("cuda")
+        self.controlnet.to("cuda")
         self.unet, self.vae = unet, vae
         self.vae.decoder.gamma = 1
         self.timesteps = torch.tensor([999], device="cuda").long()
@@ -96,12 +99,13 @@ class Ali2Ali(torch.nn.Module):
     def set_train(self):
         self.unet.train()
         self.vae.train()
+        self.controlnet.train()
         self.unet.conv_in.requires_grad_(True)
         self.unet.down_blocks.requires_grad_(True)
         self.unet.mid_block.requires_grad_(True)
         self.unet.up_blocks.requires_grad_(True)
 
-    def forward(self, c_t, prompt=None, prompt_tokens=None, deterministic=True, r=1.0, noise_map=None):
+    def forward(self, c_t, trgt = None,  prompt=None, prompt_tokens=None, deterministic=True, r=1.0, noise_map=None):
         assert (prompt is None) != (prompt_tokens is None), "Either prompt or prompt_tokens should be provided"
 
         if prompt is not None:
@@ -112,9 +116,27 @@ class Ali2Ali(torch.nn.Module):
         else:
             caption_enc = self.text_encoder(prompt_tokens)[0]
 
-        encoded_control = self.vae.encode(c_t).latent_dist.sample() * self.vae.config.scaling_factor
-        model_pred = self.unet(encoded_control, self.timesteps, encoder_hidden_states=caption_enc, ).sample
-        x_denoised = self.sched.step(model_pred, self.timesteps, encoded_control, return_dict=True).prev_sample
+        # encoded_control = self.vae.encode(c_t).latent_dist.sample() * self.vae.config.scaling_factor
+        target_control = self.vae.encode(trgt).latent_dist.sample() * self.vae.config.scaling_factor
+
+        down_block_res_samples, mid_block_res_sample = self.controlnet(
+            target_control,
+            timestep=self.timesteps,
+            encoder_hidden_states=caption_enc,
+            controlnet_cond=c_t,
+            conditioning_scale=1.0,
+            return_dict=False,
+        )
+
+        model_pred = (
+            self.unet(
+            target_control,
+            self.timesteps,
+            encoder_hidden_states=caption_enc,
+            down_block_additional_residuals=down_block_res_samples,
+            mid_block_additional_residual= mid_block_res_sample
+            ).sample)
+        x_denoised = self.sched.step(model_pred, self.timesteps, target_control, return_dict=True).prev_sample
         self.vae.decoder.incoming_skip_acts = self.vae.encoder.current_down_blocks
         output_image = (self.vae.decode(x_denoised / self.vae.config.scaling_factor).sample).clamp(-1, 1)
 
