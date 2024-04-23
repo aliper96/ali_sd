@@ -91,13 +91,14 @@ def main(args):
         for step, batch in enumerate(dl_train):
             l_acc = [net_pix2pix, net_disc]
             x_src_condition = batch["conditioning_pixel_values"].cuda()
+            x_src_input_image = batch["input_pixel_values"].cuda()
             x_tgt = batch["output_pixel_values"].cuda()
             input_ids = batch["input_ids"].cuda()
             B,C,H,W = x_src_condition.shape
             #forward pass
-            x_tgt_pred = net_pix2pix(x_src_condition,x_tgt,prompt_tokens = input_ids ,deterministic = True)
+            x_tgt_pred = net_pix2pix(x_src_condition,x_src_input_image,prompt_tokens = input_ids ,deterministic = True)
             loss_l2 = F.mse_loss(x_tgt.float(), x_tgt_pred.float()).mean() * args.lambda_l2
-            loss_lpips = F.mse_loss(x_tgt.float(), x_tgt_pred.float()).mean() * args.lambda_lpips
+            loss_lpips = net_lpips(x_tgt.float(), x_tgt_pred.float()).mean() * args.lambda_lpips
             loss = loss_l2 + loss_lpips
             # CLIP similarity loss
             if args.lambda_clipsim > 0:
@@ -117,7 +118,7 @@ def main(args):
 
             # Generator loss: fool the discriminator
 
-            x_tgt_pred = net_pix2pix(x_src_condition,x_tgt, prompt_tokens=input_ids, deterministic=True)
+            x_tgt_pred = net_pix2pix(x_src_input_image,x_tgt, prompt_tokens=input_ids, deterministic=True)
             lossG = net_disc(x_tgt_pred, for_G=True).mean() * args.lambda_gan
             lossG.backward()
             torch.nn.utils.clip_grad_norm_(net_disc.parameters(), args.max_grad_norm)

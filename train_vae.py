@@ -32,8 +32,7 @@ def main(args):
 
     #train the vae
     vae.train()
-    # vae.encoder.requires_grad_(True)
-    # vae.decoder.requires_grad_(True)
+
     optimizer = torch.optim.AdamW(list(vae.encoder.parameters()) + list(vae.decoder.parameters()), lr=1e-4)
     tokenizer = AutoTokenizer.from_pretrained("stabilityai/sd-turbo", subfolder="tokenizer")
 

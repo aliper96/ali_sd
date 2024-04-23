@@ -86,9 +86,9 @@ def parse_args_paired_training(input_args=None):
     # args for the loss function
     parser.add_argument("--gan_disc_type", default="vagan_clip")
     parser.add_argument("--gan_loss_type", default="multilevel_sigmoid_s")
-    parser.add_argument("--lambda_gan", default=0.5, type=float)
-    parser.add_argument("--lambda_lpips", default=5, type=float)
-    parser.add_argument("--lambda_l2", default=1.0, type=float)
+    parser.add_argument("--lambda_gan", default=2.5, type=float)
+    parser.add_argument("--lambda_lpips", default=15, type=float)
+    parser.add_argument("--lambda_l2", default=2.0, type=float)
     parser.add_argument("--lambda_clipsim", default=5.0, type=float)
 
     # dataset options
@@ -177,10 +177,27 @@ def build_transform(image_prep):
 
 class PairedDataset(torch.utils.data.Dataset):
     def __init__(self, dataset_folder, split, image_prep, tokenizer):
+        """
+        Itialize the paired dataset object for loading and transforming paired data samples
+        from specified dataset folders.
+
+        This constructor sets up the paths to input and output folders based on the specified 'split',
+        loads the captions (or prompts) for the input images, and prepares the transformations and
+        tokenizer to be applied on the data.
+
+        Parameters:
+        - dataset_folder (str): The root folder containing the dataset, expected to include
+                                sub-folders for different splits (e.g., 'train_A', 'train_B').
+        - split (str): The dataset split to use ('train' or 'test'), used to select the appropriate
+                       sub-folders and caption files within the dataset folder.
+        - image_prep (str): The image preprocessing transformation to apply to each image.
+        - tokenizer: The tokenizer used for tokenizing the captions (or prompts).
+        """
         super().__init__()
         if split == "train":
             self.input_folder = os.path.join(dataset_folder, "train_A")
             self.output_folder = os.path.join(dataset_folder, "train_B")
+            self.input_images = os.path.join(dataset_folder, "train_C")
             captions = os.path.join(dataset_folder, "train_prompts.json")
         elif split == "test":
             self.input_folder = os.path.join(dataset_folder, "test_A")
@@ -193,17 +210,65 @@ class PairedDataset(torch.utils.data.Dataset):
         self.tokenizer = tokenizer
 
     def __len__(self):
+        """
+        Returns:
+        int: The total number of items in the dataset.
+        """
         return len(self.captions)
 
     def __getitem__(self, idx):
+        """
+        Retrieves a dataset item given its index. Each item consists of an input image,
+        its corresponding output image, the captions associated with the input image,
+        and the tokenized form of this caption.
 
+        This method performs the necessary preprocessing on both the input and output images,
+        including scaling and normalization, as well as tokenizing the caption using a provided tokenizer.
+
+        Parameters:
+        - idx (int): The index of the item to retrieve.
+
+        Returns:
+        dict: A dictionary containing the following key-value pairs:
+            - "output_pixel_values": a tensor of the preprocessed output image with pixel values
+            scaled to [-1, 1].
+            - "conditioning_pixel_values": a tensor of the preprocessed input image with pixel values
+            scaled to [0, 1].
+            - "caption": the text caption.
+            - "input_ids": a tensor of the tokenized caption.
+
+        Note:
+        The actual preprocessing steps (scaling and normalization) for images are defined externally
+        and passed to this class through the `image_prep` parameter during initialization. The
+        tokenization process relies on the `tokenizer` also provided at initialization, which
+        should be compatible with the models intended to be used with this dataset.
+        """
         img_name = self.img_names[idx]
         input_img = Image.open(os.path.join(self.input_folder, img_name))
+        input_real_img = Image.open(os.path.join(self.input_images, img_name))
         output_img = Image.open(os.path.join(self.output_folder, img_name))
-        if output_img.mode != 'RGB':
-            output_img = output_img.convert('RGB')
-
         caption = self.captions[img_name]
+
+        #convert img_t to RGB
+        # input_img = input_img.convert("RGB")
+        input_w, input_h = input_img.size
+        ima = Image.new('RGB', (input_w, input_h))
+        input_data = zip(input_img.getdata(), input_img.getdata(), input_img.getdata())
+        ima.putdata(list(input_data))
+        input_img = ima
+
+        # output_img = output_img.convert("RGB")
+        output_w, output_h = output_img.size
+        ima_output = Image.new('RGB', (output_w, output_h))
+        output_data = zip(output_img.getdata(), output_img.getdata(), output_img.getdata())
+        ima_output.putdata(list(output_data))
+        output_img = ima_output
+
+        # input_img_w, input_img_h = input_real_img.size
+        # ima_input_real = Image.new('RGB', (input_img_w, input_img_h))
+        # input_real_data = zip(input_real_img.getdata(), input_real_img.getdata(), input_real_img.getdata())
+        # ima_input_real.putdata(list(input_real_data))
+        # input_real_img = ima_input_real
 
         # input images scaled to 0,1
         img_t = self.T(input_img)
@@ -213,6 +278,10 @@ class PairedDataset(torch.utils.data.Dataset):
         output_t = F.to_tensor(output_t)
         output_t = F.normalize(output_t, mean=[0.5], std=[0.5])
 
+        input_real_t = self.T(input_real_img)
+        input_real_t = F.to_tensor(input_real_t)
+        input_real_t = F.normalize(input_real_t, mean=[0.5], std=[0.5])
+
         input_ids = self.tokenizer(
             caption, max_length=self.tokenizer.model_max_length,
             padding="max_length", truncation=True, return_tensors="pt"
@@ -220,6 +289,7 @@ class PairedDataset(torch.utils.data.Dataset):
 
         return {
             "output_pixel_values": output_t,
+            "input_pixel_values" : input_real_t,
             "conditioning_pixel_values": img_t,
             "caption": caption,
             "input_ids": input_ids,
