@@ -74,7 +74,7 @@ class Ali2Ali(torch.nn.Module):
         vae.add_adapter(vae_lora_config, adapter_name="vae_skip")
         target_modules_unet = [
             "to_k", "to_q", "to_v", "to_out.0", "conv", "conv1", "conv2", "conv_shortcut", "conv_out",
-            "proj_in", "proj_out", "ff.net.2", "ff.net.0.proj"
+            "proj_in", "proj_out", "ff.net.2", "ff.net.0.proj",
         ]
         unet_lora_config = LoraConfig(r=lora_rank_unet, init_lora_weights="gaussian",
                                       target_modules=target_modules_unet
@@ -109,6 +109,7 @@ class Ali2Ali(torch.nn.Module):
         for n, _p in self.vae.named_parameters():
             if "lora" in n:
                 _p.requires_grad = True
+        self.unet.conv_in.requires_grad_(True)
         self.vae.decoder.skip_conv_1.requires_grad_(True)
         self.vae.decoder.skip_conv_2.requires_grad_(True)
         self.vae.decoder.skip_conv_3.requires_grad_(True)
@@ -125,8 +126,8 @@ class Ali2Ali(torch.nn.Module):
         else:
             caption_enc = self.text_encoder(prompt_tokens)[0]
 
-        encoded_control = self.vae.encode(c_t).latent_dist.sample() * self.vae.config.scaling_factor
         target_control = self.vae.encode(trgt).latent_dist.sample() * self.vae.config.scaling_factor
+        encoded_control = self.vae.encode(c_t).latent_dist.sample() * self.vae.config.scaling_factor
 
         # resize c_t to 64x64
         small_c_t = torch.nn.functional.interpolate(c_t[:,0:1,:,:], size=(64, 64), mode="bilinear", align_corners=False)

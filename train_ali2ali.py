@@ -51,10 +51,11 @@ def main(args):
         if "lora" in n and "vae_skip" in n:
             assert _p.requires_grad
             layers_to_opt.append(_p)
-    layers_to_opt = layers_to_opt + list(net_pix2pix.vae.decoder.skip_conv_1.parameters()) + \
+    layers_to_opt = (layers_to_opt + list(net_pix2pix.vae.decoder.skip_conv_1.parameters()) + \
         list(net_pix2pix.vae.decoder.skip_conv_2.parameters()) + \
         list(net_pix2pix.vae.decoder.skip_conv_3.parameters()) + \
-        list(net_pix2pix.vae.decoder.skip_conv_4.parameters())
+        list(net_pix2pix.vae.decoder.skip_conv_4.parameters()) +\
+        list(net_pix2pix.unet.conv_in.parameters()))
 
     optimizer = torch.optim.AdamW(layers_to_opt, lr=args.learning_rate,
         betas=(args.adam_beta1, args.adam_beta2), weight_decay=args.adam_weight_decay,
@@ -118,7 +119,7 @@ def main(args):
 
             # Generator loss: fool the discriminator
 
-            x_tgt_pred = net_pix2pix(x_src_input_image,x_tgt, prompt_tokens=input_ids, deterministic=True)
+            x_tgt_pred = net_pix2pix(x_src_condition,x_src_input_image, prompt_tokens=input_ids, deterministic=True)
             lossG = net_disc(x_tgt_pred, for_G=True).mean() * args.lambda_gan
             lossG.backward()
             torch.nn.utils.clip_grad_norm_(net_disc.parameters(), args.max_grad_norm)
@@ -160,6 +161,7 @@ def main(args):
             if global_step % args.viz_freq == 1:
                 log_dict = {
                     "train/source": [wandb.Image(x_src_condition[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
+                    "train/input": [wandb.Image(x_src_input_image[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
                     "train/target": [wandb.Image(x_tgt[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
                     "train/model_output": [wandb.Image(x_tgt_pred[idx].float().detach().cpu(), caption=f"idx={idx}") for idx in range(B)],
                 }
