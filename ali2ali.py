@@ -32,9 +32,9 @@ class Ali2Ali(torch.nn.Module):
         vae.decoder.skip_conv_3 = torch.nn.Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False).cuda()
         vae.decoder.skip_conv_4 = torch.nn.Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False).cuda()
         vae.decoder.ignore_skip = False
-        # unet = UNet2DConditionModel.from_pretrained("stabilityai/sd-turbo", subfolder="unet")
+        unet = UNet2DConditionModel.from_pretrained("stabilityai/sd-turbo", subfolder="unet")
         # unet = UNet2DConditionModel.from_pretrained("stabilityai/sd-turbo", subfolder="unet",in_channels=9)
-        unet = UNet2DConditionModel.from_pretrained("stabilityai/sd-turbo", subfolder="unet",in_channels=9, ignore_mismatched_sizes=True,low_cpu_mem_usage=False)
+        # unet = UNet2DConditionModel.from_pretrained("stabilityai/sd-turbo", subfolder="unet",in_channels=9, ignore_mismatched_sizes=True,low_cpu_mem_usage=False)
 
         # self.controlnet = ControlNetModel.from_unet(unet, load_weights_from_unet=True)
 
@@ -105,7 +105,7 @@ class Ali2Ali(torch.nn.Module):
         for n, _p in self.unet.named_parameters():
             if "lora" in n:
                 _p.requires_grad = True
-        self.unet.conv_in.requires_grad_(True)
+        # self.unet.conv_in.requires_grad_(True)
         for n, _p in self.vae.named_parameters():
             if "lora" in n:
                 _p.requires_grad = True
@@ -135,7 +135,7 @@ class Ali2Ali(torch.nn.Module):
 
         model_pred = (
             self.unet(
-                target_control_concatenated,
+                target_control,
                 self.timesteps,
                 encoder_hidden_states=caption_enc,
             ).sample)
