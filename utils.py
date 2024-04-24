@@ -305,3 +305,13 @@ def canny_from_pil(image, low_threshold=100, high_threshold=200):
     image = np.concatenate([image, image, image], axis=2)
     control_image = Image.fromarray(image)
     return control_image
+
+
+def process_image(input_img):
+    # Obtiene las dimensiones de la imagen de entrada
+    output_w, output_h = input_img.size
+    ima_output = Image.new('RGB', (output_w, output_h))
+    output_data = zip(input_img.getdata(), input_img.getdata(), input_img.getdata())
+    ima_output.putdata(list(output_data))
+    # Retorna la imagen procesada
+    return ima_output

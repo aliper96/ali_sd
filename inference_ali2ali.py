@@ -6,11 +6,11 @@ import torch
 from torchvision import transforms
 import torchvision.transforms.functional as F
 from ali2ali import Ali2Ali
-from utils import canny_from_pil
+from utils import canny_from_pil, process_image
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_image', type=str, default= r"C:\Users\aliha\PycharmProjects\my_sb\data\assembly\train_A\20230720111057_1_5.png", help='path to the input image')
+    parser.add_argument('--input_condition', type=str, default= r"C:\Users\aliha\PycharmProjects\my_sb\data\assembly\train_A\20230720153307_1_2.png", help='path to the input image')
     parser.add_argument('--input_real_image', type=str, default= r"C:\Users\aliha\PycharmProjects\my_sb\data\assembly\train_C\20230720093424_1_1.png", help='path to the input image')
     parser.add_argument('--prompt', type=str,default="a image of assembly solar plate with burn", help='the prompt to be used')
     parser.add_argument('--model_name', type=str, default='', help='name of the pretrained model to be used')
@@ -32,27 +32,35 @@ if __name__ == "__main__":
     model = Ali2Ali(pretrained_name=args.model_name)
     model.set_eval()
 
-    input_real_image = Image.open(args.input_real_image).convert('RGB')
+    input_real_image = Image.open(args.input_real_image)
+
+    # input_real_image = process_image(input_real_image)
+
     new_width = input_real_image.width - input_real_image.width % 8
     new_height = input_real_image.height - input_real_image.height % 8
     input_real_image = input_real_image.resize((new_width, new_height), Image.LANCZOS)
     bname = os.path.basename(args.input_real_image)
 
     # make sure that the input image is a multiple of 8
-    input_image = Image.open(args.input_image).convert('RGB')
+    input_image = Image.open(args.input_condition)
+    input_image = process_image(input_image)
+
+
     new_width = input_image.width - input_image.width % 8
     new_height = input_image.height - input_image.height % 8
     input_image = input_image.resize((new_width, new_height), Image.LANCZOS)
-    bname = os.path.basename(args.input_image)
+    bname = os.path.basename(args.input_condition)
 
     # translate the image
     with torch.no_grad():
         if args.model_name == 'edge_to_image':
             canny = canny_from_pil(input_image, args.low_threshold, args.high_threshold)
-            canny_viz_inv = Image.fromarray(255 - np.array(canny))
+            canny_viz_inv = Image.fromarray( np.array(canny))
             canny_viz_inv.save(os.path.join(args.output_dir, bname.replace('.png', '_canny.png')))
             c_t = F.to_tensor(canny).unsqueeze(0).cuda()
             input_real_img_t = F.to_tensor(input_real_image).unsqueeze(0).cuda()
+            input_real_img_t = F.normalize(input_real_img_t, mean=[0.5], std=[0.5])
+
             output_image = model(c_t,input_real_img_t, args.prompt)
 
         elif args.model_name == 'sketch_to_image_stochastic':

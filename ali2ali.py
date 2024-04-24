@@ -16,18 +16,6 @@ class Ali2Ali(torch.nn.Module):
         self.text_encoder = CLIPTextModel.from_pretrained("stabilityai/sd-turbo", subfolder="text_encoder").cuda()
         self.sched = make_1step_sched()
 
-        # vae = AutoencoderKL(in_channels=3,
-        #                          out_channels=3,
-        #                          down_block_types=("DownEncoderBlock2D", "DownEncoderBlock2D", "DownEncoderBlock2D",
-        #                                            "DownEncoderBlock2D"),
-        #                          up_block_types=("UpDecoderBlock2D", "UpDecoderBlock2D", "UpDecoderBlock2D",
-        #                                          "UpDecoderBlock2D"),
-        #                          block_out_channels=(32, 32, 32, 32),
-        #                          layers_per_block=2,
-        #                         norm_num_groups=32,
-        #                          act_fn="silu",
-        #                          latent_channels=4,
-        #                          sample_size=768)
         vae = AutoencoderKL.from_pretrained("stabilityai/sd-turbo", subfolder="vae")
         vae.encoder.forward = my_vae_encoder_fwd.__get__(vae.encoder, vae.encoder.__class__)
         vae.decoder.forward = my_vae_decoder_fwd.__get__(vae.decoder, vae.decoder.__class__)
@@ -43,44 +31,9 @@ class Ali2Ali(torch.nn.Module):
         # self.controlnet = ControlNetModel.from_unet(unet, load_weights_from_unet=True)
 
 
-        # unet = UNet2DConditionModel(sample_size=64,
-        #                                  in_channels=4,
-        #                                  out_channels=4,
-        #                                  center_input_sample=False,
-        #                                  flip_sin_to_cos=True,
-        #                                  freq_shift=0,
-        #                                  down_block_types=("CrossAttnDownBlock2D", "CrossAttnDownBlock2D",
-        #                                                    "CrossAttnDownBlock2D", "DownBlock2D"),
-        #                                  up_block_types=("UpBlock2D", "CrossAttnUpBlock2D", "CrossAttnUpBlock2D",
-        #                                                  "CrossAttnUpBlock2D"),
-        #                                  block_out_channels=(32, 32, 32, 32),
-        #                                  layers_per_block=2,
-        #                                  downsample_padding=1,
-        #                                  mid_block_scale_factor=1,
-        #                                  act_fn="silu",
-        #                                  norm_num_groups=32,
-        #                                  norm_eps=1e-5,
-        #                                  cross_attention_dim=1024,
-        #                                  attention_head_dim=4)
+
         if pretrained_name == "edge_to_image":
-            # url = "https://www.cs.cmu.edu/~img2img-turbo/models/edge_to_image_loras.pkl"
-            # os.makedirs(ckpt_folder, exist_ok=True)
-            # outf = os.path.join(ckpt_folder, "edge_to_image_loras.pkl")
-            # outf = r"C:\Users\aliha\PycharmProjects\my_sb\data\assembly\output_dir\checkpoints\model_1001.pkl"
-            # if not os.path.exists(outf):
-            #     print(f"Downloading checkpoint to {outf}")
-            #     response = requests.get(url, stream=True)
-            #     total_size_in_bytes = int(response.headers.get('content-length', 0))
-            #     block_size = 1024  # 1 Kibibyte
-            #     progress_bar = tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True)
-            #     with open(outf, 'wb') as file:
-            #         for data in response.iter_content(block_size):
-            #             progress_bar.update(len(data))
-            #             file.write(data)
-            #     progress_bar.close()
-            #     if total_size_in_bytes != 0 and progress_bar.n != total_size_in_bytes:
-            #         print("ERROR, something went wrong")
-            #     print(f"Downloaded successfully to {outf}")
+
             p_ckpt = r"C:\Users\aliha\PycharmProjects\my_sb\data\assembly\output_dir\checkpoints\model_1001.pkl"
             sd = torch.load(p_ckpt, map_location="cpu")
             unet_lora_config = LoraConfig(r=sd["rank_unet"], init_lora_weights="gaussian", target_modules=sd["unet_lora_target_modules"])
