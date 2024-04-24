@@ -9,6 +9,8 @@ import torch
 from PIL import Image
 from torchvision import transforms
 import torchvision.transforms.functional as F
+import numpy as np
+import cv2
 
 def make_1step_sched():
     noise_scheduler_1step = DDPMScheduler.from_pretrained("stabilityai/sd-turbo", subfolder="scheduler")
@@ -294,3 +296,12 @@ class PairedDataset(torch.utils.data.Dataset):
             "caption": caption,
             "input_ids": input_ids,
         }
+
+
+def canny_from_pil(image, low_threshold=100, high_threshold=200):
+    image = np.array(image)
+    image = cv2.Canny(image, low_threshold, high_threshold)
+    image = image[:, :, None]
+    image = np.concatenate([image, image, image], axis=2)
+    control_image = Image.fromarray(image)
+    return control_image
