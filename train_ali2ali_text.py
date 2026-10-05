@@ -6,7 +6,10 @@ from cleanfid.features import build_feature_extractor
 from cleanfid.fid import get_folder_features
 from tqdm import tqdm
 import wandb
-wandb.login(key="7932525c36d2cd0d2995858bb0a4f432e982e0b8",relogin=True)
+if os.environ.get("WANDB_API_KEY"):  # experiment tracking is optional; never hard-code a key
+    wandb.login()
+else:
+    os.environ.setdefault("WANDB_MODE", "disabled")
 from ali2ali_text import Ali2Ali
 from utils import parse_args_paired_training, PairedDataset
 import torch

@@ -1,0 +1,98 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/grid/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/catcolor_swap_grid",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "test",
+ "n_syn": 17,
+ "n_test_real": 17,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.4117647058823529,
+ "fidelity": 0.35294117647058826,
+ "follows_mask": 0.35294117647058826,
+ "per_category": {
+  "grid": {
+   "types": [
+    "bent",
+    "broken",
+    "glue",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 17,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.4117647058823529,
+   "fidelity": 0.35294117647058826,
+   "follows_mask": 0.35294117647058826
+  }
+ },
+ "disagreements": [
+  {
+   "name": "grid_bent_004.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_005.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_broken_004.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_broken_009.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "broken"
+  },
+  {
+   "name": "grid_glue_007.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_metal_contamination_001.png",
+   "category": "grid",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_metal_contamination_008.png",
+   "category": "grid",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_metal_contamination_009.png",
+   "category": "grid",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_thread_000.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_thread_001.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_thread_004.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "thread"
+  }
+ ]
+}

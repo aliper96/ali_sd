@@ -1,0 +1,42 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/bottle/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/catcolor_heldout_bottle",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "test",
+ "n_syn": 19,
+ "n_test_real": 19,
+ "chance": 0.3333333333333333,
+ "ceiling": 0.9473684210526315,
+ "fidelity": 0.8947368421052632,
+ "follows_mask": 0.8947368421052632,
+ "per_category": {
+  "bottle": {
+   "types": [
+    "broken_large",
+    "broken_small",
+    "contamination"
+   ],
+   "n_syn": 19,
+   "n_test": 19,
+   "chance": 0.3333333333333333,
+   "ceiling": 0.9473684210526315,
+   "fidelity": 0.8947368421052632,
+   "follows_mask": 0.8947368421052632
+  }
+ },
+ "disagreements": [
+  {
+   "name": "bottle_broken_small_018.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_small_019.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "broken_large"
+  }
+ ]
+}

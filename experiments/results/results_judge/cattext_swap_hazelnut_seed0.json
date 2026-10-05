@@ -1,0 +1,115 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/hazelnut/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_swap_hazelnut",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 20,
+ "n_test_real": 20,
+ "chance": 0.25,
+ "ceiling": 0.9,
+ "fidelity": 0.3,
+ "follows_mask": 0.55,
+ "per_category": {
+  "hazelnut": {
+   "types": [
+    "crack",
+    "cut",
+    "hole",
+    "print"
+   ],
+   "n_syn": 20,
+   "n_test": 20,
+   "chance": 0.25,
+   "ceiling": 0.9,
+   "fidelity": 0.3,
+   "follows_mask": 0.55
+  }
+ },
+ "disagreements": [
+  {
+   "name": "hazelnut_crack_000.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_crack_005.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_crack_009.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_crack_011.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_cut_002.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "hazelnut_cut_015.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "print"
+  },
+  {
+   "name": "hazelnut_cut_016.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "print"
+  },
+  {
+   "name": "hazelnut_hole_001.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_hole_004.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_hole_005.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_hole_009.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_print_006.png",
+   "category": "hazelnut",
+   "requested": "crack",
+   "judged": "print"
+  },
+  {
+   "name": "hazelnut_print_015.png",
+   "category": "hazelnut",
+   "requested": "crack",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_print_016.png",
+   "category": "hazelnut",
+   "requested": "crack",
+   "judged": "print"
+  }
+ ]
+}

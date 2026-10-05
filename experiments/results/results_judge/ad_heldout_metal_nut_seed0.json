@@ -1,0 +1,73 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/metal_nut/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/ad_heldout_metal_nut",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 29,
+ "n_test_real": 29,
+ "chance": 0.25,
+ "ceiling": 0.7931034482758621,
+ "fidelity": 0.7586206896551724,
+ "follows_mask": 0.7586206896551724,
+ "per_category": {
+  "metal_nut": {
+   "types": [
+    "bent",
+    "color",
+    "flip",
+    "scratch"
+   ],
+   "n_syn": 29,
+   "n_test": 29,
+   "chance": 0.25,
+   "ceiling": 0.7931034482758621,
+   "fidelity": 0.7586206896551724,
+   "follows_mask": 0.7586206896551724
+  }
+ },
+ "disagreements": [
+  {
+   "name": "metal_nut_bent_010.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "color"
+  },
+  {
+   "name": "metal_nut_bent_017.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "color"
+  },
+  {
+   "name": "metal_nut_bent_018.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "color"
+  },
+  {
+   "name": "metal_nut_color_008.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_021.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_scratch_003.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_scratch_019.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "bent"
+  }
+ ]
+}

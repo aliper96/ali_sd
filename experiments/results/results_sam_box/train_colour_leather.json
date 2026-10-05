@@ -1,0 +1,520 @@
+{
+ "split": "D:/ad/aliaug_cat/leather/split_0",
+ "fold": "train",
+ "images": "D:/sam3/trainpools/catcolor_syn_leather",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "leather_color_000.png",
+   "iou": 0.7638709677419355,
+   "score": 0.9498113989830017,
+   "area_ratio": 1.1426332288401253,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_001.png",
+   "iou": 0.31098696461824954,
+   "score": 0.9467124342918396,
+   "area_ratio": 2.8610603290676417,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_002.png",
+   "iou": 0.7408778424114225,
+   "score": 0.9410058856010437,
+   "area_ratio": 1.271911663216011,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_003.png",
+   "iou": 0.5426214482126489,
+   "score": 0.942280650138855,
+   "area_ratio": 1.5384615384615385,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_004.png",
+   "iou": 0.5642633228840125,
+   "score": 0.9614660739898682,
+   "area_ratio": 1.7660753880266076,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_005.png",
+   "iou": 0.5232815964523282,
+   "score": 0.9301191568374634,
+   "area_ratio": 1.748,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_007.png",
+   "iou": 0.3724770642201835,
+   "score": 0.9390763640403748,
+   "area_ratio": 2.5789473684210527,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_009.png",
+   "iou": 0.3339427178549665,
+   "score": 0.9318622350692749,
+   "area_ratio": 2.5622457282343367,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_013.png",
+   "iou": 0.41839447102605,
+   "score": 0.9307524561882019,
+   "area_ratio": 1.694949494949495,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_014.png",
+   "iou": 0.6854103343465046,
+   "score": 0.9184088110923767,
+   "area_ratio": 1.0964083175803403,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_015.png",
+   "iou": 0.6064625850340136,
+   "score": 0.9538851976394653,
+   "area_ratio": 1.3005358012664394,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_016.png",
+   "iou": 0.6033333333333334,
+   "score": 0.9174078702926636,
+   "area_ratio": 1.4170854271356783,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_color_017.png",
+   "iou": 0.76010101010101,
+   "score": 0.9633175730705261,
+   "area_ratio": 1.2393574297188754,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_000.png",
+   "iou": 0.34951456310679613,
+   "score": 0.9289128184318542,
+   "area_ratio": 2.745508982035928,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_002.png",
+   "iou": 0.3701578192252511,
+   "score": 0.930413544178009,
+   "area_ratio": 2.5902255639097747,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_003.png",
+   "iou": 0.579194509662272,
+   "score": 0.9483632445335388,
+   "area_ratio": 1.722291407222914,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_004.png",
+   "iou": 0.2729217168116355,
+   "score": 0.9631150960922241,
+   "area_ratio": 3.2897645362806345,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_006.png",
+   "iou": 0.39259748843357567,
+   "score": 0.9205232858657837,
+   "area_ratio": 2.4768976897689767,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_007.png",
+   "iou": 0.6502525252525253,
+   "score": 0.9316990375518799,
+   "area_ratio": 1.5062320230105466,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_009.png",
+   "iou": 0.3727106227106227,
+   "score": 0.9481788873672485,
+   "area_ratio": 2.674019607843137,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_010.png",
+   "iou": 0.42749731471535984,
+   "score": 0.9293263554573059,
+   "area_ratio": 1.9599109131403119,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_011.png",
+   "iou": 0.6231527093596059,
+   "score": 0.9020622968673706,
+   "area_ratio": 1.4543761638733705,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_012.png",
+   "iou": 0.6795224977043158,
+   "score": 0.9255791902542114,
+   "area_ratio": 1.2524630541871922,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_016.png",
+   "iou": 0.8098210570120683,
+   "score": 0.9534706473350525,
+   "area_ratio": 1.2121057985757884,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_017.png",
+   "iou": 0.42687870283754287,
+   "score": 0.9526358842849731,
+   "area_ratio": 1.4668463611859839,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_cut_018.png",
+   "iou": 0.6205275924802911,
+   "score": 0.955847978591919,
+   "area_ratio": 1.4068903400135104,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_001.png",
+   "iou": 0.6638185032410135,
+   "score": 0.9469628930091858,
+   "area_ratio": 1.4319552110249785,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_002.png",
+   "iou": 0.7417055113792158,
+   "score": 0.9528171420097351,
+   "area_ratio": 1.314868804664723,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_003.png",
+   "iou": 0.651671974522293,
+   "score": 0.9672425985336304,
+   "area_ratio": 1.5099818511796734,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_004.png",
+   "iou": 0.7353959484346224,
+   "score": 0.9564916491508484,
+   "area_ratio": 1.2211955496888554,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_005.png",
+   "iou": 0.7088753604613905,
+   "score": 0.9709293246269226,
+   "area_ratio": 1.3754676643506147,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_006.png",
+   "iou": 0.7810679611650485,
+   "score": 0.9633444547653198,
+   "area_ratio": 1.1294254207777132,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_008.png",
+   "iou": 0.7213435223031811,
+   "score": 0.9583573341369629,
+   "area_ratio": 1.3798525798525798,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_010.png",
+   "iou": 0.7381716448613511,
+   "score": 0.9623798727989197,
+   "area_ratio": 1.221007254757649,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_011.png",
+   "iou": 0.7328385899814471,
+   "score": 0.9597865343093872,
+   "area_ratio": 1.2642424242424242,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_013.png",
+   "iou": 0.7593602326426754,
+   "score": 0.9604750871658325,
+   "area_ratio": 1.18510158013544,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_014.png",
+   "iou": 0.7588331219423808,
+   "score": 0.9491991996765137,
+   "area_ratio": 1.2284205693296602,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_fold_016.png",
+   "iou": 0.7073556332168414,
+   "score": 0.9414220452308655,
+   "area_ratio": 1.3444926873857403,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_000.png",
+   "iou": 0.8467726113400039,
+   "score": 0.9697446227073669,
+   "area_ratio": 1.1243511622658542,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_002.png",
+   "iou": 0.7640382317801673,
+   "score": 0.9396598935127258,
+   "area_ratio": 1.2473363774733637,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_004.png",
+   "iou": 0.3940298507462687,
+   "score": 0.9425754547119141,
+   "area_ratio": 2.17687074829932,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_005.png",
+   "iou": 0.8297029702970297,
+   "score": 0.9610023498535156,
+   "area_ratio": 1.158878504672897,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_006.png",
+   "iou": 0.8019343986543314,
+   "score": 0.9532626271247864,
+   "area_ratio": 1.1940604198668714,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_007.png",
+   "iou": 0.4402730375426621,
+   "score": 0.9502931833267212,
+   "area_ratio": 2.0023715415019763,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_009.png",
+   "iou": 0.6948102246320682,
+   "score": 0.9489744901657104,
+   "area_ratio": 1.3251859723698194,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_010.png",
+   "iou": 0.6298701298701299,
+   "score": 0.9559600949287415,
+   "area_ratio": 1.5068664169787764,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_011.png",
+   "iou": 0.7791762013729977,
+   "score": 0.9466065168380737,
+   "area_ratio": 1.2471098265895955,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_015.png",
+   "iou": 0.8134570765661253,
+   "score": 0.9629829525947571,
+   "area_ratio": 1.207909604519774,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_016.png",
+   "iou": 0.7276264591439688,
+   "score": 0.9306857585906982,
+   "area_ratio": 1.3388937664618086,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_017.png",
+   "iou": 0.67747972551466,
+   "score": 0.9518839716911316,
+   "area_ratio": 1.4258006314839873,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_glue_018.png",
+   "iou": 0.7557603686635944,
+   "score": 0.9339550733566284,
+   "area_ratio": 1.2444771723122239,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_000.png",
+   "iou": 0.7165354330708661,
+   "score": 0.8987903594970703,
+   "area_ratio": 1.1372549019607843,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_002.png",
+   "iou": 0.7185813415574402,
+   "score": 0.925925076007843,
+   "area_ratio": 1.0929577464788733,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_003.png",
+   "iou": 0.7212276214833759,
+   "score": 0.9268423914909363,
+   "area_ratio": 1.0029761904761905,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_005.png",
+   "iou": 0.8275862068965517,
+   "score": 0.9200583696365356,
+   "area_ratio": 1.0892116182572613,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_008.png",
+   "iou": 0.8183254344391785,
+   "score": 0.9233785271644592,
+   "area_ratio": 1.1236162361623616,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_009.png",
+   "iou": 0.7170172084130019,
+   "score": 0.9308281540870667,
+   "area_ratio": 1.138095238095238,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_010.png",
+   "iou": 0.7507122507122507,
+   "score": 0.9349738955497742,
+   "area_ratio": 1.1448516579406631,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_011.png",
+   "iou": 0.8023715415019763,
+   "score": 0.9373023509979248,
+   "area_ratio": 1.1408450704225352,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_012.png",
+   "iou": 0.8281389136242209,
+   "score": 0.9365509152412415,
+   "area_ratio": 1.0633165829145728,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_013.png",
+   "iou": 0.7407407407407407,
+   "score": 0.9453049898147583,
+   "area_ratio": 1.252892561983471,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_014.png",
+   "iou": 0.7657393850658858,
+   "score": 0.9207176566123962,
+   "area_ratio": 1.0721649484536082,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_015.png",
+   "iou": 0.7605893186003683,
+   "score": 0.9197211861610413,
+   "area_ratio": 1.2284382284382285,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "leather_poke_016.png",
+   "iou": 0.5926966292134831,
+   "score": 0.9233720302581787,
+   "area_ratio": 1.4334763948497855,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

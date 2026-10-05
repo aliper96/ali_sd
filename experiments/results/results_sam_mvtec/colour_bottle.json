@@ -1,0 +1,221 @@
+{
+ "category": "bottle",
+ "images": "D:/ad/ours_heldout/catcolor_heldout_bottle",
+ "thr": 0.3,
+ "types": [
+  "broken_large",
+  "broken_small",
+  "contamination"
+ ],
+ "records": [
+  {
+   "name": "bottle_broken_large_000.png",
+   "type": "broken_large",
+   "iou": 0.00026396058188643827,
+   "cover": 0.0006303624584135878,
+   "bleed": 0.8739377127726642,
+   "pred_area": 39655,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_large_001.png",
+   "type": "broken_large",
+   "iou": 0.0007668351617396203,
+   "cover": 0.001975886124440502,
+   "bleed": 0.8331758154742139,
+   "pred_area": 39149,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_large_004.png",
+   "type": "broken_large",
+   "iou": 0.0007169172558000597,
+   "cover": 0.0033626004109844946,
+   "bleed": 0.9340245290175749,
+   "pred_area": 39545,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_large_010.png",
+   "type": "broken_large",
+   "iou": 0.005770745328273788,
+   "cover": 0.013837384974591402,
+   "bleed": 0.8284525952230384,
+   "pred_area": 41114,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_large_016.png",
+   "type": "broken_large",
+   "iou": 0.002912844622735519,
+   "cover": 0.005925617901603555,
+   "bleed": 0.7983260462211118,
+   "pred_area": 40025,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_large_017.png",
+   "type": "broken_large",
+   "iou": 0.007734399663264232,
+   "cover": 0.015939278937381403,
+   "bleed": 0.7866925129651074,
+   "pred_area": 39722,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_small_009.png",
+   "type": "broken_small",
+   "iou": 0.12440078247597756,
+   "cover": 0.936710909679508,
+   "bleed": 0.8415929587235519,
+   "pred_area": 46128,
+   "hit": true,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_small_010.png",
+   "type": "broken_small",
+   "iou": 0.002556373764737304,
+   "cover": 0.011139745614764319,
+   "bleed": 0.9165905781901637,
+   "pred_area": 40523,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_small_011.png",
+   "type": "broken_small",
+   "iou": 0.0,
+   "cover": 0.0,
+   "bleed": 0.9725251729486201,
+   "pred_area": 40619,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_small_017.png",
+   "type": "broken_small",
+   "iou": 0.0,
+   "cover": 0.0,
+   "bleed": 0.9592787529275479,
+   "pred_area": 39709,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_small_018.png",
+   "type": "broken_small",
+   "iou": 0.00047901543903607356,
+   "cover": 0.0017369229741465695,
+   "bleed": 0.9102326172619805,
+   "pred_area": 39335,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_small_019.png",
+   "type": "broken_small",
+   "iou": 0.14908492260326692,
+   "cover": 0.9532467532467532,
+   "bleed": 0.8076674563859574,
+   "pred_area": 46430,
+   "hit": true,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_broken_small_021.png",
+   "type": "broken_small",
+   "iou": 0.0,
+   "cover": 0.0,
+   "bleed": 0.977078573557167,
+   "pred_area": 40268,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_contamination_001.png",
+   "type": "contamination",
+   "iou": 0.43846297506770004,
+   "cover": 0.9978748273297205,
+   "bleed": 0.41017852135713617,
+   "pred_area": 42796,
+   "hit": true,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_contamination_002.png",
+   "type": "contamination",
+   "iou": 0.07865442233210727,
+   "cover": 0.6706126687435099,
+   "bleed": 0.8106519370613424,
+   "pred_area": 39467,
+   "hit": true,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_contamination_007.png",
+   "type": "contamination",
+   "iou": 0.0025446911381131116,
+   "cover": 0.00823045267489712,
+   "bleed": 0.8131938709973392,
+   "pred_area": 32697,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_contamination_012.png",
+   "type": "contamination",
+   "iou": 0.0,
+   "cover": 0.0,
+   "bleed": 0.0,
+   "pred_area": 0,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_contamination_019.png",
+   "type": "contamination",
+   "iou": 0.0,
+   "cover": 0.0,
+   "bleed": 0.9336746448227313,
+   "pred_area": 39065,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  },
+  {
+   "name": "bottle_contamination_020.png",
+   "type": "contamination",
+   "iou": 0.0,
+   "cover": 0.0,
+   "bleed": 0.0,
+   "pred_area": 0,
+   "hit": false,
+   "sam_label": null,
+   "best_scores": {}
+  }
+ ]
+}

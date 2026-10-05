@@ -1,0 +1,272 @@
+{
+ "split": "D:/ad/aliaug_cat/capsule/split_0",
+ "fold": "test",
+ "images": "D:/ad/aliaug_cat/capsule/split_0/test_B",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "capsule_crack_001.png",
+   "iou": 0.8846589988660295,
+   "score": 0.9509626626968384,
+   "area_ratio": 0.9047151277013753,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_crack_002.png",
+   "iou": 0.8452950558213717,
+   "score": 0.9568443298339844,
+   "area_ratio": 1.0884476534296028,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "capsule_crack_003.png",
+   "iou": 0.8506876227897839,
+   "score": 0.9449117183685303,
+   "area_ratio": 1.0657894736842106,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_crack_004.png",
+   "iou": 0.8486682808716707,
+   "score": 0.9474782347679138,
+   "area_ratio": 0.9016189290161893,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_crack_012.png",
+   "iou": 0.6771255060728745,
+   "score": 0.9205865263938904,
+   "area_ratio": 0.9002293577981652,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_crack_020.png",
+   "iou": 0.7630331753554502,
+   "score": 0.9003623127937317,
+   "area_ratio": 1.1136363636363635,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_crack_022.png",
+   "iou": 0.5247813411078717,
+   "score": 0.890457272529602,
+   "area_ratio": 1.7967914438502675,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_faulty_imprint_001.png",
+   "iou": 0.8892307692307693,
+   "score": 0.9563727378845215,
+   "area_ratio": 1.0955631399317407,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_faulty_imprint_004.png",
+   "iou": 0.8765783389649653,
+   "score": 0.9311619997024536,
+   "area_ratio": 0.9595171773444754,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_faulty_imprint_008.png",
+   "iou": 0.7693836978131213,
+   "score": 0.9715685248374939,
+   "area_ratio": 1.2820512820512822,
+   "n_inst": 4,
+   "accepted": true
+  },
+  {
+   "name": "capsule_faulty_imprint_011.png",
+   "iou": 0.8574821852731591,
+   "score": 0.9305016398429871,
+   "area_ratio": 1.0687830687830688,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_faulty_imprint_014.png",
+   "iou": 0.7341269841269841,
+   "score": 0.9545719027519226,
+   "area_ratio": 1.3415941058271936,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_faulty_imprint_015.png",
+   "iou": 0.7268518518518519,
+   "score": 0.9551782608032227,
+   "area_ratio": 1.1395793499043978,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_faulty_imprint_017.png",
+   "iou": 0.6358296622613803,
+   "score": 0.960682213306427,
+   "area_ratio": 1.566820276497696,
+   "n_inst": 4,
+   "accepted": true
+  },
+  {
+   "name": "capsule_poke_000.png",
+   "iou": 0.7344398340248963,
+   "score": 0.9653333425521851,
+   "area_ratio": 1.1972789115646258,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_poke_008.png",
+   "iou": 0.5313604240282686,
+   "score": 0.9328358769416809,
+   "area_ratio": 1.547391623806025,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_poke_009.png",
+   "iou": 0.5715767634854771,
+   "score": 0.9456998705863953,
+   "area_ratio": 1.616580310880829,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_poke_011.png",
+   "iou": 0.8478802992518704,
+   "score": 0.9294430613517761,
+   "area_ratio": 1.0814606741573034,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_poke_014.png",
+   "iou": 0.8603015075376884,
+   "score": 0.9437745213508606,
+   "area_ratio": 0.9691489361702128,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_poke_016.png",
+   "iou": 0.9297297297297298,
+   "score": 0.954219400882721,
+   "area_ratio": 1.04,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_scratch_000.png",
+   "iou": 0.771,
+   "score": 0.8976641297340393,
+   "area_ratio": 1.0616996507566938,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_scratch_002.png",
+   "iou": 0.6866256295467263,
+   "score": 0.94345623254776,
+   "area_ratio": 1.00132802124834,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_scratch_003.png",
+   "iou": 0.8412280701754385,
+   "score": 0.9194704294204712,
+   "area_ratio": 0.9942992874109263,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_scratch_006.png",
+   "iou": 0.875656035526847,
+   "score": 0.9374507069587708,
+   "area_ratio": 1.085278276481149,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_scratch_009.png",
+   "iou": 0.8540297474922173,
+   "score": 0.9341004490852356,
+   "area_ratio": 1.1286735504368546,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_scratch_016.png",
+   "iou": 0.7438485804416404,
+   "score": 0.9417428970336914,
+   "area_ratio": 0.8983516483516484,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_scratch_019.png",
+   "iou": 0.7522996057818659,
+   "score": 0.920081377029419,
+   "area_ratio": 1.2317991631799163,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_squeeze_002.png",
+   "iou": 0.20555555555555555,
+   "score": 0.8902373313903809,
+   "area_ratio": 1.3085106382978724,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "capsule_squeeze_005.png",
+   "iou": 0.20694645441389292,
+   "score": 0.951826274394989,
+   "area_ratio": 3.8053777208706787,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "capsule_squeeze_008.png",
+   "iou": 0.16395978344934262,
+   "score": 0.9533584713935852,
+   "area_ratio": 1.3772782503037666,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "capsule_squeeze_009.png",
+   "iou": 0.5611630009038867,
+   "score": 0.933290958404541,
+   "area_ratio": 0.627738946045708,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "capsule_squeeze_014.png",
+   "iou": 0.010132831022051899,
+   "score": 0.9596806168556213,
+   "area_ratio": 0.4714258681048349,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "capsule_squeeze_015.png",
+   "iou": 0.2868931107273076,
+   "score": 0.9477221965789795,
+   "area_ratio": 2.1612193588937774,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/zipper/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_heldout_zipper",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 36,
+ "n_test_real": 36,
+ "chance": 0.14285714285714288,
+ "ceiling": 0.6388888888888888,
+ "fidelity": 0.4166666666666667,
+ "follows_mask": 0.4166666666666667,
+ "per_category": {
+  "zipper": {
+   "types": [
+    "broken_teeth",
+    "combined",
+    "fabric_border",
+    "fabric_interior",
+    "rough",
+    "split_teeth",
+    "squeezed_teeth"
+   ],
+   "n_syn": 36,
+   "n_test": 36,
+   "chance": 0.14285714285714285,
+   "ceiling": 0.6388888888888888,
+   "fidelity": 0.4166666666666667,
+   "follows_mask": 0.4166666666666667
+  }
+ },
+ "disagreements": [
+  {
+   "name": "zipper_broken_teeth_001.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "fabric_interior"
+  },
+  {
+   "name": "zipper_broken_teeth_002.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "fabric_interior"
+  },
+  {
+   "name": "zipper_broken_teeth_003.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_broken_teeth_006.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_broken_teeth_009.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "fabric_interior"
+  },
+  {
+   "name": "zipper_broken_teeth_018.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_combined_007.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_combined_008.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "fabric_interior"
+  },
+  {
+   "name": "zipper_combined_014.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_fabric_border_008.png",
+   "category": "zipper",
+   "requested": "fabric_border",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_fabric_border_009.png",
+   "category": "zipper",
+   "requested": "fabric_border",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_fabric_interior_004.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_fabric_interior_006.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_fabric_interior_009.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_rough_007.png",
+   "category": "zipper",
+   "requested": "rough",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_rough_016.png",
+   "category": "zipper",
+   "requested": "rough",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_split_teeth_002.png",
+   "category": "zipper",
+   "requested": "split_teeth",
+   "judged": "fabric_interior"
+  },
+  {
+   "name": "zipper_split_teeth_005.png",
+   "category": "zipper",
+   "requested": "split_teeth",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_squeezed_teeth_005.png",
+   "category": "zipper",
+   "requested": "squeezed_teeth",
+   "judged": "broken_teeth"
+  },
+  {
+   "name": "zipper_squeezed_teeth_008.png",
+   "category": "zipper",
+   "requested": "squeezed_teeth",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_squeezed_teeth_012.png",
+   "category": "zipper",
+   "requested": "squeezed_teeth",
+   "judged": "broken_teeth"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/pill/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_heldout_pill",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 43,
+ "n_test_real": 43,
+ "chance": 0.14285714285714288,
+ "ceiling": 0.7906976744186046,
+ "fidelity": 0.6511627906976745,
+ "follows_mask": 0.6511627906976745,
+ "per_category": {
+  "pill": {
+   "types": [
+    "color",
+    "combined",
+    "contamination",
+    "crack",
+    "faulty_imprint",
+    "pill_type",
+    "scratch"
+   ],
+   "n_syn": 43,
+   "n_test": 43,
+   "chance": 0.14285714285714285,
+   "ceiling": 0.7906976744186046,
+   "fidelity": 0.6511627906976745,
+   "follows_mask": 0.6511627906976745
+  }
+ },
+ "disagreements": [
+  {
+   "name": "pill_color_005.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_color_022.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_combined_011.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_contamination_003.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_contamination_015.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_contamination_016.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_contamination_017.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_crack_000.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_crack_009.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_crack_018.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_crack_019.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_faulty_imprint_000.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_faulty_imprint_001.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_faulty_imprint_008.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_scratch_009.png",
+   "category": "pill",
+   "requested": "scratch",
+   "judged": "faulty_imprint"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+\begin{tabular}{@{}l c cccc c cccc@{}}
+\toprule
+ & & \multicolumn{4}{c}{Full test fold} & & \multicolumn{4}{c}{Test images unseen by AD} \\
+\cmidrule(lr){3-6}\cmidrule(lr){8-11}
+Category & Seen by AD & Real only & AD & Ali-AUG text & Ali-AUG colour & & Real only & AD & Ali-AUG text & Ali-AUG colour \\
+\midrule
+bottle & 6/19 & 0.587 & \textbf{0.620} & 0.555 & 0.582 & & \textbf{0.745} & 0.718 & 0.697 & 0.745 \\
+cable & 8/28 & 0.330 & 0.376 & \textbf{0.376} & 0.372 & & 0.334 & 0.363 & 0.371 & \textbf{0.376} \\
+capsule & 13/33 & 0.192 & 0.213 & 0.203 & \textbf{0.237} & & 0.215 & \textbf{0.226} & 0.214 & 0.220 \\
+carpet$^\dagger$ & 8/27 & 0.361 & 0.390 & 0.395 & \textbf{0.425} & & 0.404 & 0.446 & 0.467 & \textbf{0.467} \\
+grid$^\dagger$ & 7/17 & 0.072 & 0.130 & \textbf{0.162} & 0.128 & & 0.162 & \textbf{0.201} & 0.185 & 0.142 \\
+hazelnut & 6/20 & 0.529 & 0.527 & \textbf{0.581} & 0.575 & & 0.513 & 0.524 & \textbf{0.580} & 0.578 \\
+leather$^\dagger$ & 9/28 & \textbf{0.379} & 0.363 & 0.346 & 0.356 & & \textbf{0.408} & 0.378 & 0.379 & 0.380 \\
+metal\_nut & 10/29 & 0.519 & 0.498 & \textbf{0.531} & 0.526 & & 0.522 & 0.513 & 0.555 & \textbf{0.555} \\
+pill & 19/43 & 0.460 & 0.438 & 0.475 & \textbf{0.488} & & 0.492 & 0.481 & 0.506 & \textbf{0.509} \\
+screw & 14/36 & \textbf{0.285} & 0.246 & 0.277 & 0.275 & & \textbf{0.310} & 0.278 & 0.273 & 0.281 \\
+toothbrush & 4/9 & 0.121 & 0.170 & 0.191 & \textbf{0.206} & & 0.155 & 0.207 & 0.209 & \textbf{0.230} \\
+transistor & 3/12 & 0.322 & 0.431 & 0.424 & \textbf{0.434} & & 0.328 & 0.399 & \textbf{0.410} & 0.406 \\
+wood$^\dagger$ & 6/17 & 0.329 & 0.355 & 0.364 & \textbf{0.371} & & 0.310 & 0.362 & 0.367 & \textbf{0.371} \\
+zipper & 17/36 & 0.374 & 0.364 & 0.384 & \textbf{0.388} & & 0.394 & 0.440 & 0.430 & \textbf{0.441} \\
+\midrule
+Mean (14 / 14 categories) & 130/354 & 0.347 & 0.366 & 0.376 & 0.383 & & 0.378 & 0.395 & 0.403 & 0.407 \\
+$p$ colour vs.\ AD & & \multicolumn{4}{c}{0.042 / 0.005 (10/14)} & & \multicolumn{4}{c}{0.030 / 0.076 (12/14)} \\
+$p$ text vs.\ AD & & \multicolumn{4}{c}{0.135 / 0.066 (10/14)} & & \multicolumn{4}{c}{0.358 / 0.315 (9/14)} \\
+$p$ AD vs.\ real only & & \multicolumn{4}{c}{0.104 / 0.025 (8/14)} & & \multicolumn{4}{c}{0.078 / 0.089 (9/14)} \\
+\bottomrule
+\end{tabular}

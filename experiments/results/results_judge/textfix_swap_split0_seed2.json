@@ -1,0 +1,113 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_0",
+ "syn": "/home/aliha/t23/judge_syn/textfix_swap_split_0",
+ "label_from": "prompt",
+ "seed": 2,
+ "n_train_real": 60,
+ "n_test_real": 24,
+ "n_syn": 24,
+ "chance": 0.2,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.375,
+ "follows_mask": 0.4166666666666667,
+ "fold": "test",
+ "per_class": {
+  "crack": {
+   "n": 4,
+   "correct": 0
+  },
+  "glue_strip": {
+   "n": 5,
+   "correct": 0
+  },
+  "gray_stroke": {
+   "n": 5,
+   "correct": 3
+  },
+  "oil": {
+   "n": 5,
+   "correct": 1
+  },
+  "rough": {
+   "n": 5,
+   "correct": 5
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_crack_000.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_004.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_009.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_011.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_015.png",
+   "requested": "glue_strip",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_glue_strip_007.png",
+   "requested": "gray_stroke",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_glue_strip_017.png",
+   "requested": "gray_stroke",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_gray_stroke_000.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_003.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_008.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_012.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_rough_002.png",
+   "requested": "crack",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_004.png",
+   "requested": "crack",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_rough_006.png",
+   "requested": "crack",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_007.png",
+   "requested": "crack",
+   "judged": "rough"
+  }
+ ]
+}

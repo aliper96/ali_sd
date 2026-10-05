@@ -1,0 +1,25 @@
+\begin{tabular}{@{}l c c c c c c c@{}}
+\toprule
+ & SAM IoU & \multicolumn{2}{c}{Accepted by SAM} & \multicolumn{2}{c}{NAS text} & \multicolumn{2}{c}{NAS colour} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Category & real defects & text & colour & requested & SAM & requested & SAM \\
+\midrule
+bottle & 0.75 & 0.91 & 0.91 & 0.555 & \textbf{0.568} & \textbf{0.582} & 0.570 \\
+cable & 0.66 & 0.92 & 0.92 & \textbf{0.376} & 0.365 & \textbf{0.372} & 0.371 \\
+capsule & 0.68 & 0.89 & 0.88 & 0.203 & \textbf{0.246} & \textbf{0.237} & 0.194 \\
+carpet$^\dagger$ & 0.76 & 0.98 & 1.00 & \textbf{0.395} & 0.381 & 0.425 & \textbf{0.430} \\
+grid$^\dagger$ & 0.53 & 0.93 & 0.80 & \textbf{0.162} & 0.139 & \textbf{0.128} & 0.086 \\
+hazelnut & 0.70 & 0.90 & 0.88 & 0.581 & \textbf{0.631} & 0.575 & \textbf{0.600} \\
+leather$^\dagger$ & 0.77 & 1.00 & 1.00 & \textbf{0.346} & 0.333 & \textbf{0.356} & 0.336 \\
+metal\_nut & 0.61 & 0.70 & 0.70 & \textbf{0.531} & 0.515 & 0.526 & \textbf{0.537} \\
+pill & 0.70 & 0.88 & 0.88 & 0.475 & \textbf{0.487} & \textbf{0.488} & 0.476 \\
+screw & 0.68 & 0.96 & 0.96 & \textbf{0.277} & 0.259 & \textbf{0.275} & 0.265 \\
+toothbrush & 0.49 & 0.67 & 0.67 & \textbf{0.191} & 0.160 & \textbf{0.206} & 0.158 \\
+transistor & 0.51 & 0.79 & 0.79 & \textbf{0.424} & 0.380 & \textbf{0.434} & 0.363 \\
+wood$^\dagger$ & 0.61 & 0.93 & 1.00 & \textbf{0.364} & 0.354 & \textbf{0.371} & 0.362 \\
+zipper & 0.51 & 0.64 & 0.69 & \textbf{0.384} & 0.366 & \textbf{0.388} & 0.364 \\
+\midrule
+Mean (14 categories) & 0.64 & 0.86 & 0.86 & 0.376 & 0.370 & 0.383 & 0.365 \\
+$p$ SAM vs.\ requested (categories / pairs) & & & & \multicolumn{2}{c}{0.268 / 0.280} & \multicolumn{2}{c}{0.025 / 0.005} \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,15 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/toothbrush/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/catcolor_swap_toothbrush",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 0,
+ "n_test_real": 0,
+ "chance": 0.0,
+ "ceiling": 0.0,
+ "fidelity": 0.0,
+ "follows_mask": 0.0,
+ "per_category": {},
+ "disagreements": []
+}

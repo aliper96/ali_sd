@@ -1,0 +1,134 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/carpet/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/catcolor_heldout_carpet",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 27,
+ "n_test_real": 27,
+ "chance": 0.2,
+ "ceiling": 0.8518518518518519,
+ "fidelity": 0.37037037037037035,
+ "follows_mask": 0.37037037037037035,
+ "per_category": {
+  "carpet": {
+   "types": [
+    "color",
+    "cut",
+    "hole",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 27,
+   "n_test": 27,
+   "chance": 0.2,
+   "ceiling": 0.8518518518518519,
+   "fidelity": 0.37037037037037035,
+   "follows_mask": 0.37037037037037035
+  }
+ },
+ "disagreements": [
+  {
+   "name": "carpet_color_002.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_color_013.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_cut_004.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_007.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_009.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_012.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_016.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_hole_000.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_003.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_006.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_007.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_015.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_metal_contamination_006.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_metal_contamination_009.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_metal_contamination_012.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_metal_contamination_013.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_thread_002.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "cut"
+  }
+ ]
+}

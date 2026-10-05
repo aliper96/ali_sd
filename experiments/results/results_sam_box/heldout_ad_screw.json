@@ -1,0 +1,296 @@
+{
+ "split": "D:/ad/aliaug_cat/screw/split_0",
+ "fold": "test",
+ "images": "D:/ad/judge_syn/ad_heldout_screw",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "screw_manipulated_front_003.png",
+   "iou": 0.548502994011976,
+   "score": 0.8742373585700989,
+   "area_ratio": 1.1604010025062657,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_manipulated_front_005.png",
+   "iou": 0.39087301587301587,
+   "score": 0.8645670413970947,
+   "area_ratio": 1.5460048426150121,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_manipulated_front_012.png",
+   "iou": 0.6881720430107527,
+   "score": 0.8056848645210266,
+   "area_ratio": 1.221698113207547,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_manipulated_front_013.png",
+   "iou": 0.522680412371134,
+   "score": 0.8384969830513,
+   "area_ratio": 0.8791348600508906,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_manipulated_front_019.png",
+   "iou": 0.7033398821218074,
+   "score": 0.721575140953064,
+   "area_ratio": 0.9571106094808126,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_manipulated_front_021.png",
+   "iou": 0.7262931034482759,
+   "score": 0.7794166207313538,
+   "area_ratio": 1.0968586387434556,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_manipulated_front_023.png",
+   "iou": 0.44166666666666665,
+   "score": 0.8120711445808411,
+   "area_ratio": 0.6555023923444976,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_head_000.png",
+   "iou": 0.5875139353400223,
+   "score": 0.8312973976135254,
+   "area_ratio": 1.0518731988472623,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_head_003.png",
+   "iou": 0.4897959183673469,
+   "score": 0.8148934841156006,
+   "area_ratio": 1.0184331797235022,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_head_007.png",
+   "iou": 0.7992227979274611,
+   "score": 0.8999670147895813,
+   "area_ratio": 1.0577777777777777,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_head_008.png",
+   "iou": 0.5014807502467917,
+   "score": 0.8396444916725159,
+   "area_ratio": 1.014569536423841,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_head_010.png",
+   "iou": 0.6073968705547653,
+   "score": 0.8819097876548767,
+   "area_ratio": 1.0287253141831239,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_head_011.png",
+   "iou": 0.7091633466135459,
+   "score": 0.8491469621658325,
+   "area_ratio": 0.825531914893617,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_head_022.png",
+   "iou": 0.6575342465753424,
+   "score": 0.834374189376831,
+   "area_ratio": 0.7335243553008596,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_002.png",
+   "iou": 0.504071661237785,
+   "score": 0.8088294863700867,
+   "area_ratio": 1.5095108695652173,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_006.png",
+   "iou": 0.36955698599015524,
+   "score": 0.9214867949485779,
+   "area_ratio": 2.083546462063086,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_008.png",
+   "iou": 0.8584142394822006,
+   "score": 0.928956925868988,
+   "area_ratio": 1.0096237970253719,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_014.png",
+   "iou": 0.8301647655259823,
+   "score": 0.8258187174797058,
+   "area_ratio": 0.938255033557047,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_016.png",
+   "iou": 0.729076790336497,
+   "score": 0.9241969585418701,
+   "area_ratio": 1.0262891809908998,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_017.png",
+   "iou": 0.5689964157706093,
+   "score": 0.8067060112953186,
+   "area_ratio": 0.8354297693920335,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_020.png",
+   "iou": 0.3837243837243837,
+   "score": 0.8561022877693176,
+   "area_ratio": 1.5320652173913043,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_scratch_neck_022.png",
+   "iou": 0.6723549488054608,
+   "score": 0.9306463003158569,
+   "area_ratio": 0.9215686274509803,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_side_000.png",
+   "iou": 0.2492836676217765,
+   "score": 0.809908390045166,
+   "area_ratio": 2.311392405063291,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "screw_thread_side_004.png",
+   "iou": 0.15792575132586917,
+   "score": 0.8076748847961426,
+   "area_ratio": 4.413223140495868,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "screw_thread_side_009.png",
+   "iou": 0.3657142857142857,
+   "score": 0.8044994473457336,
+   "area_ratio": 1.251177394034537,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_side_011.png",
+   "iou": 0.27980922098569155,
+   "score": 0.8073502779006958,
+   "area_ratio": 0.8295454545454546,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_side_012.png",
+   "iou": 0.3508158508158508,
+   "score": 0.8382306694984436,
+   "area_ratio": 1.1992409867172675,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_side_014.png",
+   "iou": 0.522673031026253,
+   "score": 0.8197299838066101,
+   "area_ratio": 0.8627737226277372,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_side_017.png",
+   "iou": 0.2254209668658338,
+   "score": 0.8321292996406555,
+   "area_ratio": 2.1031636863823935,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "screw_thread_top_000.png",
+   "iou": 0.45020842982862436,
+   "score": 0.9282853603363037,
+   "area_ratio": 0.845020624631703,
+   "n_inst": 4,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_top_001.png",
+   "iou": 0.6484304932735426,
+   "score": 0.9472402334213257,
+   "area_ratio": 1.3047021943573667,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_top_004.png",
+   "iou": 0.6792369121561668,
+   "score": 0.9129742980003357,
+   "area_ratio": 1.2570065593321407,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_top_009.png",
+   "iou": 0.5538243626062322,
+   "score": 0.874195396900177,
+   "area_ratio": 1.16798418972332,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_top_014.png",
+   "iou": 0.4506787330316742,
+   "score": 0.8961266875267029,
+   "area_ratio": 1.6128769356153219,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_top_016.png",
+   "iou": 0.5792922673656619,
+   "score": 0.9162823557853699,
+   "area_ratio": 1.3262548262548262,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "screw_thread_top_022.png",
+   "iou": 0.5340646651270208,
+   "score": 0.8698300123214722,
+   "area_ratio": 1.6543456543456543,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

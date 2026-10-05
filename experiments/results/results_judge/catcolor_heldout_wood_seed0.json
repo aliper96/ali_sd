@@ -1,0 +1,56 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/wood/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/catcolor_heldout_wood",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 17,
+ "n_test_real": 17,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.6470588235294118,
+ "fidelity": 0.7647058823529411,
+ "follows_mask": 0.7647058823529411,
+ "per_category": {
+  "wood": {
+   "types": [
+    "color",
+    "combined",
+    "hole",
+    "liquid",
+    "scratch"
+   ],
+   "n_syn": 17,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.6470588235294118,
+   "fidelity": 0.7647058823529411,
+   "follows_mask": 0.7647058823529411
+  }
+ },
+ "disagreements": [
+  {
+   "name": "wood_color_007.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "combined"
+  },
+  {
+   "name": "wood_combined_003.png",
+   "category": "wood",
+   "requested": "combined",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_hole_007.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "combined"
+  },
+  {
+   "name": "wood_scratch_012.png",
+   "category": "wood",
+   "requested": "scratch",
+   "judged": "combined"
+  }
+ ]
+}

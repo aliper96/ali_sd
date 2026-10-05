@@ -1,0 +1,38 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_1",
+ "syn": "/mnt/scratch/t23/judge_syn/abl_noclip_heldout_split_1",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 24,
+ "n_test_real": 24,
+ "chance": 0.19999999999999998,
+ "ceiling": 1.0,
+ "fidelity": 0.9583333333333334,
+ "follows_mask": 0.9583333333333334,
+ "per_category": {
+  "tile": {
+   "types": [
+    "crack",
+    "glue_strip",
+    "gray_stroke",
+    "oil",
+    "rough"
+   ],
+   "n_syn": 24,
+   "n_test": 24,
+   "chance": 0.2,
+   "ceiling": 1.0,
+   "fidelity": 0.9583333333333334,
+   "follows_mask": 0.9583333333333334
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_rough_006.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "glue_strip"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_4",
+ "syn": "/home/aliha/t23/judge_syn/textfix_heldout_split_4",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 24,
+ "n_test_real": 24,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.875,
+ "follows_mask": 0.875,
+ "per_category": {
+  "tile": {
+   "types": [
+    "crack",
+    "glue_strip",
+    "gray_stroke",
+    "oil",
+    "rough"
+   ],
+   "n_syn": 24,
+   "n_test": 24,
+   "chance": 0.2,
+   "ceiling": 0.9583333333333334,
+   "fidelity": 0.875,
+   "follows_mask": 0.875
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_glue_strip_010.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_rough_002.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_rough_010.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "crack"
+  }
+ ]
+}

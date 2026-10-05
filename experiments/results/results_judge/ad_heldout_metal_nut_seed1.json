@@ -1,0 +1,49 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/metal_nut/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/ad_heldout_metal_nut",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "test",
+ "n_syn": 29,
+ "n_test_real": 29,
+ "chance": 0.25,
+ "ceiling": 0.896551724137931,
+ "fidelity": 0.896551724137931,
+ "follows_mask": 0.896551724137931,
+ "per_category": {
+  "metal_nut": {
+   "types": [
+    "bent",
+    "color",
+    "flip",
+    "scratch"
+   ],
+   "n_syn": 29,
+   "n_test": 29,
+   "chance": 0.25,
+   "ceiling": 0.896551724137931,
+   "fidelity": 0.896551724137931,
+   "follows_mask": 0.896551724137931
+  }
+ },
+ "disagreements": [
+  {
+   "name": "metal_nut_bent_012.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_color_008.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_color_021.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "scratch"
+  }
+ ]
+}

@@ -1,0 +1,672 @@
+{
+ "split": "D:/ad/aliaug_cat/zipper/split_0",
+ "fold": "train",
+ "images": "D:/sam3/trainpools/cattext_syn_zipper",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "zipper_broken_teeth_000.png",
+   "iou": 0.20983887882543617,
+   "score": 0.5034568905830383,
+   "area_ratio": 4.418445772843723,
+   "n_inst": 2,
+   "accepted": false
+  },
+  {
+   "name": "zipper_broken_teeth_004.png",
+   "iou": 0.7025951884826672,
+   "score": 0.916434645652771,
+   "area_ratio": 1.2719919110212337,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_005.png",
+   "iou": 0.8206674708484117,
+   "score": 0.92100590467453,
+   "area_ratio": 1.141911069063387,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_007.png",
+   "iou": 0.2964635063957863,
+   "score": 0.9573373198509216,
+   "area_ratio": 0.3920982467480003,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_008.png",
+   "iou": 0.696870925684485,
+   "score": 0.8304782509803772,
+   "area_ratio": 0.9586155003762227,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_010.png",
+   "iou": 0.8323232323232324,
+   "score": 0.9086796045303345,
+   "area_ratio": 1.1492890995260663,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_011.png",
+   "iou": 0.6988051091882983,
+   "score": 0.9003409147262573,
+   "area_ratio": 0.8162995594713657,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_012.png",
+   "iou": 0.7631667225763167,
+   "score": 0.9215908646583557,
+   "area_ratio": 1.0030487804878048,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_013.png",
+   "iou": 0.27621913443667584,
+   "score": 0.9267190098762512,
+   "area_ratio": 1.0694603903559128,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_014.png",
+   "iou": 0.6237623762376238,
+   "score": 0.9110094308853149,
+   "area_ratio": 1.383426097711812,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_015.png",
+   "iou": 0.07481821660926138,
+   "score": 0.9150177240371704,
+   "area_ratio": 0.34153331741103415,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_broken_teeth_016.png",
+   "iou": 0.7497784342688331,
+   "score": 0.9097387194633484,
+   "area_ratio": 1.265876052027544,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_broken_teeth_017.png",
+   "iou": 0.39537750385208015,
+   "score": 0.9210950136184692,
+   "area_ratio": 0.578525361687293,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_000.png",
+   "iou": 0.7665706813198425,
+   "score": 0.966912031173706,
+   "area_ratio": 1.1580713870780353,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_001.png",
+   "iou": 0.3160648279783907,
+   "score": 0.9635176658630371,
+   "area_ratio": 3.057328190743338,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_002.png",
+   "iou": 0.25248416345795555,
+   "score": 0.5369701385498047,
+   "area_ratio": 3.5072075092189072,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_003.png",
+   "iou": 0.6181184668989547,
+   "score": 0.9194523692131042,
+   "area_ratio": 0.9079704190632704,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_006.png",
+   "iou": 0.6461058563091165,
+   "score": 0.9285178184509277,
+   "area_ratio": 0.835203051379852,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_009.png",
+   "iou": 0.43560572393565017,
+   "score": 0.8226921558380127,
+   "area_ratio": 1.1235866421246385,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_010.png",
+   "iou": 0.23113359888039617,
+   "score": 0.9252644181251526,
+   "area_ratio": 0.5706633704161517,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_combined_011.png",
+   "iou": 0.6065430370888734,
+   "score": 0.9462233781814575,
+   "area_ratio": 0.7026049874849356,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_012.png",
+   "iou": 0.35943661971830987,
+   "score": 0.9286263585090637,
+   "area_ratio": 1.4921744657185985,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_combined_013.png",
+   "iou": 0.22877893781207445,
+   "score": 0.9049199223518372,
+   "area_ratio": 0.4097122770472595,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_combined_015.png",
+   "iou": 0.17187979820135996,
+   "score": 0.9544587731361389,
+   "area_ratio": 0.44262029486417886,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_fabric_border_000.png",
+   "iou": 0.5090128755364807,
+   "score": 0.9486150741577148,
+   "area_ratio": 0.6687233032747983,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_001.png",
+   "iou": 0.5751412429378531,
+   "score": 0.9399676322937012,
+   "area_ratio": 0.6438679245283019,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_002.png",
+   "iou": 0.2783143107989464,
+   "score": 0.9226939678192139,
+   "area_ratio": 0.7865030674846626,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_003.png",
+   "iou": 0.6908471275559883,
+   "score": 0.925293505191803,
+   "area_ratio": 0.894708128750682,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_004.png",
+   "iou": 0.5391098624870619,
+   "score": 0.9417261481285095,
+   "area_ratio": 1.1653838152693987,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_005.png",
+   "iou": 0.12922683238895996,
+   "score": 0.9560835957527161,
+   "area_ratio": 0.19335522503380337,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_fabric_border_006.png",
+   "iou": 0.6697315189407871,
+   "score": 0.9242137670516968,
+   "area_ratio": 0.720348616900341,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_007.png",
+   "iou": 0.4967052942513065,
+   "score": 0.9212732315063477,
+   "area_ratio": 0.5076676585030899,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_011.png",
+   "iou": 0.14954954954954955,
+   "score": 0.9115311503410339,
+   "area_ratio": 0.16042197162604582,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_fabric_border_012.png",
+   "iou": 0.08032639616709088,
+   "score": 0.884632408618927,
+   "area_ratio": 1.1753090141694302,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_fabric_border_013.png",
+   "iou": 0.8342613822469702,
+   "score": 0.952802300453186,
+   "area_ratio": 0.9767031415460642,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_border_016.png",
+   "iou": 0.4103803997421019,
+   "score": 0.9172961115837097,
+   "area_ratio": 0.4339560799737791,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_000.png",
+   "iou": 0.6530560486938879,
+   "score": 0.9469561576843262,
+   "area_ratio": 1.4755032282567413,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_002.png",
+   "iou": 0.1296282374168327,
+   "score": 0.9764342904090881,
+   "area_ratio": 7.651648193464805,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_fabric_interior_003.png",
+   "iou": 0.7045300878972278,
+   "score": 0.9524285793304443,
+   "area_ratio": 1.4135950215414075,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_007.png",
+   "iou": 0.8644444444444445,
+   "score": 0.9383276700973511,
+   "area_ratio": 1.0023866348448687,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_008.png",
+   "iou": 0.8068246230586101,
+   "score": 0.9630698561668396,
+   "area_ratio": 1.1995583770356057,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_010.png",
+   "iou": 0.0714129069558803,
+   "score": 0.9755818247795105,
+   "area_ratio": 8.077871621621622,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_fabric_interior_011.png",
+   "iou": 0.15999725758164407,
+   "score": 0.9728224277496338,
+   "area_ratio": 5.53172049929224,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_fabric_interior_012.png",
+   "iou": 0.7427821522309711,
+   "score": 0.9572956562042236,
+   "area_ratio": 1.2904449810279406,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_013.png",
+   "iou": 0.6043283718381883,
+   "score": 0.9628152251243591,
+   "area_ratio": 1.585197174808711,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_014.png",
+   "iou": 0.7938961553705906,
+   "score": 0.9662538170814514,
+   "area_ratio": 1.1960213488597768,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_fabric_interior_015.png",
+   "iou": 0.5772897514470549,
+   "score": 0.9451267123222351,
+   "area_ratio": 1.5779076238174736,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_rough_001.png",
+   "iou": 0.19271228359439407,
+   "score": 0.9484615921974182,
+   "area_ratio": 2.3219140337986772,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_002.png",
+   "iou": 0.07517614063889459,
+   "score": 0.9328965544700623,
+   "area_ratio": 0.2915365653245686,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_003.png",
+   "iou": 0.516783392393761,
+   "score": 0.9722913503646851,
+   "area_ratio": 1.8751256148516422,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_rough_004.png",
+   "iou": 0.36471607076580476,
+   "score": 0.5064703226089478,
+   "area_ratio": 2.482557221783741,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "zipper_rough_006.png",
+   "iou": 0.1195932249974233,
+   "score": 0.9408762454986572,
+   "area_ratio": 0.4437995658145408,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_008.png",
+   "iou": 0.18168348267833204,
+   "score": 0.9410838484764099,
+   "area_ratio": 0.3241619228336496,
+   "n_inst": 2,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_009.png",
+   "iou": 0.13203214695752008,
+   "score": 0.9007967710494995,
+   "area_ratio": 0.32038834951456313,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_011.png",
+   "iou": 0.16258557135334387,
+   "score": 0.894843339920044,
+   "area_ratio": 0.3931219435242152,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_012.png",
+   "iou": 0.0782825902535583,
+   "score": 0.9480113387107849,
+   "area_ratio": 0.3435316225262787,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_013.png",
+   "iou": 0.09705075445816186,
+   "score": 0.922936201095581,
+   "area_ratio": 0.2327552986512524,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_014.png",
+   "iou": 0.16432865731462926,
+   "score": 0.889953076839447,
+   "area_ratio": 0.4418756530825496,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_rough_015.png",
+   "iou": 0.42085586103761646,
+   "score": 0.9768558740615845,
+   "area_ratio": 2.274739842248293,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_split_teeth_000.png",
+   "iou": 0.08532079274437353,
+   "score": 0.9453229308128357,
+   "area_ratio": 0.2411408815903198,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_001.png",
+   "iou": 0.0664700823196953,
+   "score": 0.9221749901771545,
+   "area_ratio": 0.28993906969832073,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_004.png",
+   "iou": 0.0719633101773791,
+   "score": 0.9548196792602539,
+   "area_ratio": 0.23228407505039542,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_007.png",
+   "iou": 0.19939531368102797,
+   "score": 0.9129644632339478,
+   "area_ratio": 0.546588693957115,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_008.png",
+   "iou": 0.7909859154929577,
+   "score": 0.8979312181472778,
+   "area_ratio": 1.014575411913815,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_split_teeth_009.png",
+   "iou": 0.6490129339686862,
+   "score": 0.8893125653266907,
+   "area_ratio": 1.1760689902982393,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_split_teeth_010.png",
+   "iou": 0.10238367490544463,
+   "score": 0.8979033827781677,
+   "area_ratio": 0.19944492295913485,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_011.png",
+   "iou": 0.7656503405773597,
+   "score": 0.899196207523346,
+   "area_ratio": 1.1176813849445633,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_split_teeth_012.png",
+   "iou": 0.04493248486729784,
+   "score": 0.9447899460792542,
+   "area_ratio": 0.28605539637058264,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_013.png",
+   "iou": 0.09090909090909091,
+   "score": 0.9106090068817139,
+   "area_ratio": 0.3159483941806204,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_014.png",
+   "iou": 0.06003226628173559,
+   "score": 0.9370397329330444,
+   "area_ratio": 0.24231266792715694,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_016.png",
+   "iou": 0.08926686217008797,
+   "score": 0.9299741983413696,
+   "area_ratio": 0.2640893002994827,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_split_teeth_017.png",
+   "iou": 0.29101735715190674,
+   "score": 0.9208276867866516,
+   "area_ratio": 0.48846041484078295,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_000.png",
+   "iou": 0.7120567375886525,
+   "score": 0.8698471784591675,
+   "area_ratio": 1.3562713518789653,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_001.png",
+   "iou": 0.34326740720671906,
+   "score": 0.9320704936981201,
+   "area_ratio": 0.532612055641422,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_002.png",
+   "iou": 0.7928908233587233,
+   "score": 0.9260568618774414,
+   "area_ratio": 1.208668453976765,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_004.png",
+   "iou": 0.840174672489083,
+   "score": 0.9065505266189575,
+   "area_ratio": 0.9590887959088796,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_006.png",
+   "iou": 0.6566780821917808,
+   "score": 0.9143857955932617,
+   "area_ratio": 1.2711267605633803,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_007.png",
+   "iou": 0.5443978658536586,
+   "score": 0.901098370552063,
+   "area_ratio": 0.718253126987492,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_009.png",
+   "iou": 0.8,
+   "score": 0.9083470106124878,
+   "area_ratio": 1.1808147174770038,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_010.png",
+   "iou": 0.11398253085974157,
+   "score": 0.9501174688339233,
+   "area_ratio": 0.2546341463414634,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "zipper_squeezed_teeth_011.png",
+   "iou": 0.8454692556634305,
+   "score": 0.8186488747596741,
+   "area_ratio": 1.0426865671641792,
+   "n_inst": 5,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_013.png",
+   "iou": 0.7487891507910881,
+   "score": 0.8396353125572205,
+   "area_ratio": 0.8522571819425444,
+   "n_inst": 5,
+   "accepted": true
+  },
+  {
+   "name": "zipper_squeezed_teeth_015.png",
+   "iou": 0.45646954201867496,
+   "score": 0.9456682801246643,
+   "area_ratio": 1.656609894566099,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

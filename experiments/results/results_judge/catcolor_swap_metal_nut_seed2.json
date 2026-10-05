@@ -1,0 +1,151 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/metal_nut/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/catcolor_swap_metal_nut",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 29,
+ "n_test_real": 29,
+ "chance": 0.25,
+ "ceiling": 0.9655172413793104,
+ "fidelity": 0.3103448275862069,
+ "follows_mask": 0.5517241379310345,
+ "per_category": {
+  "metal_nut": {
+   "types": [
+    "bent",
+    "color",
+    "flip",
+    "scratch"
+   ],
+   "n_syn": 29,
+   "n_test": 29,
+   "chance": 0.25,
+   "ceiling": 0.9655172413793104,
+   "fidelity": 0.3103448275862069,
+   "follows_mask": 0.5517241379310345
+  }
+ },
+ "disagreements": [
+  {
+   "name": "metal_nut_bent_007.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_bent_016.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_bent_024.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_001.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "color"
+  },
+  {
+   "name": "metal_nut_color_002.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_003.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "color"
+  },
+  {
+   "name": "metal_nut_color_008.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_012.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_017.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_flip_000.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_005.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_008.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_009.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_010.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_013.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_021.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_scratch_005.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_scratch_009.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_scratch_013.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_scratch_021.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  }
+ ]
+}

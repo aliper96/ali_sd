@@ -1,0 +1,46 @@
+{
+ "split": "aliaug_splits/split_0",
+ "syn": "syn_split_0",
+ "label_from": "prompt",
+ "seed": 1,
+ "n_train_real": 60,
+ "n_test_real": 24,
+ "n_syn": 60,
+ "chance": 0.2,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.9666666666666667,
+ "per_class": {
+  "crack": {
+   "n": 12,
+   "correct": 12
+  },
+  "glue_strip": {
+   "n": 13,
+   "correct": 12
+  },
+  "gray_stroke": {
+   "n": 11,
+   "correct": 11
+  },
+  "oil": {
+   "n": 13,
+   "correct": 13
+  },
+  "rough": {
+   "n": 11,
+   "correct": 10
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_glue_strip_003.png",
+   "requested": "glue_strip",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_rough_001.png",
+   "requested": "rough",
+   "judged": "glue_strip"
+  }
+ ]
+}

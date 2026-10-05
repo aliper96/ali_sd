@@ -1,0 +1,232 @@
+{
+ "split": "D:/ad/aliaug_cat/cable/split_0",
+ "fold": "test",
+ "images": "D:/ad/aliaug_cat/cable/split_0/test_B",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "cable_bent_wire_002.png",
+   "iou": 0.8186626030835424,
+   "score": 0.9653839468955994,
+   "area_ratio": 1.187729135216735,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_bent_wire_003.png",
+   "iou": 0.8387938532908089,
+   "score": 0.9523400664329529,
+   "area_ratio": 0.9695652173913043,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_bent_wire_008.png",
+   "iou": 0.7980422462648119,
+   "score": 0.9526320695877075,
+   "area_ratio": 1.135427289414644,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_bent_wire_010.png",
+   "iou": 0.40599132834055973,
+   "score": 0.941459596157074,
+   "area_ratio": 2.377840909090909,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "cable_cable_swap_007.png",
+   "iou": 0.7266981037423498,
+   "score": 0.9061000943183899,
+   "area_ratio": 1.1602962405071235,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_cable_swap_008.png",
+   "iou": 0.670718769339581,
+   "score": 0.9570494890213013,
+   "area_ratio": 1.4511965756534146,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_cable_swap_009.png",
+   "iou": 0.7830352303523035,
+   "score": 0.909072995185852,
+   "area_ratio": 1.256155270557575,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_cable_swap_011.png",
+   "iou": 0.6561879044173842,
+   "score": 0.9669505953788757,
+   "area_ratio": 1.5043143297380586,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_combined_002.png",
+   "iou": 0.04549823774431272,
+   "score": 0.878309428691864,
+   "area_ratio": 0.09112188597224545,
+   "n_inst": 4,
+   "accepted": false
+  },
+  {
+   "name": "cable_combined_005.png",
+   "iou": 0.5601022344013491,
+   "score": 0.919441282749176,
+   "area_ratio": 0.5945545621027685,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_combined_008.png",
+   "iou": 0.09697088906372935,
+   "score": 0.9482072591781616,
+   "area_ratio": 0.37942122186495175,
+   "n_inst": 2,
+   "accepted": false
+  },
+  {
+   "name": "cable_cut_inner_insulation_007.png",
+   "iou": 0.34847471577756056,
+   "score": 0.9435828328132629,
+   "area_ratio": 1.551888629283489,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "cable_cut_inner_insulation_009.png",
+   "iou": 0.1868521467415798,
+   "score": 0.7255660891532898,
+   "area_ratio": 1.5850402460571953,
+   "n_inst": 3,
+   "accepted": false
+  },
+  {
+   "name": "cable_cut_inner_insulation_010.png",
+   "iou": 0.48197389885807507,
+   "score": 0.9623444080352783,
+   "area_ratio": 1.2937760383789925,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_cut_inner_insulation_011.png",
+   "iou": 0.7282714685041929,
+   "score": 0.9545716643333435,
+   "area_ratio": 0.889955214331414,
+   "n_inst": 4,
+   "accepted": true
+  },
+  {
+   "name": "cable_cut_outer_insulation_002.png",
+   "iou": 0.8243528790279979,
+   "score": 0.8966857194900513,
+   "area_ratio": 0.8928473554398465,
+   "n_inst": 5,
+   "accepted": true
+  },
+  {
+   "name": "cable_cut_outer_insulation_003.png",
+   "iou": 0.6018145161290323,
+   "score": 0.8815956711769104,
+   "area_ratio": 0.6509090909090909,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_cut_outer_insulation_005.png",
+   "iou": 0.6607256524506684,
+   "score": 0.9038886427879333,
+   "area_ratio": 1.2491379310344828,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_missing_cable_000.png",
+   "iou": 0.9639156469669357,
+   "score": 0.9550715088844299,
+   "area_ratio": 1.023335657958264,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_missing_cable_005.png",
+   "iou": 0.9632441950038516,
+   "score": 0.9600011110305786,
+   "area_ratio": 1.0167307257517522,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_missing_cable_006.png",
+   "iou": 0.9864107640170453,
+   "score": 0.9416559934616089,
+   "area_ratio": 1.000101354775499,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_missing_cable_011.png",
+   "iou": 0.9519168933959931,
+   "score": 0.931057333946228,
+   "area_ratio": 1.043291388327896,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_missing_wire_003.png",
+   "iou": 0.7779497764017888,
+   "score": 0.9003421664237976,
+   "area_ratio": 1.031243859304382,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_missing_wire_004.png",
+   "iou": 0.892673821745217,
+   "score": 0.9756913185119629,
+   "area_ratio": 1.0987271033840422,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "cable_missing_wire_009.png",
+   "iou": 0.912058508740635,
+   "score": 0.9637519717216492,
+   "area_ratio": 1.0927372120265522,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "cable_poke_insulation_001.png",
+   "iou": 0.5107751248546213,
+   "score": 0.9282780885696411,
+   "area_ratio": 1.8088272704146529,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_poke_insulation_006.png",
+   "iou": 0.5627433115215771,
+   "score": 0.9394875168800354,
+   "area_ratio": 1.7197635865647976,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "cable_poke_insulation_007.png",
+   "iou": 0.8309570812312642,
+   "score": 0.8980720639228821,
+   "area_ratio": 0.9630007054950224,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

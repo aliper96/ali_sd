@@ -1,0 +1,152 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/screw/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_heldout_screw",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 36,
+ "n_test_real": 36,
+ "chance": 0.2,
+ "ceiling": 0.7777777777777778,
+ "fidelity": 0.4444444444444444,
+ "follows_mask": 0.4444444444444444,
+ "per_category": {
+  "screw": {
+   "types": [
+    "manipulated_front",
+    "scratch_head",
+    "scratch_neck",
+    "thread_side",
+    "thread_top"
+   ],
+   "n_syn": 36,
+   "n_test": 36,
+   "chance": 0.2,
+   "ceiling": 0.7777777777777778,
+   "fidelity": 0.4444444444444444,
+   "follows_mask": 0.4444444444444444
+  }
+ },
+ "disagreements": [
+  {
+   "name": "screw_manipulated_front_003.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_012.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_013.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_manipulated_front_023.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_scratch_head_000.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_head_003.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_head_007.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_head_008.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_head_010.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_head_011.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_head_022.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_neck_002.png",
+   "category": "screw",
+   "requested": "scratch_neck",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_neck_006.png",
+   "category": "screw",
+   "requested": "scratch_neck",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_scratch_neck_014.png",
+   "category": "screw",
+   "requested": "scratch_neck",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_neck_017.png",
+   "category": "screw",
+   "requested": "scratch_neck",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_scratch_neck_020.png",
+   "category": "screw",
+   "requested": "scratch_neck",
+   "judged": "scratch_head"
+  },
+  {
+   "name": "screw_scratch_neck_022.png",
+   "category": "screw",
+   "requested": "scratch_neck",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_thread_side_009.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_thread_side_014.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_thread_top_022.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  }
+ ]
+}

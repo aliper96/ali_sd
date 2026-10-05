@@ -1,0 +1,23 @@
+# Ali-AUG (Img2Img-turbo backbone). Versions used for the experiments of the paper on one of the
+# training machines (CUDA 12.8); the code also ran with torch 2.9.1+cu129 and 2.10/2.11 on an RTX 5090.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.9.0+cu128
+torchvision==0.24.0+cu128
+diffusers==0.37.0
+transformers==4.57.0
+peft==0.17.1
+accelerate==1.10.1
+safetensors==0.6.2
+lpips==0.1.4
+clean-fid
+vision-aided-loss
+git+https://github.com/openai/CLIP.git
+ftfy
+regex
+Pillow
+numpy
+opencv-python-headless
+tqdm
+wandb            # optional: set WANDB_API_KEY to enable tracking
+# experiments/ additionally need: ultralytics (YOLOv8), timm (judge), scipy (tests),
+# sam3 (https://github.com/facebookresearch/sam3) for the SAM step.

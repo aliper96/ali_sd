@@ -1,0 +1,328 @@
+{
+ "split": "D:/ad/aliaug_cat/grid/split_0",
+ "fold": "train",
+ "images": "D:/sam3/trainpools/catcolor_syn_grid",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "grid_bent_000.png",
+   "iou": 0.5994423791821561,
+   "score": 0.9314435720443726,
+   "area_ratio": 1.5179224579370885,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_bent_001.png",
+   "iou": 0.29379760609357997,
+   "score": 0.8903837203979492,
+   "area_ratio": 3.1573426573426575,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_bent_002.png",
+   "iou": 0.5812431842966194,
+   "score": 0.9370702505111694,
+   "area_ratio": 1.6851851851851851,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_bent_003.png",
+   "iou": 0.21341200172686717,
+   "score": 0.9520630240440369,
+   "area_ratio": 3.299847016828149,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "grid_bent_006.png",
+   "iou": 0.5863803680981595,
+   "score": 0.9687530994415283,
+   "area_ratio": 1.2834687389614976,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_bent_007.png",
+   "iou": 0.02048730045886383,
+   "score": 0.9069797396659851,
+   "area_ratio": 4.270360480640854,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "grid_bent_008.png",
+   "iou": 0.11944225203893712,
+   "score": 0.9404777884483337,
+   "area_ratio": 1.7310654685494222,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "grid_bent_009.png",
+   "iou": 0.2223728375935967,
+   "score": 0.920674204826355,
+   "area_ratio": 4.232660956065211,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "grid_broken_000.png",
+   "iou": 0.5185699409927108,
+   "score": 0.9241517186164856,
+   "area_ratio": 1.3699891657638137,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_broken_002.png",
+   "iou": 0.5296296296296297,
+   "score": 0.9091741442680359,
+   "area_ratio": 1.4992435703479576,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_broken_003.png",
+   "iou": 0.06047017618340055,
+   "score": 0.9387302994728088,
+   "area_ratio": 12.557327001356851,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "grid_broken_005.png",
+   "iou": 0.24376932872475895,
+   "score": 0.9418435096740723,
+   "area_ratio": 3.1186746987951808,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "grid_broken_006.png",
+   "iou": 0.30767414403778043,
+   "score": 0.9415727853775024,
+   "area_ratio": 3.0217864923747277,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_broken_007.png",
+   "iou": 0.4963389121338912,
+   "score": 0.9111567139625549,
+   "area_ratio": 1.3644628099173555,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_broken_008.png",
+   "iou": 0.3695404481579947,
+   "score": 0.9462398886680603,
+   "area_ratio": 2.5043731778425657,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_broken_010.png",
+   "iou": 0.025993133889161354,
+   "score": 0.8259599208831787,
+   "area_ratio": 2.2234206471494606,
+   "n_inst": 8,
+   "accepted": false
+  },
+  {
+   "name": "grid_glue_000.png",
+   "iou": 0.8829923273657289,
+   "score": 0.9425833821296692,
+   "area_ratio": 1.055129099790649,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_glue_001.png",
+   "iou": 0.8728236184708554,
+   "score": 0.9502003192901611,
+   "area_ratio": 0.9728867623604466,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_glue_002.png",
+   "iou": 0.45977011494252873,
+   "score": 0.9503413438796997,
+   "area_ratio": 0.6016320474777448,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_glue_004.png",
+   "iou": 0.7691169215589542,
+   "score": 0.9442121982574463,
+   "area_ratio": 0.8599585062240664,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_glue_005.png",
+   "iou": 0.33110976349302607,
+   "score": 0.9428390264511108,
+   "area_ratio": 2.4404388714733543,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_glue_008.png",
+   "iou": 0.7907647907647908,
+   "score": 0.9312320351600647,
+   "area_ratio": 1.125,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_glue_009.png",
+   "iou": 0.9099941554646406,
+   "score": 0.9530459642410278,
+   "area_ratio": 0.996334758704948,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_glue_010.png",
+   "iou": 0.632,
+   "score": 0.9383934140205383,
+   "area_ratio": 0.9256637168141593,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_000.png",
+   "iou": 0.772104607721046,
+   "score": 0.9260432720184326,
+   "area_ratio": 1.1692073170731707,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_002.png",
+   "iou": 0.5895372233400402,
+   "score": 0.9493393898010254,
+   "area_ratio": 1.041343669250646,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_003.png",
+   "iou": 0.4914929307452672,
+   "score": 0.9126392006874084,
+   "area_ratio": 1.9111318989710009,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_004.png",
+   "iou": 0.6650446066504461,
+   "score": 0.9533706903457642,
+   "area_ratio": 0.8697632058287796,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_005.png",
+   "iou": 0.5462703309029725,
+   "score": 0.9579076766967773,
+   "area_ratio": 1.697651663405088,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_006.png",
+   "iou": 0.48755583918315254,
+   "score": 0.9361279606819153,
+   "area_ratio": 1.9770114942528736,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_007.png",
+   "iou": 0.3095723014256619,
+   "score": 0.9655653834342957,
+   "area_ratio": 2.936734693877551,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_metal_contamination_010.png",
+   "iou": 0.44059766763848396,
+   "score": 0.922298789024353,
+   "area_ratio": 2.066718386346005,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_thread_002.png",
+   "iou": 0.4855769230769231,
+   "score": 0.9591395258903503,
+   "area_ratio": 0.9390060240963856,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_thread_003.png",
+   "iou": 0.4918302574350535,
+   "score": 0.9660619497299194,
+   "area_ratio": 1.7535257105662834,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_thread_005.png",
+   "iou": 0.4749114882187767,
+   "score": 0.9353000521659851,
+   "area_ratio": 2.06468797564688,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_thread_006.png",
+   "iou": 0.4001908194635853,
+   "score": 0.9475957155227661,
+   "area_ratio": 2.3028257064266064,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_thread_007.png",
+   "iou": 0.7776271186440677,
+   "score": 0.942179262638092,
+   "area_ratio": 1.1679659815733523,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_thread_008.png",
+   "iou": 0.897632241813602,
+   "score": 0.9455124735832214,
+   "area_ratio": 1.002977773051154,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "grid_thread_009.png",
+   "iou": 0.13294980180306593,
+   "score": 0.9796026945114136,
+   "area_ratio": 6.780534810888942,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "grid_thread_010.png",
+   "iou": 0.5392459537842642,
+   "score": 0.9684002995491028,
+   "area_ratio": 1.5788401253918496,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

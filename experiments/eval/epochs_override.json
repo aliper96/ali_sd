@@ -1,0 +1,81 @@
+{
+ "rules": [
+  {
+   "match": [
+    "/results_allreal/",
+    "/binary/"
+   ],
+   "skip": true
+  },
+  {
+   "match": [
+    "/results_alltext/",
+    "/binary/"
+   ],
+   "skip": true
+  },
+  {
+   "match": [
+    "/results_allcolor/",
+    "/binary/"
+   ],
+   "skip": true
+  },
+  {
+   "match": [
+    "/results_allreal/",
+    "/D_S.csv"
+   ],
+   "skip": true
+  },
+  {
+   "match": [
+    "/results_allreal/"
+   ],
+   "epochs": 30,
+   "imgsz": 512
+  },
+  {
+   "match": [
+    "/results_alltext/"
+   ],
+   "epochs": 30,
+   "imgsz": 512
+  },
+  {
+   "match": [
+    "/results_allcolor/"
+   ],
+   "epochs": 30,
+   "imgsz": 512
+  },
+  {
+   "match": [
+    "/results_cat"
+   ],
+   "epochs": 50,
+   "imgsz": 512
+  },
+  {
+   "match": [
+    "/results_ad/"
+   ],
+   "epochs": 50,
+   "imgsz": 512
+  },
+  {
+   "match": [
+    "/results_clean/"
+   ],
+   "epochs": 50,
+   "imgsz": 512
+  },
+  {
+   "match": [
+    "/results_samstep_"
+   ],
+   "epochs": 50,
+   "imgsz": 512
+  }
+ ]
+}

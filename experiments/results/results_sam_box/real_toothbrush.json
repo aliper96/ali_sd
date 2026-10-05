@@ -1,0 +1,80 @@
+{
+ "split": "D:/ad/aliaug_cat/toothbrush/split_0",
+ "fold": "test",
+ "images": "D:/ad/aliaug_cat/toothbrush/split_0/test_B",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "toothbrush_defective_004.png",
+   "iou": 0.6756410256410257,
+   "score": 0.907163143157959,
+   "area_ratio": 1.0107692307692309,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "toothbrush_defective_005.png",
+   "iou": 0.8352855535702468,
+   "score": 0.9565773010253906,
+   "area_ratio": 1.1785545954438335,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "toothbrush_defective_007.png",
+   "iou": 0.19449285465318927,
+   "score": 0.9411192536354065,
+   "area_ratio": 4.4657097288676235,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "toothbrush_defective_009.png",
+   "iou": 0.7259696458684655,
+   "score": 0.9384904503822327,
+   "area_ratio": 0.9384469696969697,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "toothbrush_defective_012.png",
+   "iou": 0.22506142506142507,
+   "score": 0.9601532220840454,
+   "area_ratio": 1.1598440545808968,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "toothbrush_defective_014.png",
+   "iou": 0.11637818561363834,
+   "score": 0.9642500281333923,
+   "area_ratio": 4.369543996653187,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "toothbrush_defective_017.png",
+   "iou": 0.6162604518768903,
+   "score": 0.9314427375793457,
+   "area_ratio": 1.4863163656267104,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "toothbrush_defective_023.png",
+   "iou": 0.839184876012767,
+   "score": 0.9307571053504944,
+   "area_ratio": 1.148881239242685,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "toothbrush_defective_029.png",
+   "iou": 0.20382350101380708,
+   "score": 0.9420375227928162,
+   "area_ratio": 0.42932477358706866,
+   "n_inst": 1,
+   "accepted": false
+  }
+ ]
+}

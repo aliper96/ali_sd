@@ -1,10 +1,14 @@
+import os
 import torch
 from diffusers import AutoencoderKL
 from lpips import lpips
 import torch.nn.functional as F
 from transformers import AutoTokenizer
 import wandb
-wandb.login(key="7932525c36d2cd0d2995858bb0a4f432e982e0b8",relogin=True)
+if os.environ.get("WANDB_API_KEY"):  # experiment tracking is optional; never hard-code a key
+    wandb.login()
+else:
+    os.environ.setdefault("WANDB_MODE", "disabled")
 from utils import PairedDataset, parse_args_paired_training
 
 

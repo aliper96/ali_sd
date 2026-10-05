@@ -1,0 +1,60 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/bottle/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_heldout_bottle",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "test",
+ "n_syn": 19,
+ "n_test_real": 19,
+ "chance": 0.3333333333333333,
+ "ceiling": 0.9473684210526315,
+ "fidelity": 0.7368421052631579,
+ "follows_mask": 0.7368421052631579,
+ "per_category": {
+  "bottle": {
+   "types": [
+    "broken_large",
+    "broken_small",
+    "contamination"
+   ],
+   "n_syn": 19,
+   "n_test": 19,
+   "chance": 0.3333333333333333,
+   "ceiling": 0.9473684210526315,
+   "fidelity": 0.7368421052631579,
+   "follows_mask": 0.7368421052631579
+  }
+ },
+ "disagreements": [
+  {
+   "name": "bottle_broken_small_010.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_small_019.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_small_021.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "contamination"
+  },
+  {
+   "name": "bottle_contamination_002.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_small"
+  },
+  {
+   "name": "bottle_contamination_019.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_small"
+  }
+ ]
+}

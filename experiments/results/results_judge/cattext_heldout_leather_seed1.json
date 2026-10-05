@@ -1,0 +1,128 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/leather/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_heldout_leather",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "test",
+ "n_syn": 28,
+ "n_test_real": 28,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.7857142857142857,
+ "fidelity": 0.42857142857142855,
+ "follows_mask": 0.42857142857142855,
+ "per_category": {
+  "leather": {
+   "types": [
+    "color",
+    "cut",
+    "fold",
+    "glue",
+    "poke"
+   ],
+   "n_syn": 28,
+   "n_test": 28,
+   "chance": 0.2,
+   "ceiling": 0.7857142857142857,
+   "fidelity": 0.42857142857142855,
+   "follows_mask": 0.42857142857142855
+  }
+ },
+ "disagreements": [
+  {
+   "name": "leather_color_006.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_color_008.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_011.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_001.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_005.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_008.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_cut_014.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "leather_cut_015.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_003.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_012.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_013.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_poke_001.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_004.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_006.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "color"
+  },
+  {
+   "name": "leather_poke_007.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_017.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "color"
+  }
+ ]
+}

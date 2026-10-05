@@ -1,0 +1,86 @@
+{
+ "bottle": {
+  "test_total": 19,
+  "test_seen_by_AD": 6,
+  "train_total": 44,
+  "train_seen_by_AD": 17
+ },
+ "cable": {
+  "test_total": 28,
+  "test_seen_by_AD": 8,
+  "train_total": 64,
+  "train_seen_by_AD": 28
+ },
+ "capsule": {
+  "test_total": 33,
+  "test_seen_by_AD": 13,
+  "train_total": 76,
+  "train_seen_by_AD": 26
+ },
+ "carpet": {
+  "test_total": 27,
+  "test_seen_by_AD": 8,
+  "train_total": 62,
+  "train_seen_by_AD": 24
+ },
+ "grid": {
+  "test_total": 17,
+  "test_seen_by_AD": 7,
+  "train_total": 40,
+  "train_seen_by_AD": 15
+ },
+ "hazelnut": {
+  "test_total": 20,
+  "test_seen_by_AD": 6,
+  "train_total": 50,
+  "train_seen_by_AD": 20
+ },
+ "leather": {
+  "test_total": 28,
+  "test_seen_by_AD": 9,
+  "train_total": 64,
+  "train_seen_by_AD": 25
+ },
+ "metal_nut": {
+  "test_total": 29,
+  "test_seen_by_AD": 10,
+  "train_total": 64,
+  "train_seen_by_AD": 23
+ },
+ "pill": {
+  "test_total": 43,
+  "test_seen_by_AD": 19,
+  "train_total": 98,
+  "train_seen_by_AD": 33
+ },
+ "screw": {
+  "test_total": 36,
+  "test_seen_by_AD": 14,
+  "train_total": 83,
+  "train_seen_by_AD": 29
+ },
+ "toothbrush": {
+  "test_total": 9,
+  "test_seen_by_AD": 4,
+  "train_total": 21,
+  "train_seen_by_AD": 7
+ },
+ "transistor": {
+  "test_total": 12,
+  "test_seen_by_AD": 3,
+  "train_total": 28,
+  "train_seen_by_AD": 13
+ },
+ "wood": {
+  "test_total": 17,
+  "test_seen_by_AD": 6,
+  "train_total": 43,
+  "train_seen_by_AD": 17
+ },
+ "zipper": {
+  "test_total": 36,
+  "test_seen_by_AD": 17,
+  "train_total": 83,
+  "train_seen_by_AD": 27
+ }
+}

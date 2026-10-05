@@ -1,0 +1,56 @@
+{
+ "split": "aliaug_splits/split_1",
+ "syn": "syn_split_1",
+ "label_from": "prompt",
+ "seed": 2,
+ "n_train_real": 60,
+ "n_test_real": 24,
+ "n_syn": 60,
+ "chance": 0.2,
+ "ceiling": 1.0,
+ "fidelity": 0.9333333333333333,
+ "per_class": {
+  "crack": {
+   "n": 12,
+   "correct": 12
+  },
+  "glue_strip": {
+   "n": 13,
+   "correct": 12
+  },
+  "gray_stroke": {
+   "n": 11,
+   "correct": 10
+  },
+  "oil": {
+   "n": 13,
+   "correct": 12
+  },
+  "rough": {
+   "n": 11,
+   "correct": 10
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_glue_strip_003.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_gray_stroke_005.png",
+   "requested": "gray_stroke",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_oil_016.png",
+   "requested": "oil",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_rough_000.png",
+   "requested": "rough",
+   "judged": "gray_stroke"
+  }
+ ]
+}

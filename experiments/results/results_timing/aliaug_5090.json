@@ -1,0 +1,20 @@
+{
+ "method": "Ali-AUG (one step)",
+ "ckpt": "t23_runs/gen_split_3/checkpoints/model_1.pkl",
+ "resolution": 512,
+ "batch": 1,
+ "steps": 1,
+ "n": 100,
+ "warmup": 10,
+ "s_per_img_mean": 0.1941512390000571,
+ "s_per_img_std": 0.011544205976679284,
+ "s_per_img_median": 0.19443669999964186,
+ "img_per_s": 5.150623839179857,
+ "peak_mem_gb": 6.368228435516357,
+ "params_total_M": 1299.445747,
+ "params_in_checkpoint_M": 9.50516,
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "torch": "2.10.0+cu130",
+ "trained_params_M": 9.50516,
+ "trained_params_note": "LoRA + skip convs + U-Net conv_in stored in one per-category checkpoint"
+}

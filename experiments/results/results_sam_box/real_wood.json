@@ -1,0 +1,144 @@
+{
+ "split": "D:/ad/aliaug_cat/wood/split_0",
+ "fold": "test",
+ "images": "D:/ad/aliaug_cat/wood/split_0/test_B",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "wood_color_002.png",
+   "iou": 0.691313812232287,
+   "score": 0.9521391987800598,
+   "area_ratio": 1.4263120781706458,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_color_007.png",
+   "iou": 0.7723252496433666,
+   "score": 0.9462712407112122,
+   "area_ratio": 0.7845446710715311,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_combined_003.png",
+   "iou": 0.46535440898697683,
+   "score": 0.9505077004432678,
+   "area_ratio": 0.4659373446046743,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_combined_005.png",
+   "iou": 0.6598217745060054,
+   "score": 0.9430052042007446,
+   "area_ratio": 0.7232502011263073,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_combined_010.png",
+   "iou": 0.6279667351896842,
+   "score": 0.9276869893074036,
+   "area_ratio": 0.7101840490797546,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_hole_002.png",
+   "iou": 0.6888619854721549,
+   "score": 0.936948835849762,
+   "area_ratio": 0.6909090909090909,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_hole_006.png",
+   "iou": 0.18505013673655424,
+   "score": 0.9218204617500305,
+   "area_ratio": 2.812316715542522,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "wood_hole_007.png",
+   "iou": 0.678749433620299,
+   "score": 0.9295681715011597,
+   "area_ratio": 0.6964285714285714,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_liquid_000.png",
+   "iou": 0.8528285370390634,
+   "score": 0.9198988080024719,
+   "area_ratio": 0.8534369527145359,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_liquid_005.png",
+   "iou": 0.8687449145646867,
+   "score": 0.942837655544281,
+   "area_ratio": 0.8798342541436464,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_liquid_008.png",
+   "iou": 0.1658519377110316,
+   "score": 0.9430766701698303,
+   "area_ratio": 0.30383813334836274,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "wood_scratch_003.png",
+   "iou": 0.5768500948766604,
+   "score": 0.9368765950202942,
+   "area_ratio": 0.5819961925482731,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_scratch_005.png",
+   "iou": 0.5612304331998544,
+   "score": 0.9577256441116333,
+   "area_ratio": 0.5636211171066063,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_scratch_011.png",
+   "iou": 0.44840145690004046,
+   "score": 0.9390745162963867,
+   "area_ratio": 0.44971022621050666,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_scratch_012.png",
+   "iou": 0.7185281526039127,
+   "score": 0.9161128997802734,
+   "area_ratio": 0.7340332458442694,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_scratch_017.png",
+   "iou": 0.5635342059767844,
+   "score": 0.9332388639450073,
+   "area_ratio": 0.5666295471417966,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "wood_scratch_018.png",
+   "iou": 0.9110348056812861,
+   "score": 0.9513159990310669,
+   "area_ratio": 1.090490011951511,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

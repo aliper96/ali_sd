@@ -1,0 +1,128 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/wood/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_swap_wood",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "test",
+ "n_syn": 17,
+ "n_test_real": 17,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.8235294117647058,
+ "fidelity": 0.058823529411764705,
+ "follows_mask": 0.47058823529411764,
+ "per_category": {
+  "wood": {
+   "types": [
+    "color",
+    "combined",
+    "hole",
+    "liquid",
+    "scratch"
+   ],
+   "n_syn": 17,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.8235294117647058,
+   "fidelity": 0.058823529411764705,
+   "follows_mask": 0.47058823529411764
+  }
+ },
+ "disagreements": [
+  {
+   "name": "wood_color_002.png",
+   "category": "wood",
+   "requested": "combined",
+   "judged": "liquid"
+  },
+  {
+   "name": "wood_color_007.png",
+   "category": "wood",
+   "requested": "combined",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_combined_003.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_combined_005.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_combined_010.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "liquid"
+  },
+  {
+   "name": "wood_hole_002.png",
+   "category": "wood",
+   "requested": "liquid",
+   "judged": "hole"
+  },
+  {
+   "name": "wood_hole_006.png",
+   "category": "wood",
+   "requested": "liquid",
+   "judged": "color"
+  },
+  {
+   "name": "wood_hole_007.png",
+   "category": "wood",
+   "requested": "liquid",
+   "judged": "hole"
+  },
+  {
+   "name": "wood_liquid_000.png",
+   "category": "wood",
+   "requested": "scratch",
+   "judged": "liquid"
+  },
+  {
+   "name": "wood_liquid_005.png",
+   "category": "wood",
+   "requested": "scratch",
+   "judged": "liquid"
+  },
+  {
+   "name": "wood_liquid_008.png",
+   "category": "wood",
+   "requested": "scratch",
+   "judged": "liquid"
+  },
+  {
+   "name": "wood_scratch_005.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_011.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_012.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "liquid"
+  },
+  {
+   "name": "wood_scratch_017.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "liquid"
+  },
+  {
+   "name": "wood_scratch_018.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  }
+ ]
+}

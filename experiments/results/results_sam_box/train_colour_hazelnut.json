@@ -1,0 +1,408 @@
+{
+ "split": "D:/ad/aliaug_cat/hazelnut/split_0",
+ "fold": "train",
+ "images": "D:/sam3/trainpools/catcolor_syn_hazelnut",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "hazelnut_crack_001.png",
+   "iou": 0.43357016934665316,
+   "score": 0.9450982213020325,
+   "area_ratio": 0.6161768248614792,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_002.png",
+   "iou": 0.7151341838979323,
+   "score": 0.9677032232284546,
+   "area_ratio": 1.323994038748137,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_003.png",
+   "iou": 0.8391705872103153,
+   "score": 0.9515814185142517,
+   "area_ratio": 0.8704589757221336,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_004.png",
+   "iou": 0.9644030668127054,
+   "score": 0.9536815285682678,
+   "area_ratio": 1.0234099562826118,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_006.png",
+   "iou": 0.11996455592665803,
+   "score": 0.9378105998039246,
+   "area_ratio": 0.5387713054879191,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "hazelnut_crack_007.png",
+   "iou": 0.191959248154238,
+   "score": 0.9382855892181396,
+   "area_ratio": 0.25957345325701825,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "hazelnut_crack_008.png",
+   "iou": 0.25946767655216557,
+   "score": 0.9289525747299194,
+   "area_ratio": 0.2909354327264775,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_010.png",
+   "iou": 0.002424903409947905,
+   "score": 0.9703044891357422,
+   "area_ratio": 0.1921898716710363,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "hazelnut_crack_012.png",
+   "iou": 0.6181410974244121,
+   "score": 0.9550345540046692,
+   "area_ratio": 1.4461910519951633,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_013.png",
+   "iou": 0.5696013289036544,
+   "score": 0.9452770948410034,
+   "area_ratio": 1.3204813359528487,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_014.png",
+   "iou": 0.4602382931559989,
+   "score": 0.9571443200111389,
+   "area_ratio": 0.8285912560721721,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_015.png",
+   "iou": 0.39652504220596513,
+   "score": 0.9559494256973267,
+   "area_ratio": 0.4273491983607736,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_crack_017.png",
+   "iou": 0.1733299648413651,
+   "score": 0.945997416973114,
+   "area_ratio": 0.21484000348766238,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "hazelnut_cut_000.png",
+   "iou": 0.9017341040462428,
+   "score": 0.9610095620155334,
+   "area_ratio": 0.9127906976744186,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_001.png",
+   "iou": 0.27821863456013135,
+   "score": 0.9245761632919312,
+   "area_ratio": 3.5785346728742957,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_003.png",
+   "iou": 0.9328307059629883,
+   "score": 0.9521743059158325,
+   "area_ratio": 1.0273184759166067,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_004.png",
+   "iou": 0.7024301964839711,
+   "score": 0.948967456817627,
+   "area_ratio": 1.3695573947463116,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_005.png",
+   "iou": 0.9011695906432748,
+   "score": 0.9593394994735718,
+   "area_ratio": 0.9859499083689677,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_006.png",
+   "iou": 0.8868694362017804,
+   "score": 0.9774309992790222,
+   "area_ratio": 0.9073865766779152,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_007.png",
+   "iou": 0.8971128608923884,
+   "score": 0.9414841532707214,
+   "area_ratio": 1.1072886297376092,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_008.png",
+   "iou": 0.43893738852905284,
+   "score": 0.954251229763031,
+   "area_ratio": 1.9059715639810426,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_010.png",
+   "iou": 0.9229274611398963,
+   "score": 0.9612960815429688,
+   "area_ratio": 0.9610303830911493,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_011.png",
+   "iou": 0.8924278846153846,
+   "score": 0.9594324827194214,
+   "area_ratio": 0.9154501216545012,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_013.png",
+   "iou": 0.9005602240896359,
+   "score": 0.9584686756134033,
+   "area_ratio": 0.9490125673249551,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_cut_014.png",
+   "iou": 0.9016906700062617,
+   "score": 0.9618271589279175,
+   "area_ratio": 0.9914754098360655,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_000.png",
+   "iou": 0.7448464450988641,
+   "score": 0.9629414081573486,
+   "area_ratio": 1.3086557194544948,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_002.png",
+   "iou": 0.9226006191950464,
+   "score": 0.9466702938079834,
+   "area_ratio": 1.0450054884742042,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_003.png",
+   "iou": 0.6689855072463768,
+   "score": 0.9226370453834534,
+   "area_ratio": 1.4948006932409013,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_006.png",
+   "iou": 0.24203821656050956,
+   "score": 0.9500861763954163,
+   "area_ratio": 0.40414041404140416,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "hazelnut_hole_007.png",
+   "iou": 0.9533011272141707,
+   "score": 0.9716712832450867,
+   "area_ratio": 0.9917898193760263,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_008.png",
+   "iou": 0.8493490390576566,
+   "score": 0.9620918035507202,
+   "area_ratio": 1.1726147123088129,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_010.png",
+   "iou": 0.8274693771175398,
+   "score": 0.9515880346298218,
+   "area_ratio": 0.895647472289808,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_011.png",
+   "iou": 0.46841673502871206,
+   "score": 0.9445406198501587,
+   "area_ratio": 0.6082659478885895,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_012.png",
+   "iou": 0.7241537053979872,
+   "score": 0.9376657605171204,
+   "area_ratio": 0.7990453460620525,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_014.png",
+   "iou": 0.4985020190178455,
+   "score": 0.947134256362915,
+   "area_ratio": 0.6629083550159005,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_015.png",
+   "iou": 0.7477876106194691,
+   "score": 0.9603565335273743,
+   "area_ratio": 1.131294964028777,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_hole_016.png",
+   "iou": 0.19769392033542976,
+   "score": 0.9616681337356567,
+   "area_ratio": 0.49047743282024525,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "hazelnut_hole_017.png",
+   "iou": 0.8857456742653117,
+   "score": 0.9590522646903992,
+   "area_ratio": 1.0458879618593564,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_000.png",
+   "iou": 0.8840514120202752,
+   "score": 0.9400081634521484,
+   "area_ratio": 1.1046511627906976,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_001.png",
+   "iou": 0.9351351351351351,
+   "score": 0.9608644843101501,
+   "area_ratio": 1.0325713431943822,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_002.png",
+   "iou": 0.7018119560564988,
+   "score": 0.9413216710090637,
+   "area_ratio": 1.4155528554070473,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_003.png",
+   "iou": 0.8031896249561865,
+   "score": 0.954841673374176,
+   "area_ratio": 1.2362529884807651,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_004.png",
+   "iou": 0.9365577131829694,
+   "score": 0.9616730213165283,
+   "area_ratio": 1.001745418277023,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_005.png",
+   "iou": 0.8001135718341851,
+   "score": 0.9406392574310303,
+   "area_ratio": 1.235017626321974,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_007.png",
+   "iou": 0.7328233460830146,
+   "score": 0.9548775553703308,
+   "area_ratio": 1.3053147380324162,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_008.png",
+   "iou": 0.8544487427466151,
+   "score": 0.9324232339859009,
+   "area_ratio": 1.1403655643923538,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_009.png",
+   "iou": 0.9356065252054458,
+   "score": 0.9204607009887695,
+   "area_ratio": 1.0494805194805195,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_010.png",
+   "iou": 0.5296330351918415,
+   "score": 0.9411268830299377,
+   "area_ratio": 1.8862776025236594,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_012.png",
+   "iou": 0.5332685245193346,
+   "score": 0.946357786655426,
+   "area_ratio": 1.836730615507594,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "hazelnut_print_014.png",
+   "iou": 0.6531261038502296,
+   "score": 0.9608051776885986,
+   "area_ratio": 1.505800464037123,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "per_category": {
+  "bottle": {
+   "AnomalyDiffusion": 0.025835272512937848,
+   "Ali-AUG text": 0.01943845022469759,
+   "Ali-AUG colour": 0.01950851122015401
+  },
+  "cable": {
+   "AnomalyDiffusion": 0.06210913322865963,
+   "Ali-AUG text": 0.030249934111322676,
+   "Ali-AUG colour": 0.030536021372037276
+  },
+  "capsule": {
+   "AnomalyDiffusion": 0.025852336181384144,
+   "Ali-AUG text": 0.01513425630489082,
+   "Ali-AUG colour": 0.018416507451823265
+  },
+  "carpet": {
+   "AnomalyDiffusion": 0.19679055721671493,
+   "Ali-AUG text": 0.1358024193732827,
+   "Ali-AUG colour": 0.13411206669277614
+  },
+  "grid": {
+   "AnomalyDiffusion": 0.056789952713777035,
+   "Ali-AUG text": 0.10379332808010719,
+   "Ali-AUG colour": 0.10669460016138413
+  },
+  "hazelnut": {
+   "AnomalyDiffusion": 0.04851463343948126,
+   "Ali-AUG text": 0.052111252397298816,
+   "Ali-AUG colour": 0.05633399840444327
+  },
+  "leather": {
+   "AnomalyDiffusion": 0.1745309638125556,
+   "Ali-AUG text": 0.15439042927963392,
+   "Ali-AUG colour": 0.208160295018128
+  },
+  "metal_nut": {
+   "AnomalyDiffusion": 0.1299707592818244,
+   "Ali-AUG text": 0.1194346821385211,
+   "Ali-AUG colour": 0.11956188313919923
+  },
+  "pill": {
+   "AnomalyDiffusion": 0.04221238102763891,
+   "Ali-AUG text": 0.0417852112590227,
+   "Ali-AUG colour": 0.0403974745855775
+  },
+  "screw": {
+   "AnomalyDiffusion": 0.03357878994817535,
+   "Ali-AUG text": 0.018919985508546233,
+   "Ali-AUG colour": 0.019849162755741015
+  },
+  "transistor": {
+   "AnomalyDiffusion": 0.05170567131911715,
+   "Ali-AUG text": 0.04601676529273391,
+   "Ali-AUG colour": 0.04518291152392825
+  },
+  "wood": {
+   "AnomalyDiffusion": 0.09061819840880002,
+   "Ali-AUG text": 0.2402046016033958,
+   "Ali-AUG colour": 0.2499334189821692
+  },
+  "zipper": {
+   "AnomalyDiffusion": 0.10207935691707665,
+   "Ali-AUG text": 0.046705871923930116,
+   "Ali-AUG colour": 0.05339637636724445
+  }
+ },
+ "mean": {
+  "AnomalyDiffusion": 0.0800452312313956,
+  "Ali-AUG text": 0.07876824519210643,
+  "Ali-AUG colour": 0.0847756328980466
+ },
+ "groups": {
+  "objects": {
+   "AnomalyDiffusion": 0.057984259317366144,
+   "Ali-AUG text": 0.043310712128995996,
+   "Ali-AUG colour": 0.04479809409112759
+  },
+  "textures": {
+   "AnomalyDiffusion": 0.1296824180379619,
+   "Ali-AUG text": 0.1585476945841049,
+   "Ali-AUG colour": 0.17472509521361435
+  }
+ },
+ "size": 256
+}

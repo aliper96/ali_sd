@@ -1,0 +1,49 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/transistor/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/cattext_heldout_transistor",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 12,
+ "n_test_real": 12,
+ "chance": 0.25,
+ "ceiling": 0.8333333333333334,
+ "fidelity": 0.75,
+ "follows_mask": 0.75,
+ "per_category": {
+  "transistor": {
+   "types": [
+    "bent_lead",
+    "cut_lead",
+    "damaged_case",
+    "misplaced"
+   ],
+   "n_syn": 12,
+   "n_test": 12,
+   "chance": 0.25,
+   "ceiling": 0.8333333333333334,
+   "fidelity": 0.75,
+   "follows_mask": 0.75
+  }
+ },
+ "disagreements": [
+  {
+   "name": "transistor_bent_lead_000.png",
+   "category": "transistor",
+   "requested": "bent_lead",
+   "judged": "cut_lead"
+  },
+  {
+   "name": "transistor_bent_lead_002.png",
+   "category": "transistor",
+   "requested": "bent_lead",
+   "judged": "cut_lead"
+  },
+  {
+   "name": "transistor_cut_lead_008.png",
+   "category": "transistor",
+   "requested": "cut_lead",
+   "judged": "bent_lead"
+  }
+ ]
+}

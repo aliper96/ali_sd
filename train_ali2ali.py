@@ -6,7 +6,10 @@ from cleanfid.features import build_feature_extractor
 from cleanfid.fid import get_folder_features
 from tqdm import tqdm
 import wandb
-wandb.login(key="7932525c36d2cd0d2995858bb0a4f432e982e0b8",relogin=True)
+if os.environ.get("WANDB_API_KEY"):  # experiment tracking is optional; never hard-code a key
+    wandb.login()
+else:
+    os.environ.setdefault("WANDB_MODE", "disabled")
 from ali2ali import Ali2Ali
 from utils import parse_args_paired_training, PairedDataset
 import torch
@@ -96,6 +99,22 @@ def main(args):
             x_tgt = batch["output_pixel_values"].cuda()
             input_ids = batch["input_ids"].cuda()
             B,C,H,W = x_src_condition.shape
+
+            # ----------------------------------------------------------
+            # Conditioning dropout — applied INDEPENDENTLY and PER SAMPLE to the
+            # input image and to the mask, so a single trained model can be
+            # queried with image+mask+prompt, mask+prompt or prompt-only.
+            # Dropped inputs are zeroed (the same "absent input" the model sees
+            # at inference when that modality is not supplied).
+            # Disabled by default; see the note in utils.py on provenance.
+            # ----------------------------------------------------------
+            if args.input_dropout > 0:
+                keep = (torch.rand(B, device=x_src_input_image.device) >= args.input_dropout)
+                x_src_input_image = x_src_input_image * keep.view(B, 1, 1, 1).to(x_src_input_image.dtype)
+            if args.mask_dropout > 0:
+                keep = (torch.rand(B, device=x_src_condition.device) >= args.mask_dropout)
+                x_src_condition = x_src_condition * keep.view(B, 1, 1, 1).to(x_src_condition.dtype)
+
             #forward pass
             x_tgt_pred = net_pix2pix(x_src_condition,x_src_input_image,prompt_tokens = input_ids ,deterministic = True)
             loss_l2 = F.mse_loss(x_tgt.float(), x_tgt_pred.float()).mean() * args.lambda_l2
@@ -172,6 +191,24 @@ def main(args):
             if global_step % args.checkpointing_steps == 1:
                 outf = os.path.join(args.output_dir, "checkpoints", f"model_{global_step}.pkl")
                 net_pix2pix.save_model(outf)
+
+            # ----------------------------------------------------------
+            # Stop at max_train_steps.
+            #
+            # The original loop never checked this: max_train_steps only fed the
+            # LR scheduler and the tqdm total, while the loop itself ran for
+            # num_training_epochs (default 100000) over the whole dataloader, i.e.
+            # effectively forever. Runs therefore had to be killed by hand, which
+            # is consistent with the arbitrary step numbers of the surviving
+            # checkpoints (model_1001, tile_5501, carpet_17501, tile_84501...).
+            # Honouring the flag makes a run reproducible from its arguments.
+            # ----------------------------------------------------------
+            if global_step >= args.max_train_steps:
+                outf = os.path.join(args.output_dir, "checkpoints", f"model_{global_step}.pkl")
+                net_pix2pix.save_model(outf)
+                print(f"\n[train] reached max_train_steps={args.max_train_steps}; "
+                      f"saved {outf}", flush=True)
+                return
 
 
 

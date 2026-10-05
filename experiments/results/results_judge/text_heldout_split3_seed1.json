@@ -1,0 +1,88 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_3",
+ "syn": "/home/aliha/t23/judge_syn/text_heldout_split_3",
+ "label_from": "prompt",
+ "seed": 1,
+ "n_train_real": 60,
+ "n_test_real": 24,
+ "n_syn": 24,
+ "chance": 0.2,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.5833333333333334,
+ "follows_mask": 0.5833333333333334,
+ "fold": "test",
+ "per_class": {
+  "crack": {
+   "n": 5,
+   "correct": 5
+  },
+  "glue_strip": {
+   "n": 5,
+   "correct": 1
+  },
+  "gray_stroke": {
+   "n": 5,
+   "correct": 1
+  },
+  "oil": {
+   "n": 5,
+   "correct": 4
+  },
+  "rough": {
+   "n": 4,
+   "correct": 3
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_glue_strip_003.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_glue_strip_009.png",
+   "requested": "glue_strip",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_glue_strip_014.png",
+   "requested": "glue_strip",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_glue_strip_015.png",
+   "requested": "glue_strip",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_gray_stroke_001.png",
+   "requested": "gray_stroke",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_gray_stroke_011.png",
+   "requested": "gray_stroke",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_gray_stroke_013.png",
+   "requested": "gray_stroke",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_gray_stroke_015.png",
+   "requested": "gray_stroke",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_oil_017.png",
+   "requested": "oil",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_001.png",
+   "requested": "rough",
+   "judged": "glue_strip"
+  }
+ ]
+}

@@ -14,7 +14,11 @@ import cv2
 
 def make_1step_sched():
     noise_scheduler_1step = DDPMScheduler.from_pretrained("stabilityai/sd-turbo", subfolder="scheduler")
-    # noise_scheduler_1step.set_timesteps(1, device="cuda")
+    # One-step sampling: without this call DDPMScheduler.step() at t=999 steps to t=998 instead of
+    # predicting x0, and the U-Net output enters the result with a ~1e-3 coefficient (the model is
+    # then effectively the VAE alone). This line was commented out in the first public version;
+    # every experiment of the paper uses it (see experiments/t23/fixsched.py).
+    noise_scheduler_1step.set_timesteps(1, device="cuda")
     noise_scheduler_1step.alphas_cumprod = noise_scheduler_1step.alphas_cumprod.cuda()
     return noise_scheduler_1step
 
@@ -92,6 +96,22 @@ def parse_args_paired_training(input_args=None):
     parser.add_argument("--lambda_lpips", default=100, type=float)
     parser.add_argument("--lambda_l2", default=10.0, type=float)
     parser.add_argument("--lambda_clipsim", default=5.0, type=float)
+
+    # ------------------------------------------------------------------
+    # Conditioning dropout (paper: "dropout (up to 30%) independently to both
+    # the input image and the spatial mask"; tab:training_hparams_full lists
+    # Input Image Dropout = 0.3).
+    #
+    # NOTE: this was NOT present in any committed version of the code (checked
+    # all five branches of this repo plus two local copies), so it is a
+    # re-implementation of the mechanism described in the paper, added behind a
+    # flag. Default 0.0 = the historical behaviour of this file, so nothing
+    # changes unless it is requested explicitly.
+    # ------------------------------------------------------------------
+    parser.add_argument("--input_dropout", default=0.0, type=float,
+                        help="per-sample probability of zeroing the input image")
+    parser.add_argument("--mask_dropout", default=0.0, type=float,
+                        help="per-sample probability of zeroing the conditioning mask")
 
     # dataset options
     parser.add_argument("--dataset_folder", required=True, type=str)
@@ -251,20 +271,21 @@ class PairedDataset(torch.utils.data.Dataset):
         output_img = Image.open(os.path.join(self.output_folder, img_name))
         caption = self.captions[img_name]
 
-        #convert img_t to RGB
-        # input_img = input_img.convert("RGB")
-        input_w, input_h = input_img.size
-        ima = Image.new('RGB', (input_w, input_h))
-        input_data = zip(input_img.getdata(), input_img.getdata(), input_img.getdata())
-        ima.putdata(list(input_data))
-        input_img = ima
-
-        # output_img = output_img.convert("RGB")
-        output_w, output_h = output_img.size
-        ima_output = Image.new('RGB', (output_w, output_h))
-        output_data = zip(output_img.getdata(), output_img.getdata(), output_img.getdata())
-        ima_output.putdata(list(output_data))
-        output_img = ima_output
+        # Convert to RGB.
+        #
+        # The original code did this by hand, replicating a single channel three
+        # times: zip(getdata(), getdata(), getdata()) -> putdata(). That only works
+        # when the file is grayscale ('L'), where getdata() yields ints. The images
+        # in dataset/mvtec_img2img are stored as RGB, so getdata() yields tuples and
+        # the zip produces nested tuples, which putdata rejects
+        # ("TypeError: 'tuple' object cannot be interpreted as an integer").
+        #
+        # .convert("RGB") is equivalent for grayscale inputs (it replicates the
+        # channel) and correct for inputs that are already RGB, so it handles both
+        # datasets. Note the author had already left this exact line commented out.
+        input_img = input_img.convert("RGB")
+        output_img = output_img.convert("RGB")
+        input_real_img = input_real_img.convert("RGB")
 
         # input_img_w, input_img_h = input_real_img.size
         # ima_input_real = Image.new('RGB', (input_img_w, input_img_h))

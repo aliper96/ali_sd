@@ -1,0 +1,134 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/abl_nogan_swap_split_0",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 24,
+ "n_test_real": 24,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.2916666666666667,
+ "follows_mask": 0.3333333333333333,
+ "per_category": {
+  "tile": {
+   "types": [
+    "crack",
+    "glue_strip",
+    "gray_stroke",
+    "oil",
+    "rough"
+   ],
+   "n_syn": 24,
+   "n_test": 24,
+   "chance": 0.2,
+   "ceiling": 0.9583333333333334,
+   "fidelity": 0.2916666666666667,
+   "follows_mask": 0.3333333333333333
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_crack_000.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_004.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_009.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_011.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_015.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_glue_strip_005.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_gray_stroke_000.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_008.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_gray_stroke_010.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_gray_stroke_012.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_oil_002.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_oil_009.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_oil_013.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_002.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_rough_004.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_rough_006.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_007.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "glue_strip"
+  }
+ ]
+}

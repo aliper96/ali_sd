@@ -1,0 +1,43 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_0",
+ "syn": "/home/aliha/t23/judge_syn/colorfix_heldout_split_0",
+ "label_from": "prompt",
+ "seed": 0,
+ "n_train_real": 60,
+ "n_test_real": 24,
+ "n_syn": 24,
+ "chance": 0.2,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.9583333333333334,
+ "follows_mask": 0.9583333333333334,
+ "fold": "test",
+ "per_class": {
+  "crack": {
+   "n": 5,
+   "correct": 4
+  },
+  "glue_strip": {
+   "n": 5,
+   "correct": 5
+  },
+  "gray_stroke": {
+   "n": 5,
+   "correct": 5
+  },
+  "oil": {
+   "n": 5,
+   "correct": 5
+  },
+  "rough": {
+   "n": 4,
+   "correct": 4
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_crack_015.png",
+   "requested": "crack",
+   "judged": "rough"
+  }
+ ]
+}

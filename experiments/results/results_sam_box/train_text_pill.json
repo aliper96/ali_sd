@@ -1,0 +1,792 @@
+{
+ "split": "D:/ad/aliaug_cat/pill/split_0",
+ "fold": "train",
+ "images": "D:/sam3/trainpools/cattext_syn_pill",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "pill_color_000.png",
+   "iou": 0.6755725190839694,
+   "score": 0.9572846293449402,
+   "area_ratio": 1.4388888888888889,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_001.png",
+   "iou": 0.8060921248142645,
+   "score": 0.9401799440383911,
+   "area_ratio": 1.0497470489038785,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_002.png",
+   "iou": 0.8156156156156156,
+   "score": 0.9347496628761292,
+   "area_ratio": 1.1080892608089261,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_003.png",
+   "iou": 0.725780836421387,
+   "score": 0.950183629989624,
+   "area_ratio": 1.2313483915126626,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_006.png",
+   "iou": 0.8006681514476615,
+   "score": 0.9630160331726074,
+   "area_ratio": 1.0136986301369864,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_007.png",
+   "iou": 0.5484460694698354,
+   "score": 0.9663817882537842,
+   "area_ratio": 1.528358208955224,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_010.png",
+   "iou": 0.4793608521970706,
+   "score": 0.9630773663520813,
+   "area_ratio": 2.0190217391304346,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_011.png",
+   "iou": 0.65625,
+   "score": 0.9616411924362183,
+   "area_ratio": 1.4941176470588236,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_014.png",
+   "iou": 0.6932573599240266,
+   "score": 0.9537766575813293,
+   "area_ratio": 1.3216145833333333,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_016.png",
+   "iou": 0.5714285714285714,
+   "score": 0.9627923965454102,
+   "area_ratio": 1.54375,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_017.png",
+   "iou": 0.6301115241635687,
+   "score": 0.9618622064590454,
+   "area_ratio": 1.2720207253886011,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_018.png",
+   "iou": 0.8652751423149905,
+   "score": 0.971236526966095,
+   "area_ratio": 1.0521920668058455,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_019.png",
+   "iou": 0.7919834139599171,
+   "score": 0.966838002204895,
+   "area_ratio": 1.2547826086956522,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_020.png",
+   "iou": 0.5703225806451613,
+   "score": 0.9614776372909546,
+   "area_ratio": 1.668859649122807,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_021.png",
+   "iou": 0.5725490196078431,
+   "score": 0.9668269157409668,
+   "area_ratio": 1.5705128205128205,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_023.png",
+   "iou": 0.6353591160220995,
+   "score": 0.94845050573349,
+   "area_ratio": 1.2833099579242637,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_color_024.png",
+   "iou": 0.8772845953002611,
+   "score": 0.9702543020248413,
+   "area_ratio": 1.0601719197707737,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_combined_001.png",
+   "iou": 0.21599111604664076,
+   "score": 0.9687156081199646,
+   "area_ratio": 0.750599520383693,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_combined_002.png",
+   "iou": 0.20557084480026686,
+   "score": 0.9495193362236023,
+   "area_ratio": 4.346153846153846,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_combined_003.png",
+   "iou": 0.7097652262674379,
+   "score": 0.9449253082275391,
+   "area_ratio": 1.1069182389937107,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_combined_004.png",
+   "iou": 0.04285714285714286,
+   "score": 0.9616960287094116,
+   "area_ratio": 1.6849279835390947,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_combined_006.png",
+   "iou": 0.6296590007930214,
+   "score": 0.9616803526878357,
+   "area_ratio": 1.5413812785388128,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_combined_009.png",
+   "iou": 0.7341589267285862,
+   "score": 0.9460304975509644,
+   "area_ratio": 1.2819120043454644,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_combined_010.png",
+   "iou": 0.010375923511516732,
+   "score": 0.950645923614502,
+   "area_ratio": 2.367553865652725,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_combined_012.png",
+   "iou": 0.368901881966015,
+   "score": 0.9542661309242249,
+   "area_ratio": 1.8882035466461065,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_combined_013.png",
+   "iou": 0.6572550486163051,
+   "score": 0.956010639667511,
+   "area_ratio": 1.0819826168663378,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_combined_014.png",
+   "iou": 0.1969111969111969,
+   "score": 0.9733656048774719,
+   "area_ratio": 3.3694362017804154,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_combined_015.png",
+   "iou": 0.04350967741935484,
+   "score": 0.9605984091758728,
+   "area_ratio": 0.31584770582492677,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_combined_016.png",
+   "iou": 0.45614148325050025,
+   "score": 0.9419410824775696,
+   "area_ratio": 2.089141448719704,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_001.png",
+   "iou": 0.8306666666666667,
+   "score": 0.9378846883773804,
+   "area_ratio": 1.0304643596569063,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_002.png",
+   "iou": 0.6900740740740741,
+   "score": 0.9517064094543457,
+   "area_ratio": 1.4491197939029627,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_004.png",
+   "iou": 0.8724677716390423,
+   "score": 0.9547922611236572,
+   "area_ratio": 1.1248693834900731,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_005.png",
+   "iou": 0.5843122394846533,
+   "score": 0.9426429867744446,
+   "area_ratio": 1.275993467610234,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_006.png",
+   "iou": 0.9001766784452296,
+   "score": 0.9667189717292786,
+   "area_ratio": 1.0593585447582576,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_007.png",
+   "iou": 0.7902439024390244,
+   "score": 0.9610632061958313,
+   "area_ratio": 1.2599879843796935,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_008.png",
+   "iou": 0.7377521613832853,
+   "score": 0.9602910280227661,
+   "area_ratio": 1.3517940717628705,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_009.png",
+   "iou": 0.8660890114218196,
+   "score": 0.9610214829444885,
+   "area_ratio": 1.12848158131177,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_010.png",
+   "iou": 0.9301705756929638,
+   "score": 0.9308040142059326,
+   "area_ratio": 1.006835396268243,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_011.png",
+   "iou": 0.8451906659077973,
+   "score": 0.9548996090888977,
+   "area_ratio": 1.178763440860215,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_012.png",
+   "iou": 0.880192878338279,
+   "score": 0.9444372653961182,
+   "area_ratio": 1.0431277710600564,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_013.png",
+   "iou": 0.7130028735632183,
+   "score": 0.956233024597168,
+   "area_ratio": 1.4025188916876574,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_014.png",
+   "iou": 0.8489984591679507,
+   "score": 0.9615322947502136,
+   "area_ratio": 1.1003500583430572,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_018.png",
+   "iou": 0.7924501012438531,
+   "score": 0.961817741394043,
+   "area_ratio": 1.1992901508429459,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "pill_contamination_020.png",
+   "iou": 0.8731980779498132,
+   "score": 0.947845458984375,
+   "area_ratio": 1.110375939849624,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_002.png",
+   "iou": 0.813570069752695,
+   "score": 0.9386244416236877,
+   "area_ratio": 1.2016936104695919,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_004.png",
+   "iou": 0.8720183486238532,
+   "score": 0.9308934211730957,
+   "area_ratio": 1.1332984840564557,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_005.png",
+   "iou": 0.8842056507642427,
+   "score": 0.9428384304046631,
+   "area_ratio": 1.0834827144686299,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_007.png",
+   "iou": 0.848605577689243,
+   "score": 0.9452753067016602,
+   "area_ratio": 0.9611158072696534,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_008.png",
+   "iou": 0.8908969210174029,
+   "score": 0.9298434257507324,
+   "area_ratio": 1.0627966411098941,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_010.png",
+   "iou": 0.8341082696778479,
+   "score": 0.937473714351654,
+   "area_ratio": 1.1244470090402001,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_011.png",
+   "iou": 0.7983385849326841,
+   "score": 0.9322038888931274,
+   "area_ratio": 1.1514736120630569,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_012.png",
+   "iou": 0.8958147818343722,
+   "score": 0.9276906847953796,
+   "area_ratio": 1.008490566037736,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_014.png",
+   "iou": 0.8470343392299687,
+   "score": 0.9532978534698486,
+   "area_ratio": 1.0591647331786542,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_015.png",
+   "iou": 0.7874276261373035,
+   "score": 0.9610562324523926,
+   "area_ratio": 1.2370600414078674,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_016.png",
+   "iou": 0.8324924318869829,
+   "score": 0.9482988715171814,
+   "area_ratio": 1.1415094339622642,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_017.png",
+   "iou": 0.9325992659325992,
+   "score": 0.9512523412704468,
+   "area_ratio": 1.011809656130601,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_020.png",
+   "iou": 0.8802966101694916,
+   "score": 0.96585613489151,
+   "area_ratio": 1.0894643908181283,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_021.png",
+   "iou": 0.9388275276125744,
+   "score": 0.9614704251289368,
+   "area_ratio": 1.0123456790123457,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_022.png",
+   "iou": 0.8911290322580645,
+   "score": 0.9485787749290466,
+   "area_ratio": 1.062671797691039,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_023.png",
+   "iou": 0.7416288615251674,
+   "score": 0.9532090425491333,
+   "area_ratio": 1.3388453727879315,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_024.png",
+   "iou": 0.8695652173913043,
+   "score": 0.9516696929931641,
+   "area_ratio": 0.9924859110832811,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_crack_025.png",
+   "iou": 0.802547770700637,
+   "score": 0.9295156002044678,
+   "area_ratio": 1.219607843137255,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_002.png",
+   "iou": 0.7716599190283401,
+   "score": 0.942200243473053,
+   "area_ratio": 1.2916993977481015,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_004.png",
+   "iou": 0.7268584819684937,
+   "score": 0.9473646879196167,
+   "area_ratio": 1.3745076978159685,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_005.png",
+   "iou": 0.8453668093752268,
+   "score": 0.9279255867004395,
+   "area_ratio": 1.162132290426798,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_006.png",
+   "iou": 0.8256646837440815,
+   "score": 0.9299983382225037,
+   "area_ratio": 1.1995027058651455,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_007.png",
+   "iou": 0.8192448872574725,
+   "score": 0.9199854731559753,
+   "area_ratio": 1.1999365884590996,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_009.png",
+   "iou": 0.8427856547122602,
+   "score": 0.9418700933456421,
+   "area_ratio": 1.1683022571148185,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_010.png",
+   "iou": 0.28806938042034536,
+   "score": 0.9450871348381042,
+   "area_ratio": 0.8444842246587604,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_011.png",
+   "iou": 0.8648262140147982,
+   "score": 0.9418703317642212,
+   "area_ratio": 1.081765808287638,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_012.png",
+   "iou": 0.7369207772795217,
+   "score": 0.9498681426048279,
+   "area_ratio": 1.3271028037383177,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_014.png",
+   "iou": 0.7590070298769771,
+   "score": 0.9613996148109436,
+   "area_ratio": 1.282497149372862,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_015.png",
+   "iou": 0.8427465832372798,
+   "score": 0.9509071707725525,
+   "area_ratio": 1.1525293325639545,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_017.png",
+   "iou": 0.3009319816873774,
+   "score": 0.9414329528808594,
+   "area_ratio": 0.8559598787030558,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_faulty_imprint_018.png",
+   "iou": 0.8706932626586693,
+   "score": 0.9485725164413452,
+   "area_ratio": 1.0676842429848905,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_pill_type_000.png",
+   "iou": 0.0036334095129267247,
+   "score": 0.9634993076324463,
+   "area_ratio": 0.057084022867459006,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_pill_type_001.png",
+   "iou": 0.0009674092597493862,
+   "score": 0.9674959182739258,
+   "area_ratio": 0.0226865838648316,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_pill_type_005.png",
+   "iou": 0.0016886984311446833,
+   "score": 0.9636093974113464,
+   "area_ratio": 0.02625875524384459,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_pill_type_006.png",
+   "iou": 0.0014593046734461617,
+   "score": 0.9658181667327881,
+   "area_ratio": 0.02441932515913401,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_pill_type_007.png",
+   "iou": 0.0016845995000543419,
+   "score": 0.9643422365188599,
+   "area_ratio": 0.03461243428314842,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_pill_type_008.png",
+   "iou": 0.0015602322206095792,
+   "score": 0.9643871188163757,
+   "area_ratio": 0.028715177489984162,
+   "n_inst": 1,
+   "accepted": false
+  },
+  {
+   "name": "pill_scratch_001.png",
+   "iou": 0.819560272934041,
+   "score": 0.9694482088088989,
+   "area_ratio": 1.2160664819944598,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_002.png",
+   "iou": 0.8198319976827266,
+   "score": 0.9429272413253784,
+   "area_ratio": 1.2016119612194838,
+   "n_inst": 3,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_004.png",
+   "iou": 0.9513000412711514,
+   "score": 0.9442684650421143,
+   "area_ratio": 1.000846381718155,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_006.png",
+   "iou": 0.8439024390243902,
+   "score": 0.9665408134460449,
+   "area_ratio": 0.9605809128630706,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_007.png",
+   "iou": 0.7475078000152195,
+   "score": 0.9607858657836914,
+   "area_ratio": 1.3174891512766171,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_008.png",
+   "iou": 0.8317522321428571,
+   "score": 0.9528002738952637,
+   "area_ratio": 1.1816429615844743,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_010.png",
+   "iou": 0.88,
+   "score": 0.9679467678070068,
+   "area_ratio": 0.9808429118773946,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_011.png",
+   "iou": 0.8730440967283073,
+   "score": 0.9538546204566956,
+   "area_ratio": 1.043849437330229,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_012.png",
+   "iou": 0.7712845407020165,
+   "score": 0.9613131880760193,
+   "area_ratio": 1.2965383684337932,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_014.png",
+   "iou": 0.8714952252212969,
+   "score": 0.9470127820968628,
+   "area_ratio": 1.1320914058618976,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_015.png",
+   "iou": 0.8366412213740458,
+   "score": 0.9545531868934631,
+   "area_ratio": 0.9616795760293518,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_016.png",
+   "iou": 0.6219015908250093,
+   "score": 0.9670649170875549,
+   "area_ratio": 1.6079714455681142,
+   "n_inst": 4,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_019.png",
+   "iou": 0.7726872246696035,
+   "score": 0.9499175548553467,
+   "area_ratio": 1.2941847206385404,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_020.png",
+   "iou": 0.8500651890482399,
+   "score": 0.955189049243927,
+   "area_ratio": 1.174712643678161,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_021.png",
+   "iou": 0.9054798492316614,
+   "score": 0.949488639831543,
+   "area_ratio": 1.0252696456086288,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_022.png",
+   "iou": 0.853289162328443,
+   "score": 0.9415363669395447,
+   "area_ratio": 1.168327796234773,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "pill_scratch_023.png",
+   "iou": 0.46098744512054224,
+   "score": 0.9511615037918091,
+   "area_ratio": 2.0877421455314993,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

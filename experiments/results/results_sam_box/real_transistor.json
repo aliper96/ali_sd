@@ -1,0 +1,104 @@
+{
+ "split": "D:/ad/aliaug_cat/transistor/split_0",
+ "fold": "test",
+ "images": "D:/ad/aliaug_cat/transistor/split_0/test_B",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "transistor_bent_lead_000.png",
+   "iou": 0.8557522123893805,
+   "score": 0.9326200485229492,
+   "area_ratio": 0.8656583629893239,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "transistor_bent_lead_002.png",
+   "iou": 0.5780240073868883,
+   "score": 0.9011951684951782,
+   "area_ratio": 0.7291736930860033,
+   "n_inst": 20,
+   "accepted": true
+  },
+  {
+   "name": "transistor_bent_lead_006.png",
+   "iou": 0.034615549184887254,
+   "score": 0.9361895322799683,
+   "area_ratio": 1.5761772853185596,
+   "n_inst": 3,
+   "accepted": false
+  },
+  {
+   "name": "transistor_cut_lead_005.png",
+   "iou": 0.531860390650016,
+   "score": 0.8969246745109558,
+   "area_ratio": 0.6113169417312226,
+   "n_inst": 22,
+   "accepted": true
+  },
+  {
+   "name": "transistor_cut_lead_006.png",
+   "iou": 0.4205607476635514,
+   "score": 0.8422330021858215,
+   "area_ratio": 0.43645859238995277,
+   "n_inst": 19,
+   "accepted": true
+  },
+  {
+   "name": "transistor_cut_lead_008.png",
+   "iou": 0.24248554913294798,
+   "score": 0.8814268708229065,
+   "area_ratio": 0.6512387171115805,
+   "n_inst": 11,
+   "accepted": false
+  },
+  {
+   "name": "transistor_damaged_case_003.png",
+   "iou": 0.8090622182146078,
+   "score": 0.9306424856185913,
+   "area_ratio": 1.0540056309188637,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "transistor_damaged_case_005.png",
+   "iou": 0.7236699691949047,
+   "score": 0.9588499665260315,
+   "area_ratio": 1.261387220098307,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "transistor_damaged_case_007.png",
+   "iou": 0.8831239759694156,
+   "score": 0.9449641108512878,
+   "area_ratio": 1.043864848844102,
+   "n_inst": 2,
+   "accepted": true
+  },
+  {
+   "name": "transistor_misplaced_005.png",
+   "iou": 0.5133254897948745,
+   "score": 0.9507529139518738,
+   "area_ratio": 0.5781219438467967,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "transistor_misplaced_007.png",
+   "iou": 0.4645152320336155,
+   "score": 0.96776282787323,
+   "area_ratio": 0.4790585922568667,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "transistor_misplaced_009.png",
+   "iou": 0.08078752158353189,
+   "score": 0.9529197216033936,
+   "area_ratio": 0.08078752158353189,
+   "n_inst": 1,
+   "accepted": false
+  }
+ ]
+}

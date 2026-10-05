@@ -1,0 +1,128 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_2",
+ "syn": "/home/aliha/t23/judge_syn/textfix_swap_split_2",
+ "label_from": "prompt",
+ "seed": 2,
+ "n_train_real": 60,
+ "n_test_real": 24,
+ "n_syn": 24,
+ "chance": 0.2,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.25,
+ "follows_mask": 0.5833333333333334,
+ "fold": "test",
+ "per_class": {
+  "crack": {
+   "n": 4,
+   "correct": 2
+  },
+  "glue_strip": {
+   "n": 5,
+   "correct": 0
+  },
+  "gray_stroke": {
+   "n": 5,
+   "correct": 4
+  },
+  "oil": {
+   "n": 5,
+   "correct": 0
+  },
+  "rough": {
+   "n": 5,
+   "correct": 0
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_crack_000.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_006.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_008.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_009.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_010.png",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_glue_strip_007.png",
+   "requested": "gray_stroke",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_gray_stroke_004.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_005.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_010.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_011.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_012.png",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_oil_003.png",
+   "requested": "rough",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_oil_007.png",
+   "requested": "rough",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_oil_013.png",
+   "requested": "rough",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_oil_014.png",
+   "requested": "rough",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_oil_016.png",
+   "requested": "rough",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_rough_000.png",
+   "requested": "crack",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_rough_008.png",
+   "requested": "crack",
+   "judged": "rough"
+  }
+ ]
+}

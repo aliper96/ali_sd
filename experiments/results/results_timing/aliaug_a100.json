@@ -1,0 +1,20 @@
+{
+ "method": "Ali-AUG (one step)",
+ "ckpt": "/mnt/scratch/t23/catcolor_gen_bottle/checkpoints/model_10000.pkl",
+ "resolution": 512,
+ "batch": 1,
+ "steps": 1,
+ "n": 100,
+ "warmup": 10,
+ "s_per_img_mean": 0.2187014268967323,
+ "s_per_img_std": 0.0006601535716093757,
+ "s_per_img_median": 0.21852574445074424,
+ "img_per_s": 4.572443875604825,
+ "peak_mem_gb": 6.368228435516357,
+ "params_total_M": 1299.445747,
+ "params_in_checkpoint_M": 9.50516,
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "torch": "2.9.1+cu129",
+ "trained_params_M": 9.50516,
+ "trained_params_note": "LoRA + skip convs + U-Net conv_in stored in one per-category checkpoint"
+}

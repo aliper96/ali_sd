@@ -1,0 +1,71 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/cable/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/catcolor_heldout_cable",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "test",
+ "n_syn": 28,
+ "n_test_real": 28,
+ "chance": 0.125,
+ "ceiling": 0.8214285714285714,
+ "fidelity": 0.7857142857142857,
+ "follows_mask": 0.7857142857142857,
+ "per_category": {
+  "cable": {
+   "types": [
+    "bent_wire",
+    "cable_swap",
+    "combined",
+    "cut_inner_insulation",
+    "cut_outer_insulation",
+    "missing_cable",
+    "missing_wire",
+    "poke_insulation"
+   ],
+   "n_syn": 28,
+   "n_test": 28,
+   "chance": 0.125,
+   "ceiling": 0.8214285714285714,
+   "fidelity": 0.7857142857142857,
+   "follows_mask": 0.7857142857142857
+  }
+ },
+ "disagreements": [
+  {
+   "name": "cable_cut_inner_insulation_011.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_wire_003.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_wire_004.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_wire_009.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "cable_swap"
+  },
+  {
+   "name": "cable_poke_insulation_001.png",
+   "category": "cable",
+   "requested": "poke_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_poke_insulation_007.png",
+   "category": "cable",
+   "requested": "poke_insulation",
+   "judged": "cut_outer_insulation"
+  }
+ ]
+}

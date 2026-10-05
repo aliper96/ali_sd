@@ -1,0 +1,2053 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_splits_all/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/allcolor_swap_split_0",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 369,
+ "n_test_real": 369,
+ "chance": 0.19720609110853016,
+ "ceiling": 0.7886178861788617,
+ "fidelity": 0.17615176151761516,
+ "follows_mask": 0.3956639566395664,
+ "per_category": {
+  "bottle": {
+   "types": [
+    "broken_large",
+    "broken_small",
+    "contamination"
+   ],
+   "n_syn": 19,
+   "n_test": 19,
+   "chance": 0.3333333333333333,
+   "ceiling": 0.8421052631578947,
+   "fidelity": 0.2631578947368421,
+   "follows_mask": 0.5263157894736842
+  },
+  "cable": {
+   "types": [
+    "bent_wire",
+    "cable_swap",
+    "combined",
+    "cut_inner_insulation",
+    "cut_outer_insulation",
+    "missing_cable",
+    "missing_wire",
+    "poke_insulation"
+   ],
+   "n_syn": 28,
+   "n_test": 28,
+   "chance": 0.125,
+   "ceiling": 0.8928571428571429,
+   "fidelity": 0.03571428571428571,
+   "follows_mask": 0.35714285714285715
+  },
+  "capsule": {
+   "types": [
+    "crack",
+    "faulty_imprint",
+    "poke",
+    "scratch",
+    "squeeze"
+   ],
+   "n_syn": 33,
+   "n_test": 33,
+   "chance": 0.2,
+   "ceiling": 0.7272727272727273,
+   "fidelity": 0.06060606060606061,
+   "follows_mask": 0.36363636363636365
+  },
+  "carpet": {
+   "types": [
+    "color",
+    "cut",
+    "hole",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 27,
+   "n_test": 27,
+   "chance": 0.2,
+   "ceiling": 0.8888888888888888,
+   "fidelity": 0.1111111111111111,
+   "follows_mask": 0.37037037037037035
+  },
+  "grid": {
+   "types": [
+    "bent",
+    "broken",
+    "glue",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 17,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.5882352941176471,
+   "fidelity": 0.29411764705882354,
+   "follows_mask": 0.23529411764705882
+  },
+  "hazelnut": {
+   "types": [
+    "crack",
+    "cut",
+    "hole",
+    "print"
+   ],
+   "n_syn": 20,
+   "n_test": 20,
+   "chance": 0.25,
+   "ceiling": 0.9,
+   "fidelity": 0.35,
+   "follows_mask": 0.45
+  },
+  "leather": {
+   "types": [
+    "color",
+    "cut",
+    "fold",
+    "glue",
+    "poke"
+   ],
+   "n_syn": 28,
+   "n_test": 28,
+   "chance": 0.2,
+   "ceiling": 1.0,
+   "fidelity": 0.2857142857142857,
+   "follows_mask": 0.39285714285714285
+  },
+  "metal_nut": {
+   "types": [
+    "bent",
+    "color",
+    "flip",
+    "scratch"
+   ],
+   "n_syn": 29,
+   "n_test": 29,
+   "chance": 0.25,
+   "ceiling": 0.7931034482758621,
+   "fidelity": 0.13793103448275862,
+   "follows_mask": 0.6551724137931034
+  },
+  "pill": {
+   "types": [
+    "color",
+    "combined",
+    "contamination",
+    "crack",
+    "faulty_imprint",
+    "pill_type",
+    "scratch"
+   ],
+   "n_syn": 43,
+   "n_test": 43,
+   "chance": 0.14285714285714285,
+   "ceiling": 0.6976744186046512,
+   "fidelity": 0.09302325581395349,
+   "follows_mask": 0.32558139534883723
+  },
+  "screw": {
+   "types": [
+    "manipulated_front",
+    "scratch_head",
+    "scratch_neck",
+    "thread_side",
+    "thread_top"
+   ],
+   "n_syn": 36,
+   "n_test": 36,
+   "chance": 0.2,
+   "ceiling": 0.8333333333333334,
+   "fidelity": 0.2777777777777778,
+   "follows_mask": 0.4166666666666667
+  },
+  "tile": {
+   "types": [
+    "crack",
+    "glue_strip",
+    "gray_stroke",
+    "oil",
+    "rough"
+   ],
+   "n_syn": 24,
+   "n_test": 24,
+   "chance": 0.2,
+   "ceiling": 0.9166666666666666,
+   "fidelity": 0.125,
+   "follows_mask": 0.4166666666666667
+  },
+  "transistor": {
+   "types": [
+    "bent_lead",
+    "cut_lead",
+    "damaged_case",
+    "misplaced"
+   ],
+   "n_syn": 12,
+   "n_test": 12,
+   "chance": 0.25,
+   "ceiling": 0.8333333333333334,
+   "fidelity": 0.25,
+   "follows_mask": 0.4166666666666667
+  },
+  "wood": {
+   "types": [
+    "color",
+    "combined",
+    "hole",
+    "liquid",
+    "scratch"
+   ],
+   "n_syn": 17,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.7058823529411765,
+   "fidelity": 0.17647058823529413,
+   "follows_mask": 0.4117647058823529
+  },
+  "zipper": {
+   "types": [
+    "broken_teeth",
+    "combined",
+    "fabric_border",
+    "fabric_interior",
+    "rough",
+    "split_teeth",
+    "squeezed_teeth"
+   ],
+   "n_syn": 36,
+   "n_test": 36,
+   "chance": 0.14285714285714285,
+   "ceiling": 0.5277777777777778,
+   "fidelity": 0.19444444444444445,
+   "follows_mask": 0.2777777777777778
+  }
+ },
+ "disagreements": [
+  {
+   "name": "bottle_broken_large_000.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_large_001.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_large_016.png",
+   "category": "bottle",
+   "requested": "broken_small",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_small_009.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_small"
+  },
+  {
+   "name": "bottle_broken_small_010.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_small_011.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_small"
+  },
+  {
+   "name": "bottle_broken_small_018.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_large"
+  },
+  {
+   "name": "bottle_broken_small_021.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_small"
+  },
+  {
+   "name": "bottle_contamination_001.png",
+   "category": "bottle",
+   "requested": "broken_large",
+   "judged": "contamination"
+  },
+  {
+   "name": "bottle_contamination_002.png",
+   "category": "bottle",
+   "requested": "broken_large",
+   "judged": "contamination"
+  },
+  {
+   "name": "bottle_contamination_007.png",
+   "category": "bottle",
+   "requested": "broken_large",
+   "judged": "broken_small"
+  },
+  {
+   "name": "bottle_contamination_012.png",
+   "category": "bottle",
+   "requested": "broken_large",
+   "judged": "contamination"
+  },
+  {
+   "name": "bottle_contamination_019.png",
+   "category": "bottle",
+   "requested": "broken_large",
+   "judged": "contamination"
+  },
+  {
+   "name": "bottle_contamination_020.png",
+   "category": "bottle",
+   "requested": "broken_large",
+   "judged": "broken_small"
+  },
+  {
+   "name": "cable_bent_wire_002.png",
+   "category": "cable",
+   "requested": "cable_swap",
+   "judged": "poke_insulation"
+  },
+  {
+   "name": "cable_bent_wire_003.png",
+   "category": "cable",
+   "requested": "cable_swap",
+   "judged": "cut_inner_insulation"
+  },
+  {
+   "name": "cable_bent_wire_008.png",
+   "category": "cable",
+   "requested": "cable_swap",
+   "judged": "missing_cable"
+  },
+  {
+   "name": "cable_bent_wire_010.png",
+   "category": "cable",
+   "requested": "cable_swap",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cable_swap_008.png",
+   "category": "cable",
+   "requested": "combined",
+   "judged": "missing_cable"
+  },
+  {
+   "name": "cable_cable_swap_009.png",
+   "category": "cable",
+   "requested": "combined",
+   "judged": "cut_outer_insulation"
+  },
+  {
+   "name": "cable_cable_swap_011.png",
+   "category": "cable",
+   "requested": "combined",
+   "judged": "cable_swap"
+  },
+  {
+   "name": "cable_combined_002.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_combined_005.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_combined_008.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cut_inner_insulation_007.png",
+   "category": "cable",
+   "requested": "cut_outer_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cut_inner_insulation_009.png",
+   "category": "cable",
+   "requested": "cut_outer_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cut_inner_insulation_010.png",
+   "category": "cable",
+   "requested": "cut_outer_insulation",
+   "judged": "cable_swap"
+  },
+  {
+   "name": "cable_cut_inner_insulation_011.png",
+   "category": "cable",
+   "requested": "cut_outer_insulation",
+   "judged": "cut_inner_insulation"
+  },
+  {
+   "name": "cable_cut_outer_insulation_002.png",
+   "category": "cable",
+   "requested": "missing_cable",
+   "judged": "cut_outer_insulation"
+  },
+  {
+   "name": "cable_cut_outer_insulation_003.png",
+   "category": "cable",
+   "requested": "missing_cable",
+   "judged": "cut_outer_insulation"
+  },
+  {
+   "name": "cable_cut_outer_insulation_005.png",
+   "category": "cable",
+   "requested": "missing_cable",
+   "judged": "cut_outer_insulation"
+  },
+  {
+   "name": "cable_missing_cable_000.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "cable_swap"
+  },
+  {
+   "name": "cable_missing_cable_005.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "cut_outer_insulation"
+  },
+  {
+   "name": "cable_missing_cable_006.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_cable_011.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "cable_swap"
+  },
+  {
+   "name": "cable_missing_wire_003.png",
+   "category": "cable",
+   "requested": "poke_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_wire_004.png",
+   "category": "cable",
+   "requested": "poke_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_wire_009.png",
+   "category": "cable",
+   "requested": "poke_insulation",
+   "judged": "cable_swap"
+  },
+  {
+   "name": "cable_poke_insulation_001.png",
+   "category": "cable",
+   "requested": "bent_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_poke_insulation_006.png",
+   "category": "cable",
+   "requested": "bent_wire",
+   "judged": "poke_insulation"
+  },
+  {
+   "name": "cable_poke_insulation_007.png",
+   "category": "cable",
+   "requested": "bent_wire",
+   "judged": "poke_insulation"
+  },
+  {
+   "name": "capsule_crack_001.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "squeeze"
+  },
+  {
+   "name": "capsule_crack_002.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_crack_003.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_crack_004.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_crack_012.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_crack_020.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_crack_022.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_faulty_imprint_001.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_faulty_imprint_004.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_faulty_imprint_008.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_faulty_imprint_011.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "capsule_faulty_imprint_017.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_000.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_008.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_009.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_011.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_014.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_016.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_scratch_000.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_scratch_002.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_scratch_003.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_scratch_006.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_scratch_009.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_scratch_016.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_scratch_019.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_squeeze_002.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "squeeze"
+  },
+  {
+   "name": "capsule_squeeze_005.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_squeeze_008.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "squeeze"
+  },
+  {
+   "name": "capsule_squeeze_009.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_squeeze_014.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "squeeze"
+  },
+  {
+   "name": "capsule_squeeze_015.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "squeeze"
+  },
+  {
+   "name": "carpet_color_005.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_color_007.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_color_008.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_color_013.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_cut_004.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_cut_007.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_cut_009.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_cut_012.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_cut_016.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_000.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_hole_003.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_hole_006.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_hole_007.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_hole_015.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_metal_contamination_006.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "carpet_metal_contamination_009.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "carpet_metal_contamination_012.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "carpet_metal_contamination_013.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_metal_contamination_014.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_thread_000.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_thread_002.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "carpet_thread_006.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_thread_007.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_thread_017.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_004.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_005.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_010.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_bent_011.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_001.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_broken_004.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_009.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_011.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_glue_006.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_metal_contamination_009.png",
+   "category": "grid",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_thread_000.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_thread_001.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "hazelnut_crack_000.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_crack_009.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_crack_011.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_cut_002.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_cut_012.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "print"
+  },
+  {
+   "name": "hazelnut_cut_015.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_cut_016.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "print"
+  },
+  {
+   "name": "hazelnut_hole_001.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_hole_004.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_hole_005.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_hole_009.png",
+   "category": "hazelnut",
+   "requested": "print",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_print_006.png",
+   "category": "hazelnut",
+   "requested": "crack",
+   "judged": "print"
+  },
+  {
+   "name": "hazelnut_print_016.png",
+   "category": "hazelnut",
+   "requested": "crack",
+   "judged": "print"
+  },
+  {
+   "name": "leather_color_006.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "poke"
+  },
+  {
+   "name": "leather_color_008.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "poke"
+  },
+  {
+   "name": "leather_color_010.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "leather_color_012.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "leather_color_018.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_001.png",
+   "category": "leather",
+   "requested": "fold",
+   "judged": "cut"
+  },
+  {
+   "name": "leather_cut_005.png",
+   "category": "leather",
+   "requested": "fold",
+   "judged": "cut"
+  },
+  {
+   "name": "leather_cut_008.png",
+   "category": "leather",
+   "requested": "fold",
+   "judged": "cut"
+  },
+  {
+   "name": "leather_cut_013.png",
+   "category": "leather",
+   "requested": "fold",
+   "judged": "cut"
+  },
+  {
+   "name": "leather_fold_000.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "cut"
+  },
+  {
+   "name": "leather_fold_007.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_fold_009.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_fold_012.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_fold_015.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_001.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_008.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_012.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "color"
+  },
+  {
+   "name": "leather_glue_013.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "color"
+  },
+  {
+   "name": "leather_poke_001.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_017.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "poke"
+  },
+  {
+   "name": "metal_nut_bent_004.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_bent_007.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_bent_010.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_bent_012.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_bent_017.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_bent_018.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_bent_024.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_001.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "color"
+  },
+  {
+   "name": "metal_nut_color_002.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_003.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_008.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_012.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "bent"
+  },
+  {
+   "name": "metal_nut_color_017.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "color"
+  },
+  {
+   "name": "metal_nut_color_021.png",
+   "category": "metal_nut",
+   "requested": "flip",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_flip_000.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_005.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_008.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_009.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_010.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_013.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_flip_021.png",
+   "category": "metal_nut",
+   "requested": "scratch",
+   "judged": "flip"
+  },
+  {
+   "name": "metal_nut_scratch_005.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_scratch_009.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_scratch_013.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_scratch_021.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_color_004.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_color_008.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_color_009.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_color_012.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_color_013.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_color_015.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_color_022.png",
+   "category": "pill",
+   "requested": "combined",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_combined_000.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_combined_005.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_combined_007.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_combined_008.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_combined_011.png",
+   "category": "pill",
+   "requested": "contamination",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_contamination_000.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_contamination_015.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_contamination_016.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "pill_contamination_017.png",
+   "category": "pill",
+   "requested": "crack",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_crack_000.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_crack_001.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_crack_003.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_crack_006.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_crack_009.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_crack_013.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "color"
+  },
+  {
+   "name": "pill_crack_018.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_crack_019.png",
+   "category": "pill",
+   "requested": "faulty_imprint",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_faulty_imprint_000.png",
+   "category": "pill",
+   "requested": "pill_type",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_faulty_imprint_001.png",
+   "category": "pill",
+   "requested": "pill_type",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_faulty_imprint_003.png",
+   "category": "pill",
+   "requested": "pill_type",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_faulty_imprint_008.png",
+   "category": "pill",
+   "requested": "pill_type",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_faulty_imprint_013.png",
+   "category": "pill",
+   "requested": "pill_type",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_faulty_imprint_016.png",
+   "category": "pill",
+   "requested": "pill_type",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_pill_type_002.png",
+   "category": "pill",
+   "requested": "scratch",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_pill_type_003.png",
+   "category": "pill",
+   "requested": "scratch",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_pill_type_004.png",
+   "category": "pill",
+   "requested": "scratch",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_scratch_000.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "pill_scratch_003.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_scratch_009.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "combined"
+  },
+  {
+   "name": "pill_scratch_013.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "crack"
+  },
+  {
+   "name": "pill_scratch_017.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "contamination"
+  },
+  {
+   "name": "pill_scratch_018.png",
+   "category": "pill",
+   "requested": "color",
+   "judged": "combined"
+  },
+  {
+   "name": "screw_manipulated_front_003.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "manipulated_front"
+  },
+  {
+   "name": "screw_manipulated_front_005.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_manipulated_front_012.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_013.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_manipulated_front_019.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "manipulated_front"
+  },
+  {
+   "name": "screw_manipulated_front_021.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_manipulated_front_023.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "manipulated_front"
+  },
+  {
+   "name": "screw_scratch_neck_002.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_neck_008.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_neck_014.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_neck_016.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_neck_017.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_neck_020.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_neck_022.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_thread_side_000.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_side_009.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_side_011.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_thread_side_012.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_side_017.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_000.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_thread_top_001.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_004.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_thread_top_009.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_014.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_thread_top_016.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_022.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "tile_crack_000.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_001.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_002.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_007.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_crack_012.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_glue_strip_001.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_glue_strip_004.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_glue_strip_005.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_glue_strip_014.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_gray_stroke_000.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_gray_stroke_005.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_009.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_gray_stroke_010.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_gray_stroke_011.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_oil_004.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_oil_007.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_oil_009.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "gray_stroke"
+  },
+  {
+   "name": "tile_oil_012.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_oil_017.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_rough_000.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_013.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "rough"
+  },
+  {
+   "name": "transistor_bent_lead_006.png",
+   "category": "transistor",
+   "requested": "cut_lead",
+   "judged": "bent_lead"
+  },
+  {
+   "name": "transistor_cut_lead_005.png",
+   "category": "transistor",
+   "requested": "damaged_case",
+   "judged": "bent_lead"
+  },
+  {
+   "name": "transistor_cut_lead_006.png",
+   "category": "transistor",
+   "requested": "damaged_case",
+   "judged": "bent_lead"
+  },
+  {
+   "name": "transistor_cut_lead_008.png",
+   "category": "transistor",
+   "requested": "damaged_case",
+   "judged": "bent_lead"
+  },
+  {
+   "name": "transistor_damaged_case_003.png",
+   "category": "transistor",
+   "requested": "misplaced",
+   "judged": "cut_lead"
+  },
+  {
+   "name": "transistor_damaged_case_007.png",
+   "category": "transistor",
+   "requested": "misplaced",
+   "judged": "damaged_case"
+  },
+  {
+   "name": "transistor_misplaced_005.png",
+   "category": "transistor",
+   "requested": "bent_lead",
+   "judged": "misplaced"
+  },
+  {
+   "name": "transistor_misplaced_007.png",
+   "category": "transistor",
+   "requested": "bent_lead",
+   "judged": "misplaced"
+  },
+  {
+   "name": "transistor_misplaced_009.png",
+   "category": "transistor",
+   "requested": "bent_lead",
+   "judged": "misplaced"
+  },
+  {
+   "name": "wood_color_002.png",
+   "category": "wood",
+   "requested": "combined",
+   "judged": "hole"
+  },
+  {
+   "name": "wood_color_007.png",
+   "category": "wood",
+   "requested": "combined",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_combined_003.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_combined_005.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_combined_010.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_hole_002.png",
+   "category": "wood",
+   "requested": "liquid",
+   "judged": "hole"
+  },
+  {
+   "name": "wood_hole_006.png",
+   "category": "wood",
+   "requested": "liquid",
+   "judged": "combined"
+  },
+  {
+   "name": "wood_hole_007.png",
+   "category": "wood",
+   "requested": "liquid",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_003.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_005.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_011.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_012.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_017.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "wood_scratch_018.png",
+   "category": "wood",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "zipper_broken_teeth_002.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_broken_teeth_003.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_broken_teeth_006.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_broken_teeth_009.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_broken_teeth_018.png",
+   "category": "zipper",
+   "requested": "combined",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_combined_004.png",
+   "category": "zipper",
+   "requested": "fabric_border",
+   "judged": "broken_teeth"
+  },
+  {
+   "name": "zipper_combined_005.png",
+   "category": "zipper",
+   "requested": "fabric_border",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_combined_007.png",
+   "category": "zipper",
+   "requested": "fabric_border",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_combined_008.png",
+   "category": "zipper",
+   "requested": "fabric_border",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_combined_014.png",
+   "category": "zipper",
+   "requested": "fabric_border",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_fabric_border_008.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_fabric_border_009.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "fabric_border"
+  },
+  {
+   "name": "zipper_fabric_border_010.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "fabric_border"
+  },
+  {
+   "name": "zipper_fabric_border_014.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "fabric_border"
+  },
+  {
+   "name": "zipper_fabric_border_015.png",
+   "category": "zipper",
+   "requested": "fabric_interior",
+   "judged": "fabric_border"
+  },
+  {
+   "name": "zipper_fabric_interior_004.png",
+   "category": "zipper",
+   "requested": "rough",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_fabric_interior_005.png",
+   "category": "zipper",
+   "requested": "rough",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_fabric_interior_006.png",
+   "category": "zipper",
+   "requested": "rough",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_fabric_interior_009.png",
+   "category": "zipper",
+   "requested": "rough",
+   "judged": "combined"
+  },
+  {
+   "name": "zipper_rough_005.png",
+   "category": "zipper",
+   "requested": "split_teeth",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_rough_010.png",
+   "category": "zipper",
+   "requested": "split_teeth",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_rough_016.png",
+   "category": "zipper",
+   "requested": "split_teeth",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_split_teeth_003.png",
+   "category": "zipper",
+   "requested": "squeezed_teeth",
+   "judged": "split_teeth"
+  },
+  {
+   "name": "zipper_split_teeth_005.png",
+   "category": "zipper",
+   "requested": "squeezed_teeth",
+   "judged": "broken_teeth"
+  },
+  {
+   "name": "zipper_split_teeth_015.png",
+   "category": "zipper",
+   "requested": "squeezed_teeth",
+   "judged": "rough"
+  },
+  {
+   "name": "zipper_squeezed_teeth_003.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_squeezed_teeth_008.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_squeezed_teeth_012.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "squeezed_teeth"
+  },
+  {
+   "name": "zipper_squeezed_teeth_014.png",
+   "category": "zipper",
+   "requested": "broken_teeth",
+   "judged": "rough"
+  }
+ ]
+}

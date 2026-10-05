@@ -1,0 +1,38 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_3",
+ "syn": "/home/aliha/t23/judge_syn/colorfix_heldout_split_3",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 24,
+ "n_test_real": 24,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.9583333333333334,
+ "follows_mask": 0.9583333333333334,
+ "per_category": {
+  "tile": {
+   "types": [
+    "crack",
+    "glue_strip",
+    "gray_stroke",
+    "oil",
+    "rough"
+   ],
+   "n_syn": 24,
+   "n_test": 24,
+   "chance": 0.2,
+   "ceiling": 0.9583333333333334,
+   "fidelity": 0.9583333333333334,
+   "follows_mask": 0.9583333333333334
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_crack_004.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "rough"
+  }
+ ]
+}

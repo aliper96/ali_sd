@@ -1,0 +1,89 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/cable/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/ad_heldout_cable",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 28,
+ "n_test_real": 28,
+ "chance": 0.125,
+ "ceiling": 0.8928571428571429,
+ "fidelity": 0.6785714285714286,
+ "follows_mask": 0.6785714285714286,
+ "per_category": {
+  "cable": {
+   "types": [
+    "bent_wire",
+    "cable_swap",
+    "combined",
+    "cut_inner_insulation",
+    "cut_outer_insulation",
+    "missing_cable",
+    "missing_wire",
+    "poke_insulation"
+   ],
+   "n_syn": 28,
+   "n_test": 28,
+   "chance": 0.125,
+   "ceiling": 0.8928571428571429,
+   "fidelity": 0.6785714285714286,
+   "follows_mask": 0.6785714285714286
+  }
+ },
+ "disagreements": [
+  {
+   "name": "cable_bent_wire_008.png",
+   "category": "cable",
+   "requested": "bent_wire",
+   "judged": "cable_swap"
+  },
+  {
+   "name": "cable_bent_wire_010.png",
+   "category": "cable",
+   "requested": "bent_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_combined_005.png",
+   "category": "cable",
+   "requested": "combined",
+   "judged": "missing_cable"
+  },
+  {
+   "name": "cable_cut_inner_insulation_007.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cut_inner_insulation_009.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cut_inner_insulation_010.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "cut_outer_insulation"
+  },
+  {
+   "name": "cable_missing_wire_003.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_wire_004.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_poke_insulation_001.png",
+   "category": "cable",
+   "requested": "poke_insulation",
+   "judged": "combined"
+  }
+ ]
+}

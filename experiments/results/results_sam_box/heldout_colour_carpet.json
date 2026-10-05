@@ -1,0 +1,224 @@
+{
+ "split": "D:/ad/aliaug_cat/carpet/split_0",
+ "fold": "test",
+ "images": "D:/ad/ours_heldout/catcolor_heldout_carpet",
+ "accept": 0.25,
+ "records": [
+  {
+   "name": "carpet_color_002.png",
+   "iou": 0.627245662662971,
+   "score": 0.9548988938331604,
+   "area_ratio": 1.5112484157160964,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_color_005.png",
+   "iou": 0.7714072970960536,
+   "score": 0.9651139378547668,
+   "area_ratio": 1.2207701283547259,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_color_007.png",
+   "iou": 0.7917244110077213,
+   "score": 0.938643217086792,
+   "area_ratio": 1.1987366375121478,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_color_008.png",
+   "iou": 0.8461042103565091,
+   "score": 0.9653106331825256,
+   "area_ratio": 1.089592209373098,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_color_011.png",
+   "iou": 0.5077844311377245,
+   "score": 0.9308459162712097,
+   "area_ratio": 1.7579408543263966,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_color_013.png",
+   "iou": 0.3942006269592476,
+   "score": 0.7559346556663513,
+   "area_ratio": 2.309767441860465,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_cut_004.png",
+   "iou": 0.29314888010540185,
+   "score": 0.8267237544059753,
+   "area_ratio": 0.6481947942905122,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_cut_007.png",
+   "iou": 0.6117832719621252,
+   "score": 0.9347281455993652,
+   "area_ratio": 0.8817336374802597,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_cut_009.png",
+   "iou": 0.813130091136382,
+   "score": 0.9232868552207947,
+   "area_ratio": 1.1402322924600152,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_cut_012.png",
+   "iou": 0.8368774351030371,
+   "score": 0.8968769907951355,
+   "area_ratio": 1.0484217138669318,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_cut_016.png",
+   "iou": 0.8181475335646402,
+   "score": 0.9047419428825378,
+   "area_ratio": 1.180461329715061,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_hole_000.png",
+   "iou": 0.8418604651162791,
+   "score": 0.9555912613868713,
+   "area_ratio": 1.1667203089797231,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_hole_003.png",
+   "iou": 0.8112731659173155,
+   "score": 0.9700673818588257,
+   "area_ratio": 1.22002688172043,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_hole_006.png",
+   "iou": 0.8334644342060906,
+   "score": 0.9705276489257812,
+   "area_ratio": 1.1865451621549183,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_hole_007.png",
+   "iou": 0.8662561824972241,
+   "score": 0.9639484286308289,
+   "area_ratio": 1.1246839806940934,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_hole_015.png",
+   "iou": 0.7793611793611793,
+   "score": 0.9428161382675171,
+   "area_ratio": 1.1819825248568847,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_metal_contamination_006.png",
+   "iou": 0.7055555555555556,
+   "score": 0.9710248112678528,
+   "area_ratio": 1.369639794168096,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_metal_contamination_009.png",
+   "iou": 0.607471575527883,
+   "score": 0.9710116982460022,
+   "area_ratio": 1.5419520547945205,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_metal_contamination_012.png",
+   "iou": 0.7753001715265866,
+   "score": 0.9739131927490234,
+   "area_ratio": 1.1720881427072403,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_metal_contamination_013.png",
+   "iou": 0.7178030303030303,
+   "score": 0.9678022861480713,
+   "area_ratio": 1.3078880407124682,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_metal_contamination_014.png",
+   "iou": 0.5558002936857562,
+   "score": 0.9689388871192932,
+   "area_ratio": 1.7844940867279895,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_thread_000.png",
+   "iou": 0.7311977715877437,
+   "score": 0.9641919136047363,
+   "area_ratio": 1.2039007092198581,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_thread_002.png",
+   "iou": 0.8456742010911925,
+   "score": 0.9371106028556824,
+   "area_ratio": 1.0466724286949005,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_thread_006.png",
+   "iou": 0.7995773159563226,
+   "score": 0.9633579254150391,
+   "area_ratio": 0.9049217002237137,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_thread_007.png",
+   "iou": 0.5428000998253057,
+   "score": 0.9258258938789368,
+   "area_ratio": 1.7573595004460303,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_thread_012.png",
+   "iou": 0.7070389303971687,
+   "score": 0.9591758847236633,
+   "area_ratio": 1.3688949522510232,
+   "n_inst": 1,
+   "accepted": true
+  },
+  {
+   "name": "carpet_thread_017.png",
+   "iou": 0.8328141225337488,
+   "score": 0.9558832049369812,
+   "area_ratio": 0.9883589936162223,
+   "n_inst": 1,
+   "accepted": true
+  }
+ ]
+}

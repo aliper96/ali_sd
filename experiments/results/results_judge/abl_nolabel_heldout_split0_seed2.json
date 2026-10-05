@@ -1,0 +1,104 @@
+{
+ "split": "/home/aliha/t23/aliaug_splits/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/abl_nolabel_heldout_split_0",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "test",
+ "n_syn": 24,
+ "n_test_real": 24,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.9583333333333334,
+ "fidelity": 0.5,
+ "follows_mask": 0.5,
+ "per_category": {
+  "tile": {
+   "types": [
+    "crack",
+    "glue_strip",
+    "gray_stroke",
+    "oil",
+    "rough"
+   ],
+   "n_syn": 24,
+   "n_test": 24,
+   "chance": 0.2,
+   "ceiling": 0.9583333333333334,
+   "fidelity": 0.5,
+   "follows_mask": 0.5
+  }
+ },
+ "disagreements": [
+  {
+   "name": "tile_crack_015.png",
+   "category": "tile",
+   "requested": "crack",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_glue_strip_007.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_glue_strip_016.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_glue_strip_017.png",
+   "category": "tile",
+   "requested": "glue_strip",
+   "judged": "oil"
+  },
+  {
+   "name": "tile_gray_stroke_008.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_gray_stroke_010.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_gray_stroke_012.png",
+   "category": "tile",
+   "requested": "gray_stroke",
+   "judged": "crack"
+  },
+  {
+   "name": "tile_oil_000.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_oil_009.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "rough"
+  },
+  {
+   "name": "tile_oil_014.png",
+   "category": "tile",
+   "requested": "oil",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_004.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "glue_strip"
+  },
+  {
+   "name": "tile_rough_006.png",
+   "category": "tile",
+   "requested": "rough",
+   "judged": "glue_strip"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "split": "/mnt/scratch/t23/aliaug_cat/grid/split_0",
+ "syn": "/mnt/scratch/t23/judge_syn/ad_heldout_grid",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "test",
+ "n_syn": 17,
+ "n_test_real": 17,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.5294117647058824,
+ "fidelity": 0.29411764705882354,
+ "follows_mask": 0.29411764705882354,
+ "per_category": {
+  "grid": {
+   "types": [
+    "bent",
+    "broken",
+    "glue",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 17,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.5294117647058824,
+   "fidelity": 0.29411764705882354,
+   "follows_mask": 0.29411764705882354
+  }
+ },
+ "disagreements": [
+  {
+   "name": "grid_bent_004.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_005.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_011.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "broken"
+  },
+  {
+   "name": "grid_broken_001.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_broken_004.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_009.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_011.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_glue_003.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_006.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_007.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_thread_000.png",
+   "category": "grid",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_thread_001.png",
+   "category": "grid",
+   "requested": "thread",
+   "judged": "metal_contamination"
+  }
+ ]
+}
