@@ -56,5 +56,6 @@ default; the generators of the paper were trained without it.
 
 ## Licence and data
 
-MVTec-AD is distributed by MVTec under CC BY-NC-SA 4.0 and is not redistributed here. The
+The code is released under the MIT License (see `LICENSE`); the Img2Img-turbo code in `src/` keeps its
+original MIT licence. MVTec-AD is distributed by MVTec under CC BY-NC-SA 4.0 and is not redistributed here. The
 photovoltaic-panel dataset of the paper is industrial data and cannot be shared.
