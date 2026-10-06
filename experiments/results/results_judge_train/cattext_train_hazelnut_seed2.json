@@ -1,0 +1,61 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\hazelnut\\split_0",
+ "syn": "D:\\sam3\\trainpools\\cattext_syn_hazelnut",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "train",
+ "n_syn": 50,
+ "n_test_real": 20,
+ "chance": 0.25,
+ "ceiling": 0.8,
+ "fidelity": 0.9,
+ "follows_mask": 0.9,
+ "per_category": {
+  "hazelnut": {
+   "types": [
+    "crack",
+    "cut",
+    "hole",
+    "print"
+   ],
+   "n_syn": 50,
+   "n_test": 20,
+   "chance": 0.25,
+   "ceiling": 0.8,
+   "fidelity": 0.9,
+   "follows_mask": 0.9
+  }
+ },
+ "disagreements": [
+  {
+   "name": "hazelnut_crack_006.png",
+   "category": "hazelnut",
+   "requested": "crack",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_crack_013.png",
+   "category": "hazelnut",
+   "requested": "crack",
+   "judged": "hole"
+  },
+  {
+   "name": "hazelnut_cut_007.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "print"
+  },
+  {
+   "name": "hazelnut_cut_014.png",
+   "category": "hazelnut",
+   "requested": "cut",
+   "judged": "crack"
+  },
+  {
+   "name": "hazelnut_hole_000.png",
+   "category": "hazelnut",
+   "requested": "hole",
+   "judged": "crack"
+  }
+ ]
+}

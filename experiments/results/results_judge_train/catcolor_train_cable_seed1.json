@@ -1,0 +1,89 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\cable\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_cable",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "train",
+ "n_syn": 64,
+ "n_test_real": 28,
+ "chance": 0.125,
+ "ceiling": 0.8214285714285714,
+ "fidelity": 0.859375,
+ "follows_mask": 0.859375,
+ "per_category": {
+  "cable": {
+   "types": [
+    "bent_wire",
+    "cable_swap",
+    "combined",
+    "cut_inner_insulation",
+    "cut_outer_insulation",
+    "missing_cable",
+    "missing_wire",
+    "poke_insulation"
+   ],
+   "n_syn": 64,
+   "n_test": 28,
+   "chance": 0.125,
+   "ceiling": 0.8214285714285714,
+   "fidelity": 0.859375,
+   "follows_mask": 0.859375
+  }
+ },
+ "disagreements": [
+  {
+   "name": "cable_bent_wire_005.png",
+   "category": "cable",
+   "requested": "bent_wire",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cable_swap_001.png",
+   "category": "cable",
+   "requested": "cable_swap",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cable_swap_004.png",
+   "category": "cable",
+   "requested": "cable_swap",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_cable_swap_006.png",
+   "category": "cable",
+   "requested": "cable_swap",
+   "judged": "poke_insulation"
+  },
+  {
+   "name": "cable_cut_inner_insulation_000.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "cut_outer_insulation"
+  },
+  {
+   "name": "cable_cut_inner_insulation_001.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "bent_wire"
+  },
+  {
+   "name": "cable_cut_inner_insulation_004.png",
+   "category": "cable",
+   "requested": "cut_inner_insulation",
+   "judged": "combined"
+  },
+  {
+   "name": "cable_missing_wire_000.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "missing_cable"
+  },
+  {
+   "name": "cable_missing_wire_001.png",
+   "category": "cable",
+   "requested": "missing_wire",
+   "judged": "poke_insulation"
+  }
+ ]
+}

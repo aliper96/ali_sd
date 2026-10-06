@@ -35,6 +35,7 @@ ap.add_argument("--split", required=True)
 ap.add_argument("--ckpt-dir", required=True)
 ap.add_argument("--out", required=True)
 ap.add_argument("--time", default=None)
+ap.add_argument("--steps", type=int, default=200, help="DDIM steps (AD default 200; review 2026-10-05 asked for fewer)")
 ap.add_argument("--limit", type=int, default=0)
 ap.add_argument("--fold", default="train")
 ap.add_argument("--no-ckpt", action="store_true",
@@ -85,7 +86,7 @@ for b0 in range(0, len(names), B):
     torch.cuda.synchronize()
     t0 = time.perf_counter()
     with torch.no_grad(), model.ema_scope():
-        out = model.log_images(batch, N=B, sample=False, inpaint=True, unconditional_only=True,
+        out = model.log_images(batch, N=B, sample=False, inpaint=True, unconditional_only=True, ddim_steps=a.steps,
                                adaptive_mask=parse(chunk[0])[0] in TEXTURES)
     torch.cuda.synchronize()
     times.append((time.perf_counter() - t0) / B)
@@ -101,8 +102,8 @@ json.dump(labels, open(os.path.join(a.out, "labels.json"), "w", encoding="utf-8"
 print(f"generated {len(used)} images -> {a.out}")
 if a.time:
     t = np.array(times[1:] if len(times) > 2 else times)  # the first batch includes CUDA warm-up
-    res = {"method": "AnomalyDiffusion (official code, DDIM 200)", "untrained_embeddings": a.no_ckpt,
-           "resolution": 256, "batch": B, "steps": 200, "n_batches": int(len(t)),
+    res = {"method": f"AnomalyDiffusion (official code, DDIM {a.steps})", "untrained_embeddings": a.no_ckpt,
+           "resolution": 256, "batch": B, "steps": a.steps, "n_batches": int(len(t)),
            "s_per_img_mean": float(t.mean()), "s_per_img_std": float(t.std()),
            "s_per_img_median": float(np.median(t)), "img_per_s": float(1 / t.mean()),
            "peak_mem_gb": torch.cuda.max_memory_allocated() / 2**30,

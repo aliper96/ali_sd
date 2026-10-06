@@ -1,0 +1,176 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\capsule\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_capsule",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "train",
+ "n_syn": 76,
+ "n_test_real": 33,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.8181818181818182,
+ "fidelity": 0.6842105263157895,
+ "follows_mask": 0.6842105263157895,
+ "per_category": {
+  "capsule": {
+   "types": [
+    "crack",
+    "faulty_imprint",
+    "poke",
+    "scratch",
+    "squeeze"
+   ],
+   "n_syn": 76,
+   "n_test": 33,
+   "chance": 0.2,
+   "ceiling": 0.8181818181818182,
+   "fidelity": 0.6842105263157895,
+   "follows_mask": 0.6842105263157895
+  }
+ },
+ "disagreements": [
+  {
+   "name": "capsule_crack_007.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "squeeze"
+  },
+  {
+   "name": "capsule_crack_008.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "poke"
+  },
+  {
+   "name": "capsule_crack_014.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "poke"
+  },
+  {
+   "name": "capsule_crack_017.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "capsule_crack_019.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_crack_021.png",
+   "category": "capsule",
+   "requested": "crack",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "capsule_faulty_imprint_003.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_faulty_imprint_005.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_faulty_imprint_010.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_faulty_imprint_013.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "poke"
+  },
+  {
+   "name": "capsule_faulty_imprint_019.png",
+   "category": "capsule",
+   "requested": "faulty_imprint",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_004.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "capsule_poke_006.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_007.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_poke_015.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_poke_017.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "capsule_poke_018.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "capsule_poke_020.png",
+   "category": "capsule",
+   "requested": "poke",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_scratch_005.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_scratch_014.png",
+   "category": "capsule",
+   "requested": "scratch",
+   "judged": "crack"
+  },
+  {
+   "name": "capsule_squeeze_003.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_squeeze_010.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "faulty_imprint"
+  },
+  {
+   "name": "capsule_squeeze_013.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "scratch"
+  },
+  {
+   "name": "capsule_squeeze_019.png",
+   "category": "capsule",
+   "requested": "squeeze",
+   "judged": "faulty_imprint"
+  }
+ ]
+}

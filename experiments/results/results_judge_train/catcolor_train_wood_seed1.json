@@ -1,0 +1,50 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\wood\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_wood",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "train",
+ "n_syn": 43,
+ "n_test_real": 17,
+ "chance": 0.19999999999999998,
+ "ceiling": 0.8235294117647058,
+ "fidelity": 0.9302325581395349,
+ "follows_mask": 0.9302325581395349,
+ "per_category": {
+  "wood": {
+   "types": [
+    "color",
+    "combined",
+    "hole",
+    "liquid",
+    "scratch"
+   ],
+   "n_syn": 43,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.8235294117647058,
+   "fidelity": 0.9302325581395349,
+   "follows_mask": 0.9302325581395349
+  }
+ },
+ "disagreements": [
+  {
+   "name": "wood_combined_001.png",
+   "category": "wood",
+   "requested": "combined",
+   "judged": "hole"
+  },
+  {
+   "name": "wood_combined_002.png",
+   "category": "wood",
+   "requested": "combined",
+   "judged": "hole"
+  },
+  {
+   "name": "wood_hole_005.png",
+   "category": "wood",
+   "requested": "hole",
+   "judged": "scratch"
+  }
+ ]
+}

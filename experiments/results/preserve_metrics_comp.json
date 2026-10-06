@@ -1,0 +1,488 @@
+{
+ "512": {
+  "per_category": {
+   "bottle": {
+    "AnomalyDiffusion": {
+     "psnr_out": 32.73339847410773,
+     "mae_out": 3.6911506276381645,
+     "sharp": 0.24213076884776952
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.1308036086791,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.1308036086791,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "cable": {
+    "AnomalyDiffusion": {
+     "psnr_out": 25.36003298531787,
+     "mae_out": 7.661194171224322,
+     "sharp": 0.28019269011741926
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "capsule": {
+    "AnomalyDiffusion": {
+     "psnr_out": 35.27745160471209,
+     "mae_out": 3.4516378243764243,
+     "sharp": 0.19506145899279623
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "carpet": {
+    "AnomalyDiffusion": {
+     "psnr_out": 18.900567341010436,
+     "mae_out": 22.944672337284796,
+     "sharp": 0.2512107072660314
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "grid": {
+    "AnomalyDiffusion": {
+     "psnr_out": 21.921152005639822,
+     "mae_out": 17.576852798461914,
+     "sharp": 1.9468073178498975
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "hazelnut": {
+    "AnomalyDiffusion": {
+     "psnr_out": 35.758993551796586,
+     "mae_out": 2.7521631717681885,
+     "sharp": 0.19514056113692077
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "leather": {
+    "AnomalyDiffusion": {
+     "psnr_out": 27.833122011063363,
+     "mae_out": 7.849129302161081,
+     "sharp": 0.2278802425382512
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "metal_nut": {
+    "AnomalyDiffusion": {
+     "psnr_out": 32.71310226449236,
+     "mae_out": 4.107607319437224,
+     "sharp": 0.33315759859963284
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867916,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867916,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "pill": {
+    "AnomalyDiffusion": {
+     "psnr_out": 37.36195302279031,
+     "mae_out": 2.5686915863391966,
+     "sharp": 0.41488350288066483
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867913,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867913,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "screw": {
+    "AnomalyDiffusion": {
+     "psnr_out": 34.27129734483904,
+     "mae_out": 3.2795405321651034,
+     "sharp": 0.19302943808146583
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "transistor": {
+    "AnomalyDiffusion": {
+     "psnr_out": 32.12428978694424,
+     "mae_out": 3.9645885229110718,
+     "sharp": 0.35771291906845853
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "wood": {
+    "AnomalyDiffusion": {
+     "psnr_out": 29.881720019015297,
+     "mae_out": 6.343874538646025,
+     "sharp": 0.16556297795965963
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "zipper": {
+    "AnomalyDiffusion": {
+     "psnr_out": 26.586903466760113,
+     "mae_out": 8.127012915081448,
+     "sharp": 0.2129555851209991
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   }
+  },
+  "mean_over_categories": {
+   "AnomalyDiffusion": {
+    "psnr_out": 30.055691067576102,
+    "mae_out": 7.255239665191921,
+    "sharp": 0.385825059112305
+   },
+   "Ali-AUG text": {
+    "psnr_out": 108.13080360867912,
+    "mae_out": 0.0,
+    "sharp": 1.0
+   },
+   "Ali-AUG colour": {
+    "psnr_out": 108.13080360867912,
+    "mae_out": 0.0,
+    "sharp": 1.0
+   }
+  },
+  "n_categories": 13
+ },
+ "256": {
+  "per_category": {
+   "bottle": {
+    "AnomalyDiffusion": {
+     "psnr_out": 33.66904665206055,
+     "mae_out": 3.3961272114201595,
+     "sharp": 0.6327503120473902
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.1308036086791,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.1308036086791,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "cable": {
+    "AnomalyDiffusion": {
+     "psnr_out": 25.982182200599585,
+     "mae_out": 7.269751191139221,
+     "sharp": 0.5575084414038366
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "capsule": {
+    "AnomalyDiffusion": {
+     "psnr_out": 36.031786994876484,
+     "mae_out": 3.218939846212214,
+     "sharp": 0.5356115532787354
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "carpet": {
+    "AnomalyDiffusion": {
+     "psnr_out": 19.69858156311136,
+     "mae_out": 20.89503825152362,
+     "sharp": 0.6486612256720833
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "grid": {
+    "AnomalyDiffusion": {
+     "psnr_out": 22.386477087321712,
+     "mae_out": 16.933869137483484,
+     "sharp": 2.3247146799264904
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "hazelnut": {
+    "AnomalyDiffusion": {
+     "psnr_out": 36.41758229286974,
+     "mae_out": 2.572119289636612,
+     "sharp": 0.5036873979370349
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "leather": {
+    "AnomalyDiffusion": {
+     "psnr_out": 28.774274571910432,
+     "mae_out": 7.08985710144043,
+     "sharp": 0.47153457619574557
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "metal_nut": {
+    "AnomalyDiffusion": {
+     "psnr_out": 33.41098257146618,
+     "mae_out": 3.801834801147724,
+     "sharp": 0.6539543094808259
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867916,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867916,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "pill": {
+    "AnomalyDiffusion": {
+     "psnr_out": 37.91858421129925,
+     "mae_out": 2.4439832554307093,
+     "sharp": 0.7818273587475523
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867913,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867913,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "screw": {
+    "AnomalyDiffusion": {
+     "psnr_out": 34.93819984817006,
+     "mae_out": 3.1177545388539634,
+     "sharp": 0.5552219310548373
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "transistor": {
+    "AnomalyDiffusion": {
+     "psnr_out": 32.891471084215645,
+     "mae_out": 3.7277020812034607,
+     "sharp": 0.6804628225544748
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "wood": {
+    "AnomalyDiffusion": {
+     "psnr_out": 31.0723706770796,
+     "mae_out": 5.531614219441133,
+     "sharp": 0.5435849605823747
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867912,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   },
+   "zipper": {
+    "AnomalyDiffusion": {
+     "psnr_out": 27.662877122809675,
+     "mae_out": 7.202872978316413,
+     "sharp": 0.5475670408006091
+    },
+    "Ali-AUG text": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    },
+    "Ali-AUG colour": {
+     "psnr_out": 108.13080360867914,
+     "mae_out": 0.0,
+     "sharp": 1.0
+    }
+   }
+  },
+  "mean_over_categories": {
+   "AnomalyDiffusion": {
+    "psnr_out": 30.834955144445402,
+    "mae_out": 6.707804915634549,
+    "sharp": 0.7259297392063071
+   },
+   "Ali-AUG text": {
+    "psnr_out": 108.13080360867912,
+    "mae_out": 0.0,
+    "sharp": 1.0
+   },
+   "Ali-AUG colour": {
+    "psnr_out": 108.13080360867912,
+    "mae_out": 0.0,
+    "sharp": 1.0
+   }
+  },
+  "n_categories": 13
+ }
+}

@@ -1,0 +1,44 @@
+\begin{table}[ht]\centering\footnotesize
+\caption{\textit{Tile}, Text prompt, requested class = class of the mask (15 judge runs). Rows: requested type; columns: type assigned by the judge; counts pooled over splits and judge seeds.}
+\label{tab:conf_textfix_heldout}
+\begin{tabular}{@{}lccccc@{}}\toprule
+requested $\downarrow$ / judged & crack & glue\_strip & gray\_stroke & oil & rough \\\midrule
+crack & \textbf{40} & 1 & -- & -- & 4 \\
+glue\_strip & 2 & \textbf{20} & 19 & 3 & 1 \\
+gray\_stroke & -- & 4 & \textbf{33} & -- & 8 \\
+oil & 2 & 9 & 1 & \textbf{33} & -- \\
+rough & 4 & 9 & 3 & 1 & \textbf{19} \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[ht]\centering\footnotesize
+\caption{\textit{Tile}, Text prompt, swap test, requested class $\neq$ class of the mask (15 judge runs). Rows: requested type; columns: type assigned by the judge; counts pooled over splits and judge seeds.}
+\label{tab:conf_textfix_swap}
+\begin{tabular}{@{}lccccc@{}}\toprule
+requested $\downarrow$ / judged & crack & glue\_strip & gray\_stroke & oil & rough \\\midrule
+crack & \textbf{4} & 16 & 3 & 1 & 12 \\
+glue\_strip & 40 & \textbf{1} & -- & -- & 4 \\
+gray\_stroke & 1 & 4 & \textbf{29} & 9 & 2 \\
+oil & -- & 4 & 32 & \textbf{1} & 8 \\
+rough & 2 & 12 & 1 & 20 & \textbf{10} \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[ht]\centering\footnotesize
+\caption{\textit{Tile}, Colour-coded mask, requested class = class of the mask (15 judge runs). Rows: requested type; columns: type assigned by the judge; counts pooled over splits and judge seeds.}
+\label{tab:conf_colorfix_heldout}
+\begin{tabular}{@{}lccccc@{}}\toprule
+requested $\downarrow$ / judged & crack & glue\_strip & gray\_stroke & oil & rough \\\midrule
+crack & \textbf{41} & -- & -- & -- & 4 \\
+glue\_strip & -- & \textbf{45} & -- & -- & -- \\
+gray\_stroke & -- & 2 & \textbf{39} & 1 & 3 \\
+oil & -- & -- & 1 & \textbf{44} & -- \\
+rough & 1 & 3 & -- & -- & \textbf{32} \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[ht]\centering\footnotesize
+\caption{\textit{Tile}, Colour-coded mask, swap test, requested class $\neq$ class of the mask (15 judge runs). Rows: requested type; columns: type assigned by the judge; counts pooled over splits and judge seeds.}
+\label{tab:conf_colorfix_swap}
+\begin{tabular}{@{}lccccc@{}}\toprule
+requested $\downarrow$ / judged & crack & glue\_strip & gray\_stroke & oil & rough \\\midrule
+crack & \textbf{4} & 29 & 1 & -- & 2 \\
+glue\_strip & 25 & -- & -- & -- & 20 \\
+gray\_stroke & -- & 3 & \textbf{42} & -- & -- \\
+oil & 2 & 6 & 3 & \textbf{22} & 12 \\
+rough & -- & 3 & -- & 1 & \textbf{41} \\
+\bottomrule\end{tabular}\end{table}

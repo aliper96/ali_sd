@@ -46,7 +46,7 @@ def seeds(sub, cat, proto):
 
 
 def judge(var, mode, cat, key="fidelity"):
-    fs = sorted(glob.glob(os.path.join(a.live, "results_judge", f"{var}_{mode}_{cat}_seed*.json")))
+    fs = sorted(glob.glob(os.path.join(a.live, "results_judge_train" if mode == "train" else "results_judge", f"{var}_{mode}_{cat}_seed*.json")))
     if not fs:
         return None
     js = [json.load(open(f)) for f in fs]
@@ -170,6 +170,7 @@ for c in jcats:
     L.append(f"{lab(c)} & {1 / nty:.2f} & " + " & ".join(row) + " \\\\")
 L.append("\\midrule")
 jm = {k: np.mean([jud[c][k].mean() for c in jcats]) for k in jcols}
+N["chance_mean"] = float(np.mean([1 / counts(c)[2] for c in jcats]))  # average uniform-chance rate of the judge categories
 L.append(f"Mean ({len(jcats)} categories) & & " + " & ".join(f"{jm[k]:.3f}" for k in jcols) + " \\\\")
 L.append(f"$p$ colour vs.\\ text (categories / pairs) & & & \\multicolumn{{2}}{{c}}{{{fp(N['fid_c_vs_t']['p_cat'])} / {fp(N['fid_c_vs_t']['p_pairs'])}}} & "
          f"\\multicolumn{{2}}{{c}}{{{fp(N['swap_c_vs_t']['p_cat'])} / {fp(N['swap_c_vs_t']['p_pairs'])}}} \\\\")
@@ -181,9 +182,13 @@ L = ["\\begin{tabular}{@{}l c c c c c c l@{}}", "\\toprule",
      "Generator & Steps & Resolution & Batch & s / image & Images / s & Peak memory & Trained parameters \\\\",
      "\\midrule"]
 tim = {}
+mac_ad50 = None
 TGPU = a.gpu
 for f in sorted(glob.glob(os.path.join(a.live, "results_timing", f"*_{TGPU}.json"))):
     t = json.load(open(f))
+    if os.path.basename(f).startswith("ad50"):  # AD at 50 DDIM steps (review 2026-10-05): macro only
+        mac_ad50 = t["s_per_img_mean"]
+        continue
     ours = t["method"].startswith("Ali-AUG")
     name = "Ali-AUG (ours)" if ours else "AnomalyDiffusion~\\cite{hu2024anomalydiffusionfewshotanomalyimage}"
     scope = "per category" if ours else "one model, all categories"
@@ -268,18 +273,33 @@ if os.path.exists(ovl_f) and os.path.isdir(os.path.join(a.live, "results_ad")):
     sharp = lambda m, cs: np.mean([pm["per_category"][c][m]["sharp"] for c in cs])
     meth = [("AnomalyDiffusion", "fid_ad", "ad_cas", "AnomalyDiffusion"), ("Ali-AUG text", "fid_t", "cas_t", "Ali-AUG text"),
             ("Ali-AUG colour", "fid_c", "cas_c", "Ali-AUG colour")]
-    L = ["\\begin{tabular}{@{}l c c c c c c@{}}", "\\toprule",
-         " & Label fidelity & CAS & \\multicolumn{2}{c}{LPIPS outside mask $\\downarrow$} & \\multicolumn{2}{c}{Sharpness outside mask} \\\\",
-         "\\cmidrule(lr){4-5}\\cmidrule(lr){6-7}",
-         "Generator & ($%d$ cat.) & ($%d$ cat.) & objects & textures & objects & textures \\\\" % (len(ajcats), len(acats)),
+    icf = os.path.join(a.live, "ic_lpips.json")
+    IC = json.load(open(icf)) if os.path.exists(icf) else None
+    icm = lambda pk: np.mean([IC[c][pk] for c in IC if IC[c].get(pk) is not None]) if IC else None
+    cpl = os.path.join(a.live, "preserve_lpips_comp.json"); cpm = os.path.join(a.live, "preserve_metrics_comp.json")
+    COMP = (json.load(open(cpl)), json.load(open(cpm))["256"]) if os.path.exists(cpl) and os.path.exists(cpm) else None
+    L = ["\\begin{tabular}{@{}l c c c c c c c@{}}", "\\toprule",
+         " & Label fidelity & CAS & IC-LPIPS & \\multicolumn{2}{c}{LPIPS outside mask $\\downarrow$} & \\multicolumn{2}{c}{Sharpness outside mask} \\\\",
+         "\\cmidrule(lr){5-6}\\cmidrule(lr){7-8}",
+         "Generator & ($%d$ cat.) & ($%d$ cat.) & (held-out) & objects & textures & objects & textures \\\\" % (len(ajcats), len(acats)),
          "\\midrule"]
     for name, fk, ck, pk in meth:
         fv = np.mean([jud[c][fk].mean() for c in ajcats])
         cv = np.mean([(full[c]["ad_cas"] if ck == "ad_cas" else det[c][ck]).mean() for c in acats])
-        L.append(f"{name} & {fv:.3f} & {cv:.3f} & {pl['groups']['objects'][pk]:.3f} & {pl['groups']['textures'][pk]:.3f} & "
+        ic = f"{icm(pk):.3f}" if IC else "--"
+        L.append(f"{name} & {fv:.3f} & {cv:.3f} & {ic} & {pl['groups']['objects'][pk]:.3f} & {pl['groups']['textures'][pk]:.3f} & "
                  f"{sharp(pk, obj):.2f} & {sharp(pk, tex):.2f} \\\\")
+    if COMP:
+        cl, cm = COMP
+        csharp = lambda m, cs: np.mean([cm["per_category"][c][m]["sharp"] for c in cs if c in cm["per_category"]])
+        for name, pk in (("Ali-AUG text + compositing", "Ali-AUG text"), ("Ali-AUG colour + compositing", "Ali-AUG colour")):
+            L.append(f"{name} & -- & -- & -- & {cl['groups']['objects'][pk]:.3f} & {cl['groups']['textures'][pk]:.3f} & "
+                     f"{csharp(pk, obj):.2f} & {csharp(pk, tex):.2f} \\\\")
+        AD["comp_lpips"] = cl["groups"]
     L += ["\\bottomrule", "\\end{tabular}"]
     open(os.path.join(a.out, "tab_ad_quality.tex"), "w", encoding="utf-8").write("\n".join(L) + "\n")
+    if IC:
+        AD["ic_lpips"] = {pk: float(icm(pk)) for *_, pk in meth}
     AD["n_obj"], AD["n_tex"] = len(obj), len(tex)
     AD["lpips"] = pl["groups"]
     AD["sharp"] = {pk: {"objects": float(sharp(pk, obj)), "textures": float(sharp(pk, tex))} for *_, pk in meth}
@@ -385,8 +405,103 @@ if os.path.isdir(SB) and os.path.isdir(os.path.join(a.live, "results_samstep_cat
             SAMN["analysis"] = json.load(open(sa))["summary"]
         N["sam"] = SAMN
 
+# ---- fidelity of the synthetic sets actually used for CAS/NAS (training masks; review 2026-10-05)
+TRN = {}
+tr_tab = {}
+for c in jcats:
+    cells = {"train_t": judge("cattext", "train", c), "train_c": judge("catcolor", "train", c),
+             "fid_t": jud[c]["fid_t"], "fid_c": jud[c]["fid_c"]}
+    if all(v is not None and len(v) == 3 for v in cells.values()):
+        tr_tab[c] = cells
+if tr_tab:
+    tcats = list(tr_tab)
+    TRN["n_cat"] = len(tcats)
+    TRN["means"] = {k: float(np.mean([tr_tab[c][k].mean() for c in tcats])) for k in ("train_t", "train_c", "fid_t", "fid_c")}
+    TRN["train_c_vs_t"] = compare("train_t", "train_c", tr_tab, tcats)
+    TRN["train_t_vs_held"] = compare("fid_t", "train_t", tr_tab, tcats)
+    TRN["train_c_vs_held"] = compare("fid_c", "train_c", tr_tab, tcats)
+    L = ["\\begin{tabular}{@{}l c c c c@{}}", "\\toprule",
+         "Category & \\multicolumn{2}{c}{Held-out masks} & \\multicolumn{2}{c}{Training masks (CAS/NAS set)} \\\\",
+         "\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}", " & text & colour & text & colour \\\\", "\\midrule"]
+    for c in tcats:
+        L.append(f"{lab(c)} & " + " & ".join(f"{tr_tab[c][k].mean():.2f}" for k in ("fid_t", "fid_c", "train_t", "train_c")) + " \\\\")
+    L += ["\\midrule", "\\textbf{Mean} & " + " & ".join(f"\\textbf{{{TRN['means'][k]:.3f}}}" for k in ("fid_t", "fid_c", "train_t", "train_c")) + " \\\\",
+          "\\bottomrule", "\\end{tabular}"]
+    open(os.path.join(a.out, "tab_cat_train_fidelity.tex"), "w", encoding="utf-8").write("\n".join(L) + "\n")
+    N["train"] = TRN
+
+# ---- control pools: post-hoc compositing and copy-paste baseline (review 2026-10-05)
+CTRL = {}
+ctl = {}
+for c in CATS:
+    if c not in det:
+        continue
+    cells = dict(det[c])
+    cells.update({"comp_t": seeds("results_catcomp_cattext", c, "NAS"), "comp_c": seeds("results_catcomp_catcolor", c, "NAS"),
+                  "paste": seeds("results_catpaste", c, "NAS")})
+    # AnomalyDiffusion at 200 (results_ad) and 50 DDIM steps (results_cat_ad50), when available
+    ad200, ad50 = seeds("results_ad", c, "NAS"), seeds("results_cat_ad50", c, "NAS")
+    if ad200 is not None and ad50 is not None and len(ad200) == 3 and len(ad50) == 3:
+        cells.update({"ad200": ad200, "ad50": ad50})
+    if all(v is not None and len(v) == 3 for v in cells.values()):
+        ctl[c] = cells
+if ctl:
+    kcats = list(ctl)
+    CTRL["n_cat"] = len(kcats)
+    CTRL["means"] = {k: float(np.mean([ctl[c][k].mean() for c in kcats])) for k in ("real", "nas_t", "nas_c", "comp_t", "comp_c", "paste")}
+    for name, x, y in (("comp_t_vs_nas_t", "nas_t", "comp_t"), ("comp_c_vs_nas_c", "nas_c", "comp_c"), ("paste_vs_real", "real", "paste"),
+                       ("nas_c_vs_paste", "paste", "nas_c"), ("nas_t_vs_paste", "paste", "nas_t"), ("comp_c_vs_paste", "paste", "comp_c")):
+        CTRL[name] = compare(x, y, ctl, kcats)
+    adc = [c for c in kcats if "ad50" in ctl[c]]
+    if adc:
+        CTRL["ad50_n_cat"] = len(adc)
+        CTRL["means"]["ad200"] = float(np.mean([ctl[c]["ad200"].mean() for c in adc]))
+        CTRL["means"]["ad50"] = float(np.mean([ctl[c]["ad50"].mean() for c in adc]))
+        for name, x, y in (("ad50_vs_ad200", "ad200", "ad50"), ("ad50_vs_real", "real", "ad50"), ("nas_c_vs_ad50", "ad50", "nas_c")):
+            CTRL[name] = compare(x, y, ctl, adc)
+        f50 = {c: judge("ad50", "heldout", c) for c in jcats}
+        f50 = {c: v for c, v in f50.items() if v is not None and len(v) == 3}
+        if f50:
+            CTRL["ad50_fid_mean"] = float(np.mean([v.mean() for v in f50.values()]))
+            CTRL["ad50_fid_n"] = len(f50)
+    L = ["\\begin{tabular}{@{}l c c c c c c@{}}", "\\toprule",
+         "Category & Real only & \\multicolumn{2}{c}{Ali-AUG (NAS)} & \\multicolumn{2}{c}{Ali-AUG + compositing} & Copy-paste \\\\",
+         "\\cmidrule(lr){3-4}\\cmidrule(lr){5-6}", " & & text & colour & text & colour & (NAS) \\\\", "\\midrule"]
+    for c in kcats:
+        vals = {k: ctl[c][k].mean() for k in ("real", "nas_t", "nas_c", "comp_t", "comp_c", "paste")}
+        best = max(vals, key=vals.get)
+        L.append(f"{lab(c)} & " + " & ".join((f"\\textbf{{{vals[k]:.3f}}}" if k == best else f"{vals[k]:.3f}") for k in vals) + " \\\\")
+    L += ["\\midrule", "\\textbf{Mean} & " + " & ".join(f"\\textbf{{{CTRL['means'][k]:.3f}}}" for k in ("real", "nas_t", "nas_c", "comp_t", "comp_c", "paste")) + " \\\\",
+          f"$p$ vs.\\ Ali-AUG, same carrier (categories / pairs) & -- & -- & -- & {fp(CTRL['comp_t_vs_nas_t']['p_cat'])} / {fp(CTRL['comp_t_vs_nas_t']['p_pairs'])} & {fp(CTRL['comp_c_vs_nas_c']['p_cat'])} / {fp(CTRL['comp_c_vs_nas_c']['p_pairs'])} & -- \\\\",
+          f"$p$ vs.\\ real only (categories / pairs) & -- & {fp(N['nas_t_vs_real']['p_cat'])} / {fp(N['nas_t_vs_real']['p_pairs'])} & {fp(N['nas_c_vs_real']['p_cat'])} / {fp(N['nas_c_vs_real']['p_pairs'])} & -- & -- & {fp(CTRL['paste_vs_real']['p_cat'])} / {fp(CTRL['paste_vs_real']['p_pairs'])} \\\\",
+          f"$p$ vs.\\ copy-paste (categories / pairs) & -- & {fp(CTRL['nas_t_vs_paste']['p_cat'])} / {fp(CTRL['nas_t_vs_paste']['p_pairs'])} & {fp(CTRL['nas_c_vs_paste']['p_cat'])} / {fp(CTRL['nas_c_vs_paste']['p_pairs'])} & -- & {fp(CTRL['comp_c_vs_paste']['p_cat'])} / {fp(CTRL['comp_c_vs_paste']['p_pairs'])} & -- \\\\",
+          "\\bottomrule", "\\end{tabular}"]
+    open(os.path.join(a.out, "tab_controls.tex"), "w", encoding="utf-8").write("\n".join(L) + "\n")
+    N["controls"] = CTRL
+
 # ---- macros
 mac = {}
+if TRN:
+    mac["TrainNcat"] = str(TRN["n_cat"])
+    for k, v in TRN["means"].items():
+        mac["TrainMean" + "".join(w.capitalize() for w in k.split("_"))] = f"{v:.3f}"
+    for k in ("train_c_vs_t", "train_t_vs_held", "train_c_vs_held"):
+        v = TRN[k]; tag = "Train" + "".join(w.capitalize() for w in k.split("_"))
+        mac[tag + "Diff"], mac[tag + "CI"] = f"{v['diff']:+.3f}", f"[{v['ci_lo']:+.3f}, {v['ci_hi']:+.3f}]"
+        mac[tag + "Ppairs"], mac[tag + "Pcat"], mac[tag + "Up"] = fpt(v["p_pairs"]), fpt(v["p_cat"]), f"{v['n_up']}/{v['n_cat']}"
+if CTRL:
+    mac["CtrlNcat"] = str(CTRL["n_cat"])
+    for k, v in CTRL["means"].items():
+        mac["CtrlMean" + "".join(w.capitalize() for w in k.split("_")).replace("200", "TwoHundred").replace("50", "Fifty")] = f"{v:.3f}"  # no digits in macro names
+    if "ad50_fid_mean" in CTRL:
+        mac["CtrlAdFiftyFid"], mac["CtrlAdFiftyFidN"] = f"{CTRL['ad50_fid_mean']:.3f}", str(CTRL["ad50_fid_n"])
+    if "ad50_n_cat" in CTRL:
+        mac["CtrlAdFiftyNcat"] = str(CTRL["ad50_n_cat"])
+    for k, v in CTRL.items():
+        if isinstance(v, dict) and "p_pairs" in v:
+            tag = "Ctrl" + "".join(w.capitalize() for w in k.split("_")).replace("200", "TwoHundred").replace("50", "Fifty")
+            mac[tag + "Diff"], mac[tag + "CI"] = f"{v['diff']:+.3f}", f"[{v['ci_lo']:+.3f}, {v['ci_hi']:+.3f}]"
+            mac[tag + "Ppairs"], mac[tag + "Pcat"], mac[tag + "Up"] = fpt(v["p_pairs"]), fpt(v["p_cat"]), f"{v['n_up']}/{v['n_cat']}"
 if RATIO:
     mac["RatioNcat"] = str(RATIO["n_cat"])
     for k, v in RATIO["means"].items():
@@ -436,6 +551,11 @@ if AD:
     mac["AdUnseen"] = str(AD["test_total"] - AD["seen"])
     mac["AdNcat"], mac["AdNclean"], mac["AdNjcat"] = str(AD["n_cat"]), str(AD["n_clean"]), str(AD["n_jcat"])
     mac["AdNobj"], mac["AdNtex"] = str(AD["n_obj"]), str(AD["n_tex"])
+    for pk, tag in (("AnomalyDiffusion", "Ad"), ("Ali-AUG text", "T"), ("Ali-AUG colour", "C")):
+        if "ic_lpips" in AD:
+            mac["IcLpips" + tag] = f"{AD['ic_lpips'][pk]:.3f}"
+        if "comp_lpips" in AD and pk != "AnomalyDiffusion":
+            mac["CompLpips" + tag + "Obj"], mac["CompLpips" + tag + "Tex"] = f"{AD['comp_lpips']['objects'][pk]:.3f}", f"{AD['comp_lpips']['textures'][pk]:.3f}"
     for pk, tag in (("AnomalyDiffusion", "Ad"), ("Ali-AUG text", "Text"), ("Ali-AUG colour", "Colour")):
         mac[f"Lpips{tag}Obj"] = f"{AD['lpips']['objects'][pk]:.3f}"
         mac[f"Lpips{tag}Tex"] = f"{AD['lpips']['textures'][pk]:.3f}"
@@ -453,6 +573,7 @@ for k in ("nas_t_vs_real", "nas_c_vs_real", "cas_t_vs_real", "cas_c_vs_real", "n
     mac[tag + "Up"] = f"{v['n_up']}/{v['n_cat']}"
     mac[tag + "Npairs"] = str(v["n_pairs"])
 mac["CatN"], mac["CatJN"], mac["CatCeil"] = str(N["n_cat"]), str(N["n_jcat"]), f"{N['ceil_mean']:.2f}"
+mac["CatChance"] = f"{N['chance_mean']:.2f}"
 # single adapter for all categories (split 0), same judges, restricted to the categories of the judge table
 for var, tag in (("alltext", "Text"), ("allcolor", "Colour")):
     for mode, mt in (("heldout", "Fid"), ("swap", "Swap")):
@@ -472,6 +593,9 @@ if f"aliaug_{TGPU}" in tim and f"ad_{TGPU}" in tim:
     mac["TimeAD"] = f"{ta['s_per_img_mean']:.2f}"
     mac["TimeRatio"] = f"{ta['s_per_img_mean'] / to['s_per_img_mean']:.1f}"
     mac["TimeGPU"] = to["gpu"].replace("NVIDIA GeForce ", "").replace("NVIDIA ", "")
+    if mac_ad50 is not None:
+        mac["TimeADFifty"] = f"{mac_ad50:.2f}"
+        mac["TimeRatioFifty"] = f"{mac_ad50 / to['s_per_img_mean']:.1f}"
 with open(os.path.join(a.out, "cat_numbers.tex"), "w", encoding="utf-8") as f:
     f.write("% generated by prep/t23/tables_cat.py -- do not edit\n")
     for k, v in mac.items():

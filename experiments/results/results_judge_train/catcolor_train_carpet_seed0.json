@@ -1,0 +1,260 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\carpet\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_carpet",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "train",
+ "n_syn": 62,
+ "n_test_real": 27,
+ "chance": 0.2,
+ "ceiling": 0.8888888888888888,
+ "fidelity": 0.3870967741935484,
+ "follows_mask": 0.3870967741935484,
+ "per_category": {
+  "carpet": {
+   "types": [
+    "color",
+    "cut",
+    "hole",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 62,
+   "n_test": 27,
+   "chance": 0.2,
+   "ceiling": 0.8888888888888888,
+   "fidelity": 0.3870967741935484,
+   "follows_mask": 0.3870967741935484
+  }
+ },
+ "disagreements": [
+  {
+   "name": "carpet_color_001.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_color_014.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_color_016.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_color_017.png",
+   "category": "carpet",
+   "requested": "color",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_000.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_001.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_cut_002.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_005.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_006.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_008.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_010.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_011.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_013.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_014.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_cut_015.png",
+   "category": "carpet",
+   "requested": "cut",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_hole_001.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_002.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_004.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_hole_005.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_008.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_009.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "color"
+  },
+  {
+   "name": "carpet_hole_010.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_011.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_012.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_hole_013.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_hole_014.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_hole_016.png",
+   "category": "carpet",
+   "requested": "hole",
+   "judged": "cut"
+  },
+  {
+   "name": "carpet_metal_contamination_000.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_metal_contamination_001.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_metal_contamination_002.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_metal_contamination_003.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_metal_contamination_004.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "thread"
+  },
+  {
+   "name": "carpet_metal_contamination_010.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_metal_contamination_011.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_metal_contamination_015.png",
+   "category": "carpet",
+   "requested": "metal_contamination",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_thread_009.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_thread_014.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "hole"
+  },
+  {
+   "name": "carpet_thread_018.png",
+   "category": "carpet",
+   "requested": "thread",
+   "judged": "cut"
+  }
+ ]
+}

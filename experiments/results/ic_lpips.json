@@ -1,0 +1,71 @@
+{
+ "bottle": {
+  "AnomalyDiffusion": 0.10087755648862749,
+  "Ali-AUG text": 0.09226567276886531,
+  "Ali-AUG colour": 0.08743529527906387
+ },
+ "cable": {
+  "AnomalyDiffusion": 0.2755802692845464,
+  "Ali-AUG text": 0.2826676800226172,
+  "Ali-AUG colour": 0.2787520081425707
+ },
+ "capsule": {
+  "AnomalyDiffusion": 0.07415805397289141,
+  "Ali-AUG text": 0.07016700508339065,
+  "Ali-AUG colour": 0.07025388993677639
+ },
+ "carpet": {
+  "AnomalyDiffusion": 0.0887670113146305,
+  "Ali-AUG text": 0.13511302237709363,
+  "Ali-AUG colour": 0.12477863361438116
+ },
+ "grid": {
+  "AnomalyDiffusion": 0.257363614688317,
+  "Ali-AUG text": 0.2304841270049413,
+  "Ali-AUG colour": 0.2264965390165647
+ },
+ "hazelnut": {
+  "AnomalyDiffusion": 0.22706052176654337,
+  "Ali-AUG text": 0.22500374279916288,
+  "Ali-AUG colour": 0.24148893617093561
+ },
+ "leather": {
+  "AnomalyDiffusion": 0.17121859004100165,
+  "Ali-AUG text": 0.16035741776227952,
+  "Ali-AUG colour": 0.12687025755643846
+ },
+ "metal_nut": {
+  "AnomalyDiffusion": 0.2876255225744986,
+  "Ali-AUG text": 0.27993402550263063,
+  "Ali-AUG colour": 0.2823011448518151
+ },
+ "pill": {
+  "AnomalyDiffusion": 0.12185244107378178,
+  "Ali-AUG text": 0.11257107412936737,
+  "Ali-AUG colour": 0.11260317377492683
+ },
+ "screw": {
+  "AnomalyDiffusion": 0.41056422126435094,
+  "Ali-AUG text": 0.41191391228210356,
+  "Ali-AUG colour": 0.40918566939376644
+ },
+ "toothbrush": {
+  "Ali-AUG text": 0.17941590336461863,
+  "Ali-AUG colour": 0.177191990841594
+ },
+ "transistor": {
+  "AnomalyDiffusion": 0.21081570349633694,
+  "Ali-AUG text": 0.22039337269961834,
+  "Ali-AUG colour": 0.2146887059013049
+ },
+ "wood": {
+  "AnomalyDiffusion": 0.2863878885904948,
+  "Ali-AUG text": 0.22732881764570873,
+  "Ali-AUG colour": 0.23745072980721788
+ },
+ "zipper": {
+  "AnomalyDiffusion": 0.13381951745776902,
+  "Ali-AUG text": 0.1182390173631055,
+  "Ali-AUG colour": 0.10958881708128111
+ }
+}

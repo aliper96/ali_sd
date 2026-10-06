@@ -79,7 +79,7 @@ for task, metrics in METRICS.items():
     # complete tabular: \input cannot be used between the rows of an alignment (it is robust in LaTeX 2020+)
     head = (r"\begin{tabular}{@{}l *{6}{>{\centering\arraybackslash}m{0.125\textwidth}}@{}}" "\n"
             r"\toprule" "\n"
-            r"& \textbf{D\_S} & \textbf{D\_S\_AUG} & \textbf{CAS text} & \textbf{CAS colour} & "
+            r"& \textbf{D\_S} & \textbf{D\_S\_\allowbreak AUG} & \textbf{CAS text} & \textbf{CAS colour} & "
             r"\textbf{NAS text} & \textbf{NAS colour} \\ \midrule" "\n")
     open(os.path.join(a.out, f"tab_tile_{task}.tex"), "w", encoding="utf-8").write(
         head + " \\hdashline\n".join(lines) + "\n" + r"\bottomrule" + "\n" + r"\end{tabular}" + "\n")

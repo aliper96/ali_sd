@@ -1,0 +1,122 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\grid\\split_0",
+ "syn": "D:\\sam3\\trainpools\\cattext_syn_grid",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "train",
+ "n_syn": 40,
+ "n_test_real": 17,
+ "chance": 0.2,
+ "ceiling": 0.7647058823529411,
+ "fidelity": 0.625,
+ "follows_mask": 0.625,
+ "per_category": {
+  "grid": {
+   "types": [
+    "bent",
+    "broken",
+    "glue",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 40,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.7647058823529411,
+   "fidelity": 0.625,
+   "follows_mask": 0.625
+  }
+ },
+ "disagreements": [
+  {
+   "name": "grid_bent_000.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_001.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_bent_002.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "broken"
+  },
+  {
+   "name": "grid_bent_006.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_broken_000.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_broken_002.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_broken_003.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_005.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_008.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_glue_005.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_metal_contamination_000.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_metal_contamination_002.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_metal_contamination_003.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_metal_contamination_005.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_metal_contamination_007.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "glue"
+  }
+ ]
+}

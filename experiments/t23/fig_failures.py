@@ -25,6 +25,7 @@ ap.add_argument("--splits", required=True)
 ap.add_argument("--out", required=True)
 ap.add_argument("--variant", default="text")
 ap.add_argument("--rows", type=int, default=3)
+ap.add_argument("--scale", type=float, default=1.0, help="2.56 renders the 512 px tiles at native size")
 a = ap.parse_args()
 
 
@@ -55,7 +56,8 @@ def font(sz):
     return ImageFont.load_default()
 
 
-C, PAD, LAB, TIT = 200, 6, 36, 34
+S = a.scale
+C, PAD, LAB, TIT = int(200 * S), int(6 * S), int(36 * S), int(34 * S)
 panels = [("A. Held-out mask, own class requested: judge sees another class (wrong weak label)",
            "heldout"),
           ("B. Swap test: prompt asks for another class; output follows the mask shape",
@@ -78,23 +80,23 @@ for title, mode in panels:
         rows.append(("row", (ims, f"requested: {req}   |   judge: {jud}   ({n[5:-4]}, split {k})")))
 
 W = 4 * C + 5 * PAD
-H = sum(TIT if r[0] == "title" else C + LAB + PAD for r in rows) + PAD + 28
+H = sum(TIT if r[0] == "title" else C + LAB + PAD for r in rows) + PAD + int(28 * S)
 fig = Image.new("RGB", (W, H), (250, 250, 250))
 d = ImageDraw.Draw(fig)
 y = PAD
 for j, h in enumerate(["clean input", "mask", "generated", "real defect (this mask)"]):
-    d.text((PAD + j * (C + PAD) + 4, y), h, fill=(20, 20, 20), font=font(15))
-y += 28
+    d.text((PAD + j * (C + PAD) + int(4 * S), y), h, fill=(20, 20, 20), font=font(int(15 * S)))
+y += int(28 * S)
 for kind, content in rows:
     if kind == "title":
-        d.text((PAD, y + 8), content, fill=(150, 20, 20), font=font(16))
+        d.text((PAD, y + int(8 * S)), content, fill=(150, 20, 20), font=font(int(16 * S)))
         y += TIT
         continue
     ims, lab = content
     for j, im in enumerate(ims):
         fig.paste(im.convert("RGB").resize((C, C)), (PAD + j * (C + PAD), y))
-    d.text((PAD + 4, y + C + 8), lab, fill=(20, 20, 20), font=font(15))
+    d.text((PAD + int(4 * S), y + C + int(8 * S)), lab, fill=(20, 20, 20), font=font(int(15 * S)))
     y += C + LAB + PAD
 os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
-fig.save(a.out)
+fig.save(a.out, dpi=(300, 300))
 print("saved", a.out, {m: len(robust(m)) for _, m in panels})

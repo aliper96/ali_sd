@@ -1,11 +1,13 @@
-\begin{tabular}{@{}l c c c c c c@{}}
+\begin{tabular}{@{}l c c c c c c c@{}}
 \toprule
- & Label fidelity & CAS & \multicolumn{2}{c}{LPIPS outside mask $\downarrow$} & \multicolumn{2}{c}{Sharpness outside mask} \\
-\cmidrule(lr){4-5}\cmidrule(lr){6-7}
-Generator & ($13$ cat.) & ($14$ cat.) & objects & textures & objects & textures \\
+ & Label fidelity & CAS & IC-LPIPS & \multicolumn{2}{c}{LPIPS outside mask $\downarrow$} & \multicolumn{2}{c}{Sharpness outside mask} \\
+\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Generator & ($13$ cat.) & ($14$ cat.) & (held-out) & objects & textures & objects & textures \\
 \midrule
-AnomalyDiffusion & 0.490 & 0.131 & 0.058 & 0.130 & 0.61 & 1.00 \\
-Ali-AUG text & 0.549 & 0.213 & 0.043 & 0.159 & 0.88 & 0.74 \\
-Ali-AUG colour & 0.607 & 0.199 & 0.045 & 0.175 & 0.88 & 0.92 \\
+AnomalyDiffusion & 0.490 & 0.131 & 0.204 & 0.058 & 0.130 & 0.61 & 1.00 \\
+Ali-AUG text & 0.549 & 0.213 & 0.196 & 0.043 & 0.159 & 0.88 & 0.74 \\
+Ali-AUG colour & 0.607 & 0.199 & 0.193 & 0.045 & 0.175 & 0.88 & 0.92 \\
+Ali-AUG text + compositing & -- & -- & -- & 0.030 & 0.022 & 1.00 & 1.00 \\
+Ali-AUG colour + compositing & -- & -- & -- & 0.031 & 0.019 & 1.00 & 1.00 \\
 \bottomrule
 \end{tabular}

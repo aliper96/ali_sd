@@ -1,0 +1,152 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\grid\\split_0",
+ "syn": "D:\\sam3\\trainpools\\cattext_syn_grid",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "train",
+ "n_syn": 40,
+ "n_test_real": 17,
+ "chance": 0.2,
+ "ceiling": 0.35294117647058826,
+ "fidelity": 0.5,
+ "follows_mask": 0.5,
+ "per_category": {
+  "grid": {
+   "types": [
+    "bent",
+    "broken",
+    "glue",
+    "metal_contamination",
+    "thread"
+   ],
+   "n_syn": 40,
+   "n_test": 17,
+   "chance": 0.2,
+   "ceiling": 0.35294117647058826,
+   "fidelity": 0.5,
+   "follows_mask": 0.5
+  }
+ },
+ "disagreements": [
+  {
+   "name": "grid_bent_000.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_bent_001.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "broken"
+  },
+  {
+   "name": "grid_bent_003.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_bent_006.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_bent_007.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "broken"
+  },
+  {
+   "name": "grid_bent_009.png",
+   "category": "grid",
+   "requested": "bent",
+   "judged": "broken"
+  },
+  {
+   "name": "grid_broken_000.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_broken_003.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_broken_005.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "thread"
+  },
+  {
+   "name": "grid_broken_006.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "bent"
+  },
+  {
+   "name": "grid_broken_008.png",
+   "category": "grid",
+   "requested": "broken",
+   "judged": "glue"
+  },
+  {
+   "name": "grid_glue_000.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_001.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_002.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_004.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_005.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_008.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_009.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_glue_010.png",
+   "category": "grid",
+   "requested": "glue",
+   "judged": "metal_contamination"
+  },
+  {
+   "name": "grid_metal_contamination_003.png",
+   "category": "grid",
+   "requested": "metal_contamination",
+   "judged": "thread"
+  }
+ ]
+}

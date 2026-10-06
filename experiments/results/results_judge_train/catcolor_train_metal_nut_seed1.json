@@ -1,0 +1,55 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\metal_nut\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_metal_nut",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "train",
+ "n_syn": 64,
+ "n_test_real": 29,
+ "chance": 0.25,
+ "ceiling": 0.896551724137931,
+ "fidelity": 0.9375,
+ "follows_mask": 0.9375,
+ "per_category": {
+  "metal_nut": {
+   "types": [
+    "bent",
+    "color",
+    "flip",
+    "scratch"
+   ],
+   "n_syn": 64,
+   "n_test": 29,
+   "chance": 0.25,
+   "ceiling": 0.896551724137931,
+   "fidelity": 0.9375,
+   "follows_mask": 0.9375
+  }
+ },
+ "disagreements": [
+  {
+   "name": "metal_nut_bent_000.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_bent_015.png",
+   "category": "metal_nut",
+   "requested": "bent",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_color_011.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "scratch"
+  },
+  {
+   "name": "metal_nut_color_019.png",
+   "category": "metal_nut",
+   "requested": "color",
+   "judged": "scratch"
+  }
+ ]
+}

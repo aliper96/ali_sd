@@ -1,0 +1,308 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\leather\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_leather",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "train",
+ "n_syn": 64,
+ "n_test_real": 28,
+ "chance": 0.2,
+ "ceiling": 0.7857142857142857,
+ "fidelity": 0.28125,
+ "follows_mask": 0.28125,
+ "per_category": {
+  "leather": {
+   "types": [
+    "color",
+    "cut",
+    "fold",
+    "glue",
+    "poke"
+   ],
+   "n_syn": 64,
+   "n_test": 28,
+   "chance": 0.2,
+   "ceiling": 0.7857142857142857,
+   "fidelity": 0.28125,
+   "follows_mask": 0.28125
+  }
+ },
+ "disagreements": [
+  {
+   "name": "leather_color_001.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_002.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_003.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_004.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_color_005.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_color_007.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_009.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_013.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_014.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_color_015.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_color_016.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_color_017.png",
+   "category": "leather",
+   "requested": "color",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_000.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_cut_002.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "leather_cut_003.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_004.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_cut_006.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_007.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_cut_009.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "leather_cut_010.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_cut_011.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "color"
+  },
+  {
+   "name": "leather_cut_012.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_016.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_017.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_cut_018.png",
+   "category": "leather",
+   "requested": "cut",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_000.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_002.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "color"
+  },
+  {
+   "name": "leather_glue_004.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "color"
+  },
+  {
+   "name": "leather_glue_005.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_006.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "color"
+  },
+  {
+   "name": "leather_glue_016.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_017.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "fold"
+  },
+  {
+   "name": "leather_glue_018.png",
+   "category": "leather",
+   "requested": "glue",
+   "judged": "color"
+  },
+  {
+   "name": "leather_poke_000.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_002.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "color"
+  },
+  {
+   "name": "leather_poke_003.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_005.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_008.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_009.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_010.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_011.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "color"
+  },
+  {
+   "name": "leather_poke_012.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_013.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_014.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_015.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "glue"
+  },
+  {
+   "name": "leather_poke_016.png",
+   "category": "leather",
+   "requested": "poke",
+   "judged": "color"
+  }
+ ]
+}

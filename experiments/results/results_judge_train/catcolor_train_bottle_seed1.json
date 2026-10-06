@@ -1,0 +1,42 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\bottle\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_bottle",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "train",
+ "n_syn": 44,
+ "n_test_real": 19,
+ "chance": 0.3333333333333333,
+ "ceiling": 0.9473684210526315,
+ "fidelity": 0.9545454545454546,
+ "follows_mask": 0.9545454545454546,
+ "per_category": {
+  "bottle": {
+   "types": [
+    "broken_large",
+    "broken_small",
+    "contamination"
+   ],
+   "n_syn": 44,
+   "n_test": 19,
+   "chance": 0.3333333333333333,
+   "ceiling": 0.9473684210526315,
+   "fidelity": 0.9545454545454546,
+   "follows_mask": 0.9545454545454546
+  }
+ },
+ "disagreements": [
+  {
+   "name": "bottle_broken_large_011.png",
+   "category": "bottle",
+   "requested": "broken_large",
+   "judged": "broken_small"
+  },
+  {
+   "name": "bottle_contamination_008.png",
+   "category": "bottle",
+   "requested": "contamination",
+   "judged": "broken_small"
+  }
+ ]
+}

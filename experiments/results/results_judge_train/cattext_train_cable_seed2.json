@@ -1,0 +1,41 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\cable\\split_0",
+ "syn": "D:\\sam3\\trainpools\\cattext_syn_cable",
+ "label_from": "prompt",
+ "seed": 2,
+ "fold": "train",
+ "n_syn": 64,
+ "n_test_real": 28,
+ "chance": 0.125,
+ "ceiling": 0.7857142857142857,
+ "fidelity": 0.984375,
+ "follows_mask": 0.984375,
+ "per_category": {
+  "cable": {
+   "types": [
+    "bent_wire",
+    "cable_swap",
+    "combined",
+    "cut_inner_insulation",
+    "cut_outer_insulation",
+    "missing_cable",
+    "missing_wire",
+    "poke_insulation"
+   ],
+   "n_syn": 64,
+   "n_test": 28,
+   "chance": 0.125,
+   "ceiling": 0.7857142857142857,
+   "fidelity": 0.984375,
+   "follows_mask": 0.984375
+  }
+ },
+ "disagreements": [
+  {
+   "name": "cable_poke_insulation_000.png",
+   "category": "cable",
+   "requested": "poke_insulation",
+   "judged": "cut_outer_insulation"
+  }
+ ]
+}

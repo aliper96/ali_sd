@@ -45,6 +45,7 @@ Dependencies:
 from __future__ import annotations
 
 import argparse
+import os
 import shutil
 import sys
 from pathlib import Path
@@ -168,6 +169,10 @@ def run_one(
         project=str(project), name=f"{protocol}_seed{seed}", exist_ok=True,
         verbose=False,
     )
+    # Dataloader workers: ultralytics' default (8) exhausts the Windows page file on the local
+    # machine (WinError 1455 while spawning workers); YOLO_WORKERS overrides it. Does not affect results.
+    if os.environ.get("YOLO_WORKERS"):
+        train_kwargs["workers"] = int(os.environ["YOLO_WORKERS"])
     if protocol == "D_S":
         train_kwargs.update(aug_off)
 

@@ -1,0 +1,266 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\screw\\split_0",
+ "syn": "D:\\sam3\\trainpools\\cattext_syn_screw",
+ "label_from": "prompt",
+ "seed": 0,
+ "fold": "train",
+ "n_syn": 83,
+ "n_test_real": 36,
+ "chance": 0.2,
+ "ceiling": 0.8611111111111112,
+ "fidelity": 0.5301204819277109,
+ "follows_mask": 0.5301204819277109,
+ "per_category": {
+  "screw": {
+   "types": [
+    "manipulated_front",
+    "scratch_head",
+    "scratch_neck",
+    "thread_side",
+    "thread_top"
+   ],
+   "n_syn": 83,
+   "n_test": 36,
+   "chance": 0.2,
+   "ceiling": 0.8611111111111112,
+   "fidelity": 0.5301204819277109,
+   "follows_mask": 0.5301204819277109
+  }
+ },
+ "disagreements": [
+  {
+   "name": "screw_manipulated_front_000.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_001.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_manipulated_front_004.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_007.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_008.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_010.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_manipulated_front_011.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_manipulated_front_014.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_016.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_017.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_020.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_manipulated_front_022.png",
+   "category": "screw",
+   "requested": "manipulated_front",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_001.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_scratch_head_005.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "manipulated_front"
+  },
+  {
+   "name": "screw_scratch_head_006.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_009.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_012.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_013.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_014.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_scratch_head_015.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_016.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_scratch_head_017.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_018.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_019.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_020.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_scratch_head_021.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_scratch_head_023.png",
+   "category": "screw",
+   "requested": "scratch_head",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_thread_side_010.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_thread_side_018.png",
+   "category": "screw",
+   "requested": "thread_side",
+   "judged": "thread_top"
+  },
+  {
+   "name": "screw_thread_top_002.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_003.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_005.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_007.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_008.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_011.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_013.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "scratch_neck"
+  },
+  {
+   "name": "screw_thread_top_018.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_019.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  },
+  {
+   "name": "screw_thread_top_020.png",
+   "category": "screw",
+   "requested": "thread_top",
+   "judged": "thread_side"
+  }
+ ]
+}

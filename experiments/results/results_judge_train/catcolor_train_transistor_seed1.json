@@ -1,0 +1,30 @@
+{
+ "split": "D:\\ad\\aliaug_cat\\transistor\\split_0",
+ "syn": "D:\\sam3\\trainpools\\catcolor_syn_transistor",
+ "label_from": "prompt",
+ "seed": 1,
+ "fold": "train",
+ "n_syn": 28,
+ "n_test_real": 12,
+ "chance": 0.25,
+ "ceiling": 0.8333333333333334,
+ "fidelity": 1.0,
+ "follows_mask": 1.0,
+ "per_category": {
+  "transistor": {
+   "types": [
+    "bent_lead",
+    "cut_lead",
+    "damaged_case",
+    "misplaced"
+   ],
+   "n_syn": 28,
+   "n_test": 12,
+   "chance": 0.25,
+   "ceiling": 0.8333333333333334,
+   "fidelity": 1.0,
+   "follows_mask": 1.0
+  }
+ },
+ "disagreements": []
+}

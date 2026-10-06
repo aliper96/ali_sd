@@ -1,0 +1,27 @@
+\begin{tabular}{@{}l c c c c c c@{}}
+\toprule
+Category & Real only & \multicolumn{2}{c}{Ali-AUG (NAS)} & \multicolumn{2}{c}{Ali-AUG + compositing} & Copy-paste \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+ & & text & colour & text & colour & (NAS) \\
+\midrule
+bottle & 0.587 & 0.555 & 0.582 & \textbf{0.620} & 0.617 & 0.617 \\
+cable & 0.330 & \textbf{0.376} & 0.372 & 0.375 & 0.369 & 0.342 \\
+capsule & 0.192 & 0.203 & \textbf{0.237} & 0.145 & 0.170 & 0.167 \\
+carpet$^\dagger$ & 0.361 & 0.395 & \textbf{0.425} & 0.322 & 0.379 & 0.372 \\
+grid$^\dagger$ & 0.072 & \textbf{0.162} & 0.128 & 0.089 & 0.104 & 0.091 \\
+hazelnut & 0.529 & \textbf{0.581} & 0.575 & 0.580 & 0.555 & 0.522 \\
+leather$^\dagger$ & \textbf{0.379} & 0.346 & 0.356 & 0.335 & 0.357 & 0.347 \\
+metal\_nut & 0.519 & 0.531 & 0.526 & 0.526 & 0.522 & \textbf{0.538} \\
+pill & 0.460 & 0.475 & \textbf{0.488} & 0.442 & 0.446 & 0.452 \\
+screw & \textbf{0.285} & 0.277 & 0.275 & 0.259 & 0.263 & 0.276 \\
+toothbrush & 0.121 & 0.191 & \textbf{0.206} & 0.139 & 0.126 & 0.108 \\
+transistor & 0.322 & 0.424 & 0.434 & \textbf{0.474} & 0.452 & 0.372 \\
+wood$^\dagger$ & 0.329 & 0.364 & \textbf{0.371} & 0.334 & 0.335 & 0.352 \\
+zipper & 0.374 & 0.384 & \textbf{0.388} & 0.359 & 0.359 & 0.364 \\
+\midrule
+\textbf{Mean} & \textbf{0.347} & \textbf{0.376} & \textbf{0.383} & \textbf{0.357} & \textbf{0.361} & \textbf{0.351} \\
+$p$ vs.\ Ali-AUG, same carrier (categories / pairs) & -- & -- & -- & 0.049 / 0.009 & 0.017 / 0.001 & -- \\
+$p$ vs.\ real only (categories / pairs) & -- & 0.013 / $<$0.001 & 0.004 / $<$0.001 & -- & -- & 0.502 / 0.577 \\
+$p$ vs.\ copy-paste (categories / pairs) & -- & 0.025 / $<$0.001 & 0.007 / $<$0.001 & -- & 0.296 / 0.159 & -- \\
+\bottomrule
+\end{tabular}
